@@ -1,13 +1,15 @@
 <template>
   <main>
   
-    <div v-for="item in downloadedData" :key="item" class="card">
+    <div v-for="item in downloadedData" :key="item" class="z-10">
       <router-link :to="`/details/${item.title}`">
         View more
       </router-link>
       <h2>{{ item.title }}</h2>
+      <img class="h-96" :src="item.remoteURL" alt="item.title" />
       <p>{{ item.description }}</p>
-      <p>{{ item.id }}</p>
+      
+
       
 
       <div v-if="item.remoteURL">
@@ -17,6 +19,7 @@
 
       </div>
     </div>
+
   
   </main>
 </template>
