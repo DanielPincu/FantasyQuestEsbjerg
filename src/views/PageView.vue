@@ -10,7 +10,6 @@
       <p>{{ item.id }}</p>
       
 
-      <img :src="item.remoteURL" alt="">
       <div v-if="item.remoteURL">
         <a :href="item.remoteURL">Visit project</a>
       </div>

@@ -3,23 +3,27 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    
+
+  <div class="h-screen flex flex-col">  <header>
       <nav class="flex justify-end pt-10 text-xl">
         <RouterLink class="px-5" to="/">Home</RouterLink>
         <RouterLink class="px-5" to="/about">About</RouterLink>
         <RouterLink class="px-5" to="/page">Page</RouterLink>
       </nav>
       <h1 class="text-3xl font-bold text-center pt-10">Vue 3 Router</h1>
-  </header>
-  
+    </header>
 
+    <main class="flex-grow">  <RouterView v-slot=" { Component }">
+        <transition mode="out-in" name="bounce">
+          <component :is="Component" />
+        </transition>
+      </RouterView>
+    </main>
 
-<RouterView v-slot=" { Component }">
-  <transition mode="out-in" name="bounce">
-    <component :is="Component" />
-  </transition>
-</RouterView>
+    <footer class="flex items-end text-center p-4 bg-gray-200">  <p>&copy; 2021 Vue 3 Router</p>
+    </footer>
+
+  </div>
 
 </template>
 
@@ -38,7 +42,7 @@ import { RouterLink, RouterView } from 'vue-router'
     transform: scale(0.9)
   }
   50% {
-    transform:scale(1.1)
+    transform:scale(1)
   }
   100% {
     transform: scale(1)
@@ -50,7 +54,7 @@ import { RouterLink, RouterView } from 'vue-router'
     transform: scale(1)
   }
   50% {
-    transform:scale(1.1)
+    transform:scale(1)
   }
   100% {
     transform: scale(0.9);
