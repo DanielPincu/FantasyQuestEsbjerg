@@ -4,7 +4,7 @@
     <h2>{{ selectedItem.description }}</h2>
     <h1>{{ selectedItem.extra_description }}</h1>
     
-    <RouterLink to="/portfolio">
+    <RouterLink to="/page">
       <button class="bg-blue-400 rounded-full text-black px-5 mt-5">Go back</button>
     </RouterLink>
 

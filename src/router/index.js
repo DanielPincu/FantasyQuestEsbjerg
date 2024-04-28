@@ -22,11 +22,11 @@ const router = createRouter({
       }
     },
     {
-      path: '/portfolio',
-      name: 'portfolio',
-      component: () => import('../views/PortfoliosView.vue'),
+      path: '/page',
+      name: 'page',
+      component: () => import('../views/PageView.vue'),
       meta: {
-        title: "Portfolio Views"
+        title: "Page View"
       }
     },
     {

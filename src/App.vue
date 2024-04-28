@@ -8,9 +8,9 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav class="flex justify-end pt-10 text-xl">
         <RouterLink class="px-5" to="/">Home</RouterLink>
         <RouterLink class="px-5" to="/about">About</RouterLink>
-        <RouterLink class="px-5" to="/portfolio">Portfolio</RouterLink>
+        <RouterLink class="px-5" to="/page">Page</RouterLink>
       </nav>
-  
+      <h1 class="text-3xl font-bold text-center pt-10">Vue 3 Router</h1>
   </header>
   
 
