@@ -26,18 +26,30 @@ const router = createRouter({
       name: 'page',
       component: () => import('../views/PageView.vue'),
       meta: {
-        title: "Page View"
+        title: "Page"
       }
     },
     {
       path: '/details/:title',
       name: 'details',
       component: () => import('../views/DetailsView.vue'),
-      props: true,
+      meta: {
+        dynamicTitle: true 
+      }
 
     },
+    
   ]
+
+  
 })
+
+router.beforeEach((to, from, next) => {
+  const pageTitle = to.meta.title || (to.meta.dynamicTitle && to.params.title); 
+  document.title = `Daniel Pincu | ${pageTitle}`;
+  next()
+})
+
 
 
 export default router

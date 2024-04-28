@@ -42,4 +42,6 @@ onMounted(async () => {
   // Await fetchData to ensure data is available before processing
   await fetchDataPromise.value;
 });
+
+
 </script>
