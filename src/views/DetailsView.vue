@@ -8,6 +8,10 @@
       <button class="bg-blue-400 rounded-full text-black px-5 mt-5">Go back</button>
     </RouterLink>
 
+    <RouterLink to="/">
+      <button class="bg-blue-400 rounded-full text-black px-5 mt-5">Go home</button>
+    </RouterLink>
+
   </div>
   <div v-else>
     <p>Loading data...</p>
