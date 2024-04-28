@@ -6,7 +6,7 @@
         View more
       </router-link>
       <h2>{{ item.title }}</h2>
-      <img class="h-96" :src="item.remoteURL" alt="item.title" />
+      <img :src="item.remoteURL" alt="item.title" />
       <p>{{ item.description }}</p>
       
 
