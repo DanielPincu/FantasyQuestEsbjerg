@@ -13,13 +13,17 @@ import { RouterLink, RouterView } from 'vue-router'
       </nav>
     </header>
 
-    <main class="flex-grow pt-20 px-4">
+    <!-- This is Viewport -->
+
+    <main class="flex-grow py-20 px-4">
       <RouterView v-slot=" { Component }">
         <transition mode="out-in" name="bounce">
           <component :is="Component" />
         </transition>
       </RouterView>
     </main>
+
+    <!-- Viewport ends here -->
 
     <footer class="fixed bottom-0 left-0 w-full bg-gray-200 flex items-center text-center p-4">
       <p>&copy; 2021 Vue 3 Router</p>
