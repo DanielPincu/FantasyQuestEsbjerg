@@ -4,12 +4,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, onSnapshot } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC0BZawR9IcXqSUB18N5M7GnpUhCRvaA_A",
-  authDomain: "danielpincu-bfbfa.firebaseapp.com",
-  projectId: "danielpincu-bfbfa",
-  storageBucket: "danielpincu-bfbfa.appspot.com",
-  messagingSenderId: "72266102154",
-  appId: "1:72266102154:web:008929fe5bb16316d50473"
+  apiKey: "AIzaSyAS9_9iAkcMkKwrjwSTIkyONgR-I6FQOP0",
+  authDomain: "exam-6d170.firebaseapp.com",
+  projectId: "exam-6d170",
+  storageBucket: "exam-6d170.appspot.com",
+  messagingSenderId: "746378805997",
+  appId: "1:746378805997:web:7ca166345f8ea986d882e4"
 };
 
 // Initialize Firebase

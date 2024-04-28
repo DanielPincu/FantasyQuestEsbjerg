@@ -42,20 +42,3 @@ onMounted(() => {
 
 </script>
 
-<style lang="scss">
-.card {
-  color:#333;
-  background-color: #f4f4f4;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.web {
-  background-color: #af7012;
-}
-.photo {
-  background-color: #f256e2;
-}
-</style>
