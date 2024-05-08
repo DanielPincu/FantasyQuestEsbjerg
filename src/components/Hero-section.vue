@@ -22,7 +22,7 @@
         <div class="absolute top-0 left-0 right-10 transform -translate-y-1/2">
           <div>
             <div class="max-w-screen-xl mx-auto py-4">
-              <img class="w-32 pt-10 md:w-64 xl:w-[30em]" src="../assets/img/drage.png" alt="">
+              <img class="w-32 md:pt-32 md:w-64 xl:w-[30em]" src="../assets/img/drage.png" alt="">
             </div>
           </div>
         </div>
