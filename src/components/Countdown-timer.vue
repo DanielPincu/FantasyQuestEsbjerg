@@ -1,6 +1,6 @@
 <template>
-    <div class="text-center text-2xl text-orange-500">
-      <p>Time Left: {{ days }} days, {{ hours }} hours, {{ minutes }} minutes</p>
+    <div class="text-center text-2xl pt-5 text-orange-500">
+      <p>Time Left: {{ days }} days, {{ hours }} hours</p>
     </div>
   </template>
   
@@ -20,10 +20,7 @@ const hours = computed(() => {
   return Math.floor((diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 });
 
-const minutes = computed(() => {
-  const diffTime = eventDate.getTime() - currentDate.value.getTime();
-  return Math.floor((diffTime % (1000 * 60 * 60)) / (1000 * 60));
-});
+
 
 onMounted(() => {
   // Update current date every second
