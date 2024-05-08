@@ -1,8 +1,22 @@
 <template>
-    <div class="text-center text-2xl pt-5 text-orange-500">
-      <p>Time Left: {{ days }} days, {{ hours }} hours</p>
+  <div class="text-center flex items-center justify-center ">
+    <p class="text-3xl text-orange-500 font-bold pr-10">TIME LEFT</p>
+    <div class="flex justify-center items-center space-x-4">
+      <div class="w-14 h-14 md:w-28 md:h-28 rounded-full bg-orange-500 flex items-center justify-center">
+        <p class="text-white text-sm xl:text-2xl">{{ days }} days</p>
+      </div>
+      <p class="animate-pulse text-[3em]">:</p>
+      <div class="w-14 h-14 md:w-24 md:h-24 rounded-full bg-orange-500 flex items-center justify-center">
+        <p class="text-white text-sm xl:text-xl">{{ hours }} hrs</p>
+      </div>
+      <p class="animate-pulse text-[3em]">:</p>
+      <div class="w-14 h-14 md:w-20 md:h-20 rounded-full bg-orange-500 flex items-center justify-center">
+        <p class="text-white text-sm">{{ minutes }} min</p>
+      </div>
     </div>
-  </template>
+  </div>
+</template>
+
   
   <script setup>
 import { ref, computed, onMounted } from 'vue';
@@ -18,6 +32,11 @@ const days = computed(() => {
 const hours = computed(() => {
   const diffTime = eventDate.getTime() - currentDate.value.getTime();
   return Math.floor((diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+});
+
+const minutes = computed(() => {
+  const diffTime = eventDate.getTime() - currentDate.value.getTime();
+  return Math.floor((diffTime % (1000 * 60 * 60)) / (1000 * 60));
 });
 
 
