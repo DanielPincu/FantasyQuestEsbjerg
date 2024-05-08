@@ -1,21 +1,23 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import Nav from './components/Nav-section.vue'
 </script>
 
 <template>
   <div class="h-screen flex flex-col">
     <header class="fixed top-0 left-0 w-full bg-gray-200 flex justify-between p-4">
       <h1 class="text-xl font-bold text-black">Vue 3 Router</h1>
-      <nav class="flex space-x-4">
+      <Nav />
+      <!-- <nav class="flex space-x-4">
         <RouterLink class="text-slate-500 hover:text-blue-500 font-medium px-3 py-2 rounded-full transition-all duration-300" to="/">Home</RouterLink>
         <RouterLink class="text-slate-500 hover:text-blue-500 font-medium px-3 py-2 rounded-full transition-all duration-300" to="/about">About</RouterLink>
         <RouterLink class="text-slate-500 hover:text-blue-500 font-medium px-3 py-2 rounded-full transition-all duration-300" to="/page">Page</RouterLink>
-      </nav>
+      </nav> -->
     </header>
 
     <!-- This is Viewport -->
 
-    <main class="flex-grow py-20 px-4">
+    <main class="flex-grow my-20">
       <RouterView v-slot=" { Component }">
         <transition mode="out-in" name="bounce">
           <component :is="Component" />
