@@ -6,12 +6,15 @@
 
 
 a {
-  color: blue;
+  color: white;
   transition: 0.4s;
+}
+hover .a {
+  color: orange;
 }
 
 nav a.router-link-exact-active {
-  color: black;
+  color: orange;
 }
 
 

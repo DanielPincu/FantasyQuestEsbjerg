@@ -46,7 +46,7 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   const pageTitle = to.meta.title || (to.meta.dynamicTitle && to.params.title); 
-  document.title = `Daniel Pincu | ${pageTitle}`;
+  document.title = `Fantasy Quest | ${pageTitle}`;
   next()
 })
 

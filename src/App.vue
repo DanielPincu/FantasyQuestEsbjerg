@@ -1,24 +1,19 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import Nav from './components/Nav-section.vue'
 </script>
 
 <template>
   <div class="h-screen flex flex-col">
-    <header class="fixed top-0 left-0 w-full bg-gray-200 flex justify-between p-4">
-      <h1 class="text-xl font-bold text-black">Vue 3 Router</h1>
+    <header class="w-full bg-black flex justify-between items-center p-4 sticky top-0 z-10">
+      <h1 class="xl:text-xl text-sm font-bold text-orange-500">Fantasy Quest</h1>
       <Nav />
-      <!-- <nav class="flex space-x-4">
-        <RouterLink class="text-slate-500 hover:text-blue-500 font-medium px-3 py-2 rounded-full transition-all duration-300" to="/">Home</RouterLink>
-        <RouterLink class="text-slate-500 hover:text-blue-500 font-medium px-3 py-2 rounded-full transition-all duration-300" to="/about">About</RouterLink>
-        <RouterLink class="text-slate-500 hover:text-blue-500 font-medium px-3 py-2 rounded-full transition-all duration-300" to="/page">Page</RouterLink>
-      </nav> -->
     </header>
 
     <!-- This is Viewport -->
 
-    <main class="flex-grow my-20">
-      <RouterView v-slot=" { Component }">
+    <main class="flex-grow">
+      <RouterView v-slot="{ Component }">
         <transition mode="out-in" name="bounce">
           <component :is="Component" />
         </transition>
@@ -27,14 +22,14 @@ import Nav from './components/Nav-section.vue'
 
     <!-- Viewport ends here -->
 
-    <footer class="fixed bottom-0 left-0 w-full bg-gray-200 flex items-center text-center p-4">
+    <footer class="w-full bg-gray-200 flex items-center justify-center text-center p-4">
       <p>&copy; 2021 Vue 3 Router</p>
     </footer>
   </div>
 </template>
 
 <style scoped>
-/* Animations (uncomment if desired) */
+
 .bounce-enter-active {
   animation: bounce-in 0.5s;
 }
@@ -45,22 +40,22 @@ import Nav from './components/Nav-section.vue'
 
 @keyframes bounce-in {
   0% {
-    transform: scale(0.9)
+    transform: scale(0.9);
   }
   50% {
-    transform:scale(1)
+    transform: scale(1);
   }
   100% {
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 
 @keyframes bounce-out {
   0% {
-    transform: scale(1)
+    transform: scale(1);
   }
   50% {
-    transform:scale(1)
+    transform: scale(1);
   }
   100% {
     transform: scale(0.9);
@@ -68,22 +63,24 @@ import Nav from './components/Nav-section.vue'
   }
 }
 
-
-.slide-fade-enter-active, .slide-fade-leave-active {
+.slide-fade-enter-active,
+.slide-fade-leave-active {
   transition: all 0.5s ease;
 }
 
-.slide-fade-enter-from, .slide-fade-leave-to {
+.slide-fade-enter-from,
+.slide-fade-leave-to {
   opacity: 0;
-  transform:translate(-20px, 20px)
+  transform: translate(-20px, 20px);
 }
 
-
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 0.5s;
 }
 
-.fade-enter-from, .fade-leave-to {
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
 </style>
