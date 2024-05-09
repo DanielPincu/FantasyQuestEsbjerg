@@ -6,7 +6,7 @@
     </video>
     <div class="absolute top-1/4 left-0 right-0">
 
-      <div class="bg-black bg-opacity-50 h-[25em]">
+      <div class="bg-black bg-opacity-50 h-[26em]">
 
         <div class="absolute top-0 left-0 right-10 transform  -translate-y-1/2">
             <div class="max-w-screen-xl mx-auto py-4">
