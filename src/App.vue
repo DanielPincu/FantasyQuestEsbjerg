@@ -1,32 +1,29 @@
 <script setup>
-import { RouterView } from 'vue-router'
-import Nav from './components/Nav-section.vue'
+    import { RouterView } from 'vue-router'
+    import Header from './components/Header-section.vue'
+    import Footer from './components/Footer-section.vue'
 </script>
 
 <template>
   <div class="h-screen flex flex-col">
-    <header class="w-full bg-black flex justify-between items-center p-4 sticky top-0 z-10">
-      <h1 class="xl:text-xl text-sm font-bold text-orange-500">Fantasy Quest</h1>
-      <Nav />
-    </header>
 
+    <Header />
+   
     <!-- This is Viewport -->
-
-    <main class="flex-grow">
-      <RouterView v-slot="{ Component }">
-        <transition mode="out-in" name="bounce">
-          <component :is="Component" />
-        </transition>
-      </RouterView>
-    </main>
-
+      <main class="flex-grow">
+        <RouterView v-slot="{ Component }">
+          <transition mode="out-in" name="bounce">
+            <component :is="Component" />
+          </transition>
+        </RouterView>
+      </main>
     <!-- Viewport ends here -->
 
-    <footer class="w-full bg-gray-200 flex items-center justify-center text-center p-4">
-      <p>&copy; 2021 Vue 3 Router</p>
-    </footer>
+    <Footer />
+   
   </div>
 </template>
+
 
 <style scoped>
 
