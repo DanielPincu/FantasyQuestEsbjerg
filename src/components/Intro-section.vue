@@ -10,12 +10,12 @@
 
    
     <div class="grid grid-cols-2 grid-rows-2 container mx-auto">
-        <div class="button hover:bg-orange-500 border-2 hover:border-4 border-orange-500 hover:border-black duration-100 h-10 mx-5 flex justify-center items-center">Family Quest</div>
-        <div class="button hover:bg-orange-500 border-2 hover:border-4 border-orange-500 hover:border-black duration-100 h-10 mx-5 flex justify-center items-center">Night Quest</div>
+        <div @click="toggleVisibility('family')" class="button hover:bg-orange-500 border-2 hover:border-4 border-orange-500 hover:border-black duration-100 h-10 mx-5 flex justify-center items-center">Family Quest</div>
+        <div @click="toggleVisibility('night')" class="button hover:bg-orange-500 border-2 hover:border-4 border-orange-500 hover:border-black duration-100 h-10 mx-5 flex justify-center items-center">Night Quest</div>
     </div>
 
 
-    <div id="family">
+    <div v-if="isFamilyVisible" id="family">
         
         <div class="flex container mx-auto justify-center pb-20">
             <img class="px-5" src="../assets/img/family2.png" alt="">
@@ -42,7 +42,7 @@
 
     </div>
 
-    <div id="night">
+    <div v-if="isNightVisible" id="night">
         
         <div class="flex container mx-auto justify-center pb-20">
             <img class="px-5" src="../assets/img/family.png" alt="">
@@ -76,7 +76,21 @@
 </template>
 
 <script setup>
-
+import { ref } from 'vue'
 import BuyButton from '../components/Buy-button.vue'
 
+
+const isFamilyVisible = ref(true)
+const isNightVisible = ref(false)
+
+
+const toggleVisibility = (target) => {
+    if (target === 'family') {
+        isFamilyVisible.value = true
+        isNightVisible.value = false
+    } else if (target === 'night') {
+        isFamilyVisible.value = false
+        isNightVisible.value = true
+    }
+}
 </script>
