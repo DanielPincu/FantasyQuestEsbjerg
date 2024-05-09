@@ -14,60 +14,63 @@
         <div @click="toggleVisibility('night')" class="button hover:bg-orange-500 border-2 hover:border-4 border-orange-500 hover:border-black duration-100 h-10 mx-5 flex justify-center items-center">Night Quest</div>
     </div>
 
-
-    <div v-if="isFamilyVisible" id="family">
-        
-        <div class="flex container mx-auto justify-center pb-20">
-            <img class="px-5" src="../assets/img/family2.png" alt="">
-        </div>
-
-        <div class="grid grid-cols-12 container text-2xl pb-20 text-justify mx-auto">
+    <transition name="bounce">
+        <div v-if="isFamilyVisible" id="family">
             
-            <p class="mx-5 md:col-span-8 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
-
-            <p class="mx-5 md:col-span-8 col-span-12 pb-5">Here you meet magical creatures who set you some tasks and challenges along the way towards the goal, which you must solve together to complete the Quest. The degree of difficulty has been lowered so that the children can help solve the tasks. But make no mistake, all good strength and cooperation skills are needed if you are to help save Esbjerg. </p>
-
-            <div class="md:col-span-4 hidden col-span-12 md:flex justify-center items-center"> <!-- Added flex and centering classes -->
-                <BuyButton />   
+            <div class="flex container mx-auto justify-center pb-20">
+                <img class="px-5" src="../assets/img/family2.png" alt="">
             </div>
 
-            <p class="mx-5 md:col-span-8 col-span-12 pb-10">As an added bonus, you can meet the YouTuber Salmon Rider during the Quest around the streets of Esbjerg.</p>
+            <div class="grid grid-cols-12 container text-2xl pb-20 text-justify mx-auto">
+                
+                <p class="mx-5 md:col-span-8 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
 
-            <div class="md:col-span-4 md:hidden col-span-12 flex justify-center items-center"> <!-- Added flex and centering classes -->
-                <BuyButton />   
-            </div>
+                <p class="mx-5 md:col-span-8 col-span-12 pb-5">Here you meet magical creatures who set you some tasks and challenges along the way towards the goal, which you must solve together to complete the Quest. The degree of difficulty has been lowered so that the children can help solve the tasks. But make no mistake, all good strength and cooperation skills are needed if you are to help save Esbjerg. </p>
 
-        
-        </div>
+                <div class="md:col-span-4 hidden col-span-12 md:flex justify-center items-center"> <!-- Added flex and centering classes -->
+                    <BuyButton />   
+                </div>
 
-    </div>
+                <p class="mx-5 md:col-span-8 col-span-12 pb-10">As an added bonus, you can meet the YouTuber Salmon Rider during the Quest around the streets of Esbjerg.</p>
 
-    <div v-if="isNightVisible" id="night">
-        
-        <div class="flex container mx-auto justify-center pb-20">
-            <img class="px-5" src="../assets/img/family.png" alt="">
-        </div>
+                <div class="md:col-span-4 md:hidden col-span-12 flex justify-center items-center"> <!-- Added flex and centering classes -->
+                    <BuyButton />   
+                </div>
 
-        <div class="grid grid-cols-12 container text-2xl pb-20 text-justify mx-auto">
             
-            <p class="mx-5 md:col-span-8 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
-
-            <p class="mx-5 md:col-span-8 col-span-12 pb-5">Here you meet magical creatures who set you some tasks and challenges along the way towards the goal, which you must solve together to complete the Quest. The degree of difficulty has been lowered so that the children can help solve the tasks. But make no mistake, all good strength and cooperation skills are needed if you are to help save Esbjerg. </p>
-
-            <div class="md:col-span-4 hidden col-span-12 md:flex justify-center items-center"> <!-- Added flex and centering classes -->
-                <BuyButton />   
             </div>
 
-            <p class="mx-5 md:col-span-8 col-span-12 pb-10">As an added bonus, you can meet the YouTuber Salmon Rider during the Quest around the streets of Esbjerg.</p>
-
-            <div class="md:col-span-4 md:hidden col-span-12 flex justify-center items-center"> <!-- Added flex and centering classes -->
-                <BuyButton />   
-            </div>
-
-        
         </div>
+    </transition>
 
-    </div>
+    <transition name="bounce">
+        <div v-if="isNightVisible" id="night">
+            
+            <div class="flex container mx-auto justify-center pb-20">
+                <img class="px-5" src="../assets/img/family.png" alt="">
+            </div>
+
+            <div class="grid grid-cols-12 container text-2xl pb-20 text-justify mx-auto">
+                
+                <p class="mx-5 md:col-span-8 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
+
+                <p class="mx-5 md:col-span-8 col-span-12 pb-5">Here you meet magical creatures who set you some tasks and challenges along the way towards the goal, which you must solve together to complete the Quest. The degree of difficulty has been lowered so that the children can help solve the tasks. But make no mistake, all good strength and cooperation skills are needed if you are to help save Esbjerg. </p>
+
+                <div class="md:col-span-4 hidden col-span-12 md:flex justify-center items-center"> <!-- Added flex and centering classes -->
+                    <BuyButton />   
+                </div>
+
+                <p class="mx-5 md:col-span-8 col-span-12 pb-10">As an added bonus, you can meet the YouTuber Salmon Rider during the Quest around the streets of Esbjerg.</p>
+
+                <div class="md:col-span-4 md:hidden col-span-12 flex justify-center items-center"> <!-- Added flex and centering classes -->
+                    <BuyButton />   
+                </div>
+
+            
+            </div>
+
+        </div>
+    </transition>
 
 
    
@@ -94,3 +97,28 @@ const toggleVisibility = (target) => {
     }
 }
 </script>
+
+<style scoped>
+
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+
+
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+</style>
