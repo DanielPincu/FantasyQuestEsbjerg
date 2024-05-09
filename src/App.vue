@@ -2,7 +2,7 @@
     import { RouterView } from 'vue-router'
     import Header from './components/Header-section.vue'
     import Footer from './components/Footer-section.vue'
-    import Intro from './components/Intro-section.vue'
+    // import Intro from './components/Intro-section.vue'
 </script>
 
 <template>
@@ -22,7 +22,9 @@
 
   </div>
 
-  <Intro />
+  <!-- <Intro /> -->
+
+  
   <Footer />
   
 </template>

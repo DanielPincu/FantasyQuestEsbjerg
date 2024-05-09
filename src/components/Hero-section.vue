@@ -4,7 +4,7 @@
     <video autoplay muted loop playsinline class="w-full">
       <source src="../assets/img/ddd.mp4" type="video/mp4">
     </video>
-    <div class="absolute top-1/4 left-0 right-0">
+    <div class="absolute top-14 md:top-44 left-0 right-0">
 
       <div class="bg-black bg-opacity-50 h-[26em]">
 
