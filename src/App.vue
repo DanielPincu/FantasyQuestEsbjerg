@@ -2,15 +2,16 @@
     import { RouterView } from 'vue-router'
     import Header from './components/Header-section.vue'
     import Footer from './components/Footer-section.vue'
+    import Intro from './components/Intro-section.vue'
 </script>
 
 <template>
-  <div class="h-screen flex flex-col">
+  <div class="flex flex-col">
 
     <Header />
    
     <!-- This is Viewport -->
-      <main class="flex-grow">
+      <main class="pb-32">
         <RouterView v-slot="{ Component }">
           <transition mode="out-in" name="bounce">
             <component :is="Component" />
@@ -19,9 +20,11 @@
       </main>
     <!-- Viewport ends here -->
 
-    <Footer />
-   
   </div>
+
+  <Intro />
+  <Footer />
+  
 </template>
 
 
