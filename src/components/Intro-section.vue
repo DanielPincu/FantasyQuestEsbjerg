@@ -18,11 +18,23 @@
             <div class="flex container mx-auto justify-center pb-20">
                 <img class="px-5" src="../assets/img/family.webp" alt="">
             </div>
-            <div class="grid grid-cols-12 container text-2xl pb-20 text-justify mx-auto">
+            <div class="container text-2xl pb-20 text-justify mx-auto">
                 <p class="mx-5 md:col-span-12 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
-                <div class="col-span-12 flex justify-center items-center">
-                    <BuyButton />   
-                </div>
+
+               <div class="md:grid grid-cols-12 pt-5">
+                    <div class="col-span-6 text-center flex justify-center items-center">
+                        <ul>
+                            <li><span><RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/family-quest">Read more</RouterLink></span></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-span-6 pt-10 md:pt-0">
+                        <BuyButton />  
+                    </div>
+               </div>
+
+               
             </div>
         </div>
     </transition>
@@ -32,13 +44,23 @@
             <div class="flex container mx-auto justify-center pb-20">
                 <img class="px-5" src="../assets/img/night.webp" alt="">
             </div>
-            <div class="grid grid-cols-12 container text-2xl pb-20 text-justify mx-auto">
-                <p class="mx-5 md:col-span-12 col-span-12 pb-5">When twilight begins to descend over Esbjerg, the level of difficulty in the Evening Quest is turned up. If you love solving puzzles and cracking codes, don't miss out on this ultimate experience. We send you and your friends on your ultimate adventure in Esbjerg's streets and alleys. </p>
+            <div class="container text-2xl pb-20 text-justify mx-auto">
+                <p class="mx-5 md:col-span-12 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
+
+               <div class="md:grid grid-cols-12 pt-5">
+                    <div class="col-span-6 text-center flex justify-center items-center">
+                        <ul>
+                            <li><span><RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/night-quest">Read more</RouterLink></span></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-span-6 pt-10 md:pt-0">
+                        <BuyButton />  
+                    </div>
+               </div>
+
                
-        
-                <div class="col-span-12 flex justify-center items-center">
-                    <BuyButton />   
-                </div>
             </div>
         </div>
     </transition>
@@ -63,7 +85,7 @@ const toggleVisibility = (target) => {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .bounce-enter-active {
   animation: bounce-in 0.5s;
 }
@@ -79,4 +101,71 @@ const toggleVisibility = (target) => {
     transform: scale(1);
   }
 }
+
+
+
+
+
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    color: orange;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+li::before,
+li::after
+ {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+}
+
+li::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+}
+
+li::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+}
+
+li span {
+    position: relative;
+    height: 120%;
+    top: -10%;
+    box-sizing: border-box;
+    border: 0.08em solid;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+}
+
+li:hover span {
+    transform: translateX(0.15em);
+}
+
+
 </style>
