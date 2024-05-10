@@ -1,14 +1,14 @@
 <script setup>
     import { RouterView } from 'vue-router'
-    import Header from './components/Header-section.vue'
     import Footer from './components/Footer-section.vue'
+    import Nav from './components/Nav-section.vue'
     // import Intro from './components/Intro-section.vue'
 </script>
 
 <template>
   <div class="flex flex-col">
 
-    <Header />
+    <Nav />
    
     <!-- This is Viewport -->
       <main class="pb-32">
