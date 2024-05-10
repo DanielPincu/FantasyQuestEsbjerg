@@ -14,30 +14,51 @@ const router = createRouter({
       }
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue'),
+      path: '/family-quest',
+      name: 'Family Quest',
+      component: () => import('../views/FamilyView.vue'),
       meta: {
-        title: "About"
+        title: "Family Quest"
       }
     },
-    {
-      path: '/page',
-      name: 'page',
-      component: () => import('../views/PageView.vue'),
-      meta: {
-        title: "Page"
-      }
-    },
-    {
-      path: '/details/:title',
-      name: 'details',
-      component: () => import('../views/DetailsView.vue'),
-      meta: {
-        dynamicTitle: true 
-      }
 
+    {
+      path: '/night-quest',
+      name: 'Night Quest',
+      component: () => import('../views/NightView.vue'),
+      meta: {
+        title: "Night Quest"
+      }
     },
+
+    {
+      path: '/faq',
+      name: 'FAQ',
+      component: () => import('../views/FAQView.vue'),
+      meta: {
+        title: "FAQ"
+      }
+    },
+
+
+
+    // {
+    //   path: '/page',
+    //   name: 'page',
+    //   component: () => import('../views/PageView.vue'),
+    //   meta: {
+    //     title: "Page"
+    //   }
+    // },
+    // {
+    //   path: '/details/:title',
+    //   name: 'details',
+    //   component: () => import('../views/DetailsView.vue'),
+    //   meta: {
+    //     dynamicTitle: true 
+    //   }
+
+    // },
     
   ]
 
