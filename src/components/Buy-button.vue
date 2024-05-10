@@ -51,13 +51,13 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
     &::before {
       border: 0;
-      background: linear-gradient(to bottom, #ebd67c, #d9a52b);
+      background: #F0CE00;
       top: -0.75rem;
       left: 0.5rem;
       animation: topAnimation 2s $cubic-bezier 0.25s infinite alternate;
     }
     &::after {
-      background: linear-gradient(to bottom, #ebd67c, #d9a52b);
+      background: #F3951A;
       top: 3rem;
       left: 13rem;
       animation: bottomAnimation 2s $cubic-bezier 0.5s infinite alternate;

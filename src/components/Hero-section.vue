@@ -2,7 +2,7 @@
 <template>
   <div class="w-full relative">
     <video autoplay muted loop playsinline class="w-full">
-      <source src="../assets/img/ddd.mp4" type="video/mp4">
+      <source src="../assets/img/ddd_1.mp4" type="video/mp4">
     </video>
     <div class="absolute top-14 md:top-44 left-0 right-0">
 
