@@ -16,7 +16,7 @@
     <transition name="bounce">
         <div v-if="isFamilyVisible" id="family">
             <div class="flex container mx-auto justify-center pb-20">
-                <img class="px-5" src="../assets/img/family2.png" alt="">
+                <img class="px-5" src="../assets/img/family.webp" alt="">
             </div>
             <div class="grid grid-cols-12 container text-2xl pb-20 text-justify mx-auto">
                 <p class="mx-5 md:col-span-12 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
@@ -30,7 +30,7 @@
     <transition name="bounce">
         <div v-if="isNightVisible" id="night">
             <div class="flex container mx-auto justify-center pb-20">
-                <img class="px-5" src="../assets/img/night.jpg" alt="">
+                <img class="px-5" src="../assets/img/night.webp" alt="">
             </div>
             <div class="grid grid-cols-12 container text-2xl pb-20 text-justify mx-auto">
                 <p class="mx-5 md:col-span-12 col-span-12 pb-5">When twilight begins to descend over Esbjerg, the level of difficulty in the Evening Quest is turned up. If you love solving puzzles and cracking codes, don't miss out on this ultimate experience. We send you and your friends on your ultimate adventure in Esbjerg's streets and alleys. </p>
