@@ -16,14 +16,14 @@
 
 
         <div class="max-w-screen-xl mx-auto px-8">
-          <h2 class="text-gradient pt-10 pb-5 text-center tracking-widest text-xl md:text-[60px] font-bold">Fantasy Quest <br>
+          <h2 class="text-gradient pt-10 pb-10 text-center tracking-widest text-xl md:text-[60px] font-bold">Fantasy Quest <br>
             <br class="hidden md:flex">
           
             Esbjerg
           </h2>
 
           
-          <h1 class="text-gradient text-center mb-5 tracking-widest md:text-[40px] pt-3 font-bold">14 September 2024</h1>
+          <h1 class="text-gradient text-center mb-5 tracking-widest md:text-[30px] pt-3 font-bold">14 September 2024</h1>
 
           <CountdownTimer/>
           <BuyButton/>

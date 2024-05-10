@@ -56,6 +56,7 @@
 import { ref } from 'vue'
 import BuyButton from '../components/Buy-button.vue'
 
+
 const isFamilyVisible = ref(true)
 const isNightVisible = ref(false)
 
