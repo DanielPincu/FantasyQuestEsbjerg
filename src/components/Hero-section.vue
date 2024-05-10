@@ -1,6 +1,6 @@
 
 <template>
-  <div class="w-full relative">
+  <div class="w-full">
     <video autoplay muted loop playsinline class="w-full">
       <source src="../assets/img/ddd_1.mp4" type="video/mp4">
     </video>
