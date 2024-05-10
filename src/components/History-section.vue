@@ -1,5 +1,5 @@
 <template>
-   <h1 class="text-center text-[60px] pt-24 pb-10">This is how you join Quests</h1>
+   <h1 class="text-center md:text-[60px] text-3xl pt-24 pb-10">This is how you join the Quests</h1>
 
    <div class="md:grid grid-cols-2 gap-5 xl:gap-0 items-center container mx-auto px-5">
 
