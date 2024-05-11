@@ -7,7 +7,7 @@
       </div>
       <p class="animate-pulse text-[3em]">:</p>
       <div class="w-14 h-14 md:w-24 md:h-24 rounded-full border-4 border-orange-400 bg-orange-500 bg-opacity-20 flex items-center justify-center">
-        <p class="text-white text-sm xl:text-xl">{{ hours }} hrs</p>
+        <p class="text-white text-sm xl:text-xl">{{ hours }} <br> hours</p>
       </div>
     </div>
   </div>
