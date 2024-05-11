@@ -1,7 +1,7 @@
 import { ref as VueRef } from 'vue'
 
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, onSnapshot } from "firebase/firestore";
+import { getFirestore, collection, doc, onSnapshot } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAS9_9iAkcMkKwrjwSTIkyONgR-I6FQOP0",
@@ -16,32 +16,45 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-
 const remoteData = () => {
-  const downloadedData = VueRef([])
+  const introData = VueRef([]);
+  const historyData = VueRef([]);
 
-  const EN = collection(db, 'EN')
+  const EN = collection(db, 'Fantasy Quest Esbjerg');
+  const introDocRef = doc(EN, 'Intro');
+  const historyDocRef = doc(EN, 'History');
+
+  const fetchIntroData = async () => {
+    onSnapshot(introDocRef, async (doc) => {
+      if (doc.exists()) {
+        const data = doc.data();
+        introData.value = [data];
+      } else {
+        console.log("No such document for Intro!");
+      }
+    });
+  };
+
+  const fetchHistoryData = async () => {
+    onSnapshot(historyDocRef, async (doc) => {
+      if (doc.exists()) {
+        const data = doc.data();
+        historyData.value = [data];
+      } else {
+        console.log("No such document for History!");
+      }
+    });
+  };
 
   const fetchData = async () => {
-    onSnapshot(EN, async (snapshot) => {
-      const newData = [];
-
-      for (const doc of snapshot.docs) {
-        const data = doc.data();
-        
-       
-
-        newData.push(data);
-      }
-
-      downloadedData.value = newData;
-    })
-  }
+    await Promise.all([fetchIntroData(), fetchHistoryData()]);
+  };
 
   return {
-    downloadedData,
+    introData,
+    historyData,
     fetchData,
-  }
-}
+  };
+};
 
 export default remoteData;

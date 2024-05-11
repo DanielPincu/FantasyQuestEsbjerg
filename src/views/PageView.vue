@@ -2,7 +2,7 @@
   <main>
   
     <div v-for="item in downloadedData" :key="item" class="z-10">
-      <router-link :to="`/details/${item.title}`">
+      <router-link :to="`/details/${item.intro1}`">
         View more
       </router-link>
       <h2>{{ item.title }}</h2>

@@ -2,7 +2,6 @@
     import { RouterView } from 'vue-router'
     import Footer from './components/Footer-section.vue'
     import Nav from './components/Nav-section.vue'
-    // import Intro from './components/Intro-section.vue'
 </script>
 
 <template>
@@ -21,8 +20,6 @@
     <!-- Viewport ends here -->
 
   </div>
-
-  <!-- <Intro /> -->
 
   
   <Footer />

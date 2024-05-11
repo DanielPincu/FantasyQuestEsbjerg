@@ -1,72 +1,97 @@
 <template>
-    <div class="md:text-2xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
-        <p class="mx-5 md:text-2xl text-sm">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together  with a mission</p>
-        <br>
-        <p class="mx-5 md:text-2xl text-sm">In 2024, Fantasy Quest Esbjerg will have both a <span class="text-orange-500 md:text-2xl text-sm">difficult evening</span> edition and a <span class="text-orange-500 md:text-2xl text-sm">family-friendly</span> edition during the day during the Fantasy Festival, written in collaboration with the YouTuber Lakserytteren, where everyone can participate.</p>
 
-        <h1 class="text-center text-4xl md:text-[2.5em] pt-24 text-gradient pb-10">Fantasy Quest Esbjerg</h1>
-        <p class="pb-20 mx-5">Are you ready to live into another world, a magical story where you are the hero who is on a "quest" to overcome the evil forces and save the whole world? So get ready for Fantasy Quest Esbjerg.</p>
+<div v-if="introData">
+
+    <div v-for="item in introData" :key="item">
+
+        <div class="md:text-2xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
+            <p class="mx-5 md:text-2xl text-sm">{{ item.intro1 }}</p>
+            <br>
+            <p class="mx-5 md:text-2xl text-sm">{{ item.intro2 }}</p>
+
+            <h1 class="text-center text-4xl md:text-[2.5em] pt-24 text-gradient pb-10">{{item.event_name}}</h1>
+            <p class="pb-20 mx-5">{{ item.intro3 }}</p>
+        </div>
+
+        <div class="grid grid-cols-2 grid-rows-2 container mx-auto">
+            <div @click="toggleVisibility('family')" :class="{ 'bg-orange-500': isFamilyVisible, 'hover:bg-orange-500 border-2 hover:border-4 border-orange-500 hover:border-black duration-100': !isFamilyVisible }" class="button duration-100 h-10 mx-5 flex justify-center items-center">Family Quest</div>
+            <div @click="toggleVisibility('night')" :class="{ 'bg-orange-500': isNightVisible, 'hover:bg-orange-500 border-2 hover:border-4 border-orange-500 hover:border-black duration-100': !isNightVisible }" class="button duration-100 h-10 mx-5 flex justify-center items-center">Night Quest</div>
+        </div>
+
+        <transition name="bounce">
+            <div v-if="isFamilyVisible" id="family">
+                <div class="flex container mx-auto justify-center pb-5">
+                    <img class="px-5" :src="item.family_quest_image" alt="">
+                </div>
+                <div class="container text-2xl pb-20 text-justify mx-auto">
+                    <p class="mx-5 md:text-2xl text-sm md:col-span-12 col-span-12 pb-5">{{ item.family_intro }}</p>
+
+                <div class="md:grid grid-cols-12 pt-5">
+                        <div class="col-span-6 text-center flex justify-center items-center">
+                            <ul>
+                                <li><span><RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/family-quest">Read more</RouterLink></span></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-span-6 pt-10 md:pt-0">
+                            <BuyButton /> 
+                        </div>
+                </div>
+
+                
+                </div>
+            </div>
+        </transition>
+
+        <transition name="bounce">
+            <div v-if="isNightVisible" id="night">
+                <div class="flex container mx-auto justify-center pb-5">
+                    <img class="px-5" :src="item.night_quest_image" alt="">
+                </div>
+                <div class="container text-2xl pb-20 text-justify mx-auto">
+                    <p class="mx-5 md:text-2xl text-sm md:col-span-12 col-span-12 pb-5">{{ item.night_intro }}</p>
+
+                <div class="md:grid grid-cols-12 pt-5">
+                        <div class="col-span-6 text-center flex justify-center items-center">
+                            <ul>
+                                <li><span><RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/night-quest">Read more</RouterLink></span></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-span-6 pt-10 md:pt-0">
+                            <BuyButton />  
+                        </div>
+                </div>
+
+                
+                </div>
+            </div>
+        </transition>  
+
     </div>
 
-    <div class="grid grid-cols-2 grid-rows-2 container mx-auto">
-        <div @click="toggleVisibility('family')" :class="{ 'bg-orange-500': isFamilyVisible, 'hover:bg-orange-500 border-2 hover:border-4 border-orange-500 hover:border-black duration-100': !isFamilyVisible }" class="button duration-100 h-10 mx-5 flex justify-center items-center">Family Quest</div>
-        <div @click="toggleVisibility('night')" :class="{ 'bg-orange-500': isNightVisible, 'hover:bg-orange-500 border-2 hover:border-4 border-orange-500 hover:border-black duration-100': !isNightVisible }" class="button duration-100 h-10 mx-5 flex justify-center items-center">Night Quest</div>
     </div>
 
-    <transition name="bounce">
-        <div v-if="isFamilyVisible" id="family">
-            <div class="flex container mx-auto justify-center pb-5">
-                <img class="px-5" src="../assets/img/family.webp" alt="">
-            </div>
-            <div class="container text-2xl pb-20 text-justify mx-auto">
-                <p class="mx-5 md:text-2xl text-sm md:col-span-12 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
-
-               <div class="md:grid grid-cols-12 pt-5">
-                    <div class="col-span-6 text-center flex justify-center items-center">
-                        <ul>
-                            <li><span><RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/family-quest">Read more</RouterLink></span></li>
-                        </ul>
-                    </div>
-
-
-                    <div class="col-span-6 pt-10 md:pt-0">
-                        <BuyButton /> 
-                    </div>
-               </div>
-
-               
-            </div>
-        </div>
-    </transition>
-
-    <transition name="bounce">
-        <div v-if="isNightVisible" id="night">
-            <div class="flex container mx-auto justify-center pb-5">
-                <img class="px-5" src="../assets/img/night.webp" alt="">
-            </div>
-            <div class="container text-2xl pb-20 text-justify mx-auto">
-                <p class="mx-5 md:text-2xl text-sm md:col-span-12 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
-
-               <div class="md:grid grid-cols-12 pt-5">
-                    <div class="col-span-6 text-center flex justify-center items-center">
-                        <ul>
-                            <li><span><RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/night-quest">Read more</RouterLink></span></li>
-                        </ul>
-                    </div>
-
-
-                    <div class="col-span-6 pt-10 md:pt-0">
-                        <BuyButton />  
-                    </div>
-               </div>
-
-               
-            </div>
-        </div>
-    </transition>
+<div v-else>
+    <p>Loading data...</p>
+</div>
+   
 </template>
 
 <script setup>
+
+import { onMounted } from 'vue'
+
+import connectMe from '../modules/connectMe'
+const { introData,  fetchData } = connectMe()
+
+
+onMounted(() => {
+  fetchData()
+})
+
 import { ref } from 'vue'
 import BuyButton from '../components/Buy-button.vue'
 
