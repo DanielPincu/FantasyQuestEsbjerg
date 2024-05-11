@@ -1,8 +1,8 @@
 <template>
-    <div class="text-2xl italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
-        <p class="mx-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together  with a mission</p>
+    <div class="md:text-2xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
+        <p class="mx-5 md:text-2xl text-sm">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together  with a mission</p>
         <br>
-        <p class="mx-5">In 2024, Fantasy Quest Esbjerg will have both a <span class="text-orange-500 text-3xl">difficult evening</span> edition and a <span class="text-orange-500 text-3xl">family-friendly</span> edition during the day during the Fantasy Festival, written in collaboration with the YouTuber Lakserytteren, where everyone can participate.</p>
+        <p class="mx-5 md:text-2xl text-sm">In 2024, Fantasy Quest Esbjerg will have both a <span class="text-orange-500 md:text-2xl text-sm">difficult evening</span> edition and a <span class="text-orange-500 md:text-2xl text-sm">family-friendly</span> edition during the day during the Fantasy Festival, written in collaboration with the YouTuber Lakserytteren, where everyone can participate.</p>
 
         <h1 class="text-center text-4xl md:text-[2.5em] pt-24 text-gradient pb-10">Fantasy Quest Esbjerg</h1>
         <p class="pb-20 mx-5">Are you ready to live into another world, a magical story where you are the hero who is on a "quest" to overcome the evil forces and save the whole world? So get ready for Fantasy Quest Esbjerg.</p>
@@ -19,7 +19,7 @@
                 <img class="px-5" src="../assets/img/family.webp" alt="">
             </div>
             <div class="container text-2xl pb-20 text-justify mx-auto">
-                <p class="mx-5 md:col-span-12 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
+                <p class="mx-5 md:text-2xl text-sm md:col-span-12 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
 
                <div class="md:grid grid-cols-12 pt-5">
                     <div class="col-span-6 text-center flex justify-center items-center">
@@ -45,7 +45,7 @@
                 <img class="px-5" src="../assets/img/night.webp" alt="">
             </div>
             <div class="container text-2xl pb-20 text-justify mx-auto">
-                <p class="mx-5 md:col-span-12 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
+                <p class="mx-5 md:text-2xl text-sm md:col-span-12 col-span-12 pb-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt.</p>
 
                <div class="md:grid grid-cols-12 pt-5">
                     <div class="col-span-6 text-center flex justify-center items-center">
