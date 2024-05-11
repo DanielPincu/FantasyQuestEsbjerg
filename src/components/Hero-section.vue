@@ -1,6 +1,8 @@
 
 <template>
-  <div class="w-full md:relative">
+  <!-- DO NOT DELETE THIS SNIPPET -->
+  <!-- <div class="w-full md:relative">
+    
     <video autoplay muted loop playsinline class="w-full">
       <source src="../assets/img/ddd_1.mp4" type="video/mp4">
     </video>
@@ -27,13 +29,27 @@
 
           <CountdownTimer/>
           <BuyButton/>
-          
-      
+ 
         </div>
       </div>
     </div>
+  </div> -->
+  
+  
+  
+  
+  <div class="relative">
+        <img class="" src="../assets/img/hero.png" alt="">
+    <div class="absolute bottom-0 md:bottom-5 xl:bottom-20 left-0 right-0">
+      <CountdownTimer/>
+    </div>
   </div>
-  <!-- <Intro/> -->
+
+
+  <BuyButton/>
+  
+
+  
 </template>
 
 <script setup>

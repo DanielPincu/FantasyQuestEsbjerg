@@ -1,6 +1,6 @@
 <template>
   <div class="text-center flex items-center justify-center ">
-    <p class="md:text-3xl text-xl  text-gradient font-bold pr-10">TIME LEFT</p>
+    <p class="md:text-3xl text-xl  text-gradient font-bold pr-5">TIME LEFT</p>
     <div class="flex justify-center items-center space-x-4">
       <div class="w-16 h-16 border-4 border-orange-400 bg-orange-500 bg-opacity-20 text-slate-300 md:w-24 md:h-24 rounded-full flex items-center justify-center">
         <p class="text-white text-sm xl:text-2xl">{{ days }} days</p>

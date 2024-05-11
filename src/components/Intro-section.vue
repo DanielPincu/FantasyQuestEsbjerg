@@ -1,5 +1,5 @@
 <template>
-    <div class="text-2xl italic text-justify tracking-tighter flex flex-col items-center md:pt-64 pt-72 justify-center container mx-auto">
+    <div class="text-2xl italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
         <p class="mx-5">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together  with a mission</p>
         <br>
         <p class="mx-5">In 2024, Fantasy Quest Esbjerg will have both a <span class="text-orange-500 text-3xl">difficult evening</span> edition and a <span class="text-orange-500 text-3xl">family-friendly</span> edition during the day during the Fantasy Festival, written in collaboration with the YouTuber Lakserytteren, where everyone can participate.</p>
