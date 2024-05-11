@@ -38,7 +38,7 @@
         </div>
 
         <div class="flex items-center justify-center">
-            <img class="w-96" src="../assets/img/arkivaren.png" alt="">
+            <img class="w-96" src="../assets/img/arkivaren.webp" alt="">
        </div>
 
     </div>
@@ -57,7 +57,7 @@
         </div>
 
           <div class="flex items-center justify-center">
-          <img src="../assets/img/seaman.png" alt="">
+          <img src="../assets/img/seaman.webp" alt="">
           </div>
 
      </div>

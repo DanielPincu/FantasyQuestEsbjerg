@@ -15,7 +15,7 @@
 
     <transition name="bounce">
         <div v-if="isFamilyVisible" id="family">
-            <div class="flex container mx-auto justify-center pb-20">
+            <div class="flex container mx-auto justify-center pb-5">
                 <img class="px-5" src="../assets/img/family.webp" alt="">
             </div>
             <div class="container text-2xl pb-20 text-justify mx-auto">
@@ -41,7 +41,7 @@
 
     <transition name="bounce">
         <div v-if="isNightVisible" id="night">
-            <div class="flex container mx-auto justify-center pb-20">
+            <div class="flex container mx-auto justify-center pb-5">
                 <img class="px-5" src="../assets/img/night.webp" alt="">
             </div>
             <div class="container text-2xl pb-20 text-justify mx-auto">
