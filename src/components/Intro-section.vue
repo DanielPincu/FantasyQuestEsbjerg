@@ -4,7 +4,7 @@
         <br>
         <p class="mx-5">In 2024, Fantasy Quest Esbjerg will have both a <span class="text-orange-500 text-3xl">difficult evening</span> edition and a <span class="text-orange-500 text-3xl">family-friendly</span> edition during the day during the Fantasy Festival, written in collaboration with the YouTuber Lakserytteren, where everyone can participate.</p>
 
-        <h1 class="text-center text-4xl md:text-[2.5em] pt-24 pb-10">Fantasy Quest Esbjerg</h1>
+        <h1 class="text-center text-4xl md:text-[2.5em] pt-24 text-gradient pb-10">Fantasy Quest Esbjerg</h1>
         <p class="pb-20 mx-5">Are you ready to live into another world, a magical story where you are the hero who is on a "quest" to overcome the evil forces and save the whole world? So get ready for Fantasy Quest Esbjerg.</p>
     </div>
 
