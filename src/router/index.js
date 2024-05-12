@@ -39,26 +39,6 @@ const router = createRouter({
         title: "FAQ"
       }
     },
-
-
-
-    // {
-    //   path: '/page',
-    //   name: 'page',
-    //   component: () => import('../views/PageView.vue'),
-    //   meta: {
-    //     title: "Page"
-    //   }
-    // },
-    // {
-    //   path: '/details/:title',
-    //   name: 'details',
-    //   component: () => import('../views/DetailsView.vue'),
-    //   meta: {
-    //     dynamicTitle: true 
-    //   }
-
-    // },
     
   ]
 
