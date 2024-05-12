@@ -1,15 +1,15 @@
+
 <template>
   <div>
-    <h1 class="text-xl">This is Family Quest page</h1>
-
-    <RouterLink to="/">
-      <button class="bg-blue-400 rounded-full text-black px-5 mt-5">Go home</button>
-    </RouterLink>
-
+    <hero_family />
+    <history />
+    
   </div>
 </template>
 
 <script setup>
+import hero_family from '../components/Hero-family.vue'
+import history from '../components/History-section.vue'
+
 
 </script>
-

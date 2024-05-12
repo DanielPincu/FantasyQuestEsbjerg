@@ -1,6 +1,6 @@
 <template>
     <div class=" text-center pt-5 text-orange-500">
-        <button class="btn z-20" href="#">Buy ticket</button>
+        <button class="btn" href="#">Buy ticket</button>
     </div>
 </template>
 

@@ -11,14 +11,14 @@
         <CountdownTimer/>
       </div>
     </div>
-
+    <BuyButton/>
   </div>
 
   <div v-else>
     <p>Loading data...</p>
   </div>
 
-  <BuyButton/>
+  
   
 
   

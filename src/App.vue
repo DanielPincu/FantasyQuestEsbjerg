@@ -12,9 +12,9 @@
     <!-- This is Viewport -->
       <main class="pb-32">
         <RouterView v-slot="{ Component }">
-          <transition mode="out-in" name="bounce">
+          <!-- <transition mode="out-in" name="bounce"> -->
             <component :is="Component" />
-          </transition>
+          <!-- </transition> -->
         </RouterView>
       </main>
     <!-- Viewport ends here -->
