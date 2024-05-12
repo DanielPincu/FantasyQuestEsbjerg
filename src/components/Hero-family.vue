@@ -6,10 +6,15 @@
 <div v-for="item in introData" :key="item" class="relative">
   <img class="" src="../assets/img/family.png" alt="">
   
-  <div class="absolute bottom-0 md:bottom-32 xl:bottom-64 left-0 right-0">
+  <div class="absolute hidden xl:block bottom-0 md:bottom-32 xl:bottom-64 left-0 right-0">
     <CountdownTimer/>
   </div>
 </div>
+
+    <div class="block xl:hidden ">
+        <CountdownTimer/>
+    </div>
+
 <BuyButton/>
 </div>
   
