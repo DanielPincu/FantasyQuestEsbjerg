@@ -4,7 +4,7 @@
     <h1 class="text-gradient text-4xl text-center pt-20">PRACTICAL INFORMATION</h1>
   </div>
 
-  <div class="container mx-auto mt-10 py-10 bg-slate-200 rounded-3xl">
+  <div class="container mx-auto mt-10 py-10 bg-white rounded-3xl">
 
     <div id="accordionExample">
       <!-- Accordion Items -->
@@ -87,7 +87,41 @@ function isExpanded(index) {
 
 </script>
 
-<style>
+<style scoped>
+.container {
+    width: 100%;
+}
+@media (min-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
+}
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1030px) {
+    .container {
+        max-width: 1030px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
   .accordion input[type="checkbox"] {
     position: absolute;
     opacity: 0;
