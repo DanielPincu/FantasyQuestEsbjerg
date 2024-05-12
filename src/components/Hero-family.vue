@@ -1,18 +1,17 @@
 
 <template>
 
+<div v-if="introData">
 
-    <div v-if="introData">
+<div v-for="item in introData" :key="item" class="relative">
+  <img class="" src="../assets/img/family.png" alt="">
   
-      <div v-for="item in introData" :key="item" class="relative">
-        <img class="" src="../assets/img/family.png" alt="">
-        
-        <div class="absolute bottom-0 md:bottom-5 xl:bottom-20 left-0 right-0">
-          <CountdownTimer/>
-        </div>
-      </div>
-      <BuyButton/>
-    </div>
+  <div class="absolute bottom-0 md:bottom-32 xl:bottom-64 left-0 right-0">
+    <CountdownTimer/>
+  </div>
+</div>
+<BuyButton/>
+</div>
   
     <div v-else>
       <p>Loading data...</p>
