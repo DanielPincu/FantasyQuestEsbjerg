@@ -25,9 +25,6 @@
 
           </div>
 
-          <div>
-               <img src="../assets/img/cloud2.png" alt="">
-          </div>
 
           <div class="md:grid grid-cols-2 md:gap-20 items-center text-center justify-center container mx-auto px-5">
 
