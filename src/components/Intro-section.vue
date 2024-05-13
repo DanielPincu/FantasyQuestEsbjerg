@@ -34,7 +34,8 @@
                 <div class="md:grid grid-cols-12 pt-5">
                         <div class="col-span-6 text-center flex justify-center items-center">
                             <ul>
-                                <li><span><RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/family-quest">Read more</RouterLink></span></li>
+                                <RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/family-quest"><li><span>Read more</span></li></RouterLink>
+                                
                             </ul>
                         </div>
 
@@ -58,11 +59,13 @@
                     <p class="mx-5 md:text-2xl text-sm md:col-span-12 col-span-12 pb-5">{{ item.night_intro }}</p>
 
                 <div class="md:grid grid-cols-12 pt-5">
-                        <div class="col-span-6 text-center flex justify-center items-center">
+                    <div class="col-span-6 text-center flex justify-center items-center">
                             <ul>
-                                <li><span><RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/night-quest">Read more</RouterLink></span></li>
+                                <RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/night-quest"><li><span>Read more</span></li></RouterLink>
+                                
                             </ul>
                         </div>
+
 
 
                         <div class="col-span-6 pt-10 md:pt-0">
