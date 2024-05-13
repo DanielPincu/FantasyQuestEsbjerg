@@ -5,6 +5,36 @@
   <div v-if="introData">
 
     <div v-for="item in introData" :key="item" class="relative">
+          
+      <div class="clouds overflow-hidden">
+        <img src="../assets/img/clouds/cloud1.png" style="--i:1">
+        <img src="../assets/img/clouds/cloud2.png" style="--i:2">
+        <img src="../assets/img/clouds/cloud3.png" style="--i:3">
+        <img src="../assets/img/clouds/cloud4.png" style="--i:4">
+        <img src="../assets/img/clouds/cloud5.png" style="--i:5">
+        <img src="../assets/img/clouds/cloud1.png" style="--i:6">
+        <img src="../assets/img/clouds/cloud2.png" style="--i:7">
+        <img src="../assets/img/clouds/cloud3.png" style="--i:8">
+        <img src="../assets/img/clouds/cloud4.png" style="--i:9">
+        <img src="../assets/img/clouds/cloud5.png" style="--i:10">
+      </div>
+
+      <div class="clouds2 flex justify-end overflow-hidden">
+        <div>
+        <img src="../assets/img/clouds/cloud1.png" style="--i:1">
+        <img src="../assets/img/clouds/cloud2.png" style="--i:2">
+        <img src="../assets/img/clouds/cloud3.png" style="--i:3">
+        <img src="../assets/img/clouds/cloud4.png" style="--i:4">
+        <img src="../assets/img/clouds/cloud5.png" style="--i:5">
+        <img src="../assets/img/clouds/cloud1.png" style="--i:6">
+        <img src="../assets/img/clouds/cloud2.png" style="--i:7">
+        <img src="../assets/img/clouds/cloud3.png" style="--i:8">
+        <img src="../assets/img/clouds/cloud4.png" style="--i:9">
+        <img src="../assets/img/clouds/cloud5.png" style="--i:10">
+        </div>
+      </div>
+
+
       <img class="" :src="item.hero_image" alt="">
       
       <div class="absolute hidden xl:block bottom-0 md:bottom-5 xl:bottom-20 left-0 right-0">
