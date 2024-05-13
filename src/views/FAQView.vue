@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero />
+    <FAQ />
     <h1 class="text-gradient text-4xl text-center pt-20">PRACTICAL INFORMATION</h1>
   </div>
 
@@ -54,7 +54,7 @@
 </template>
 
 <script setup>
-import hero from '../components/Hero-section.vue'
+import FAQ from '../components/Hero-FAQ.vue'
 import { ref } from 'vue';
 
 const accordionItems = ref([
