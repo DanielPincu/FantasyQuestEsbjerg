@@ -5,7 +5,7 @@
     <div v-for="item in introData" :key="item">
 
         <div class="md:text-2xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
-            <p class="mx-5 md:text-2xl text-sm">{{ item.intro1 }}</p>
+            <p class="mx-5 md:text-2xl text-sm"  v-html="highlightWords(item.intro1)"></p>
             <br>
             <!-- <p class="mx-5 md:text-2xl text-sm">{{ item.intro2 }}</p> -->
 
@@ -110,6 +110,26 @@ const toggleVisibility = (target) => {
         isNightVisible.value = true
     }
 }
+
+
+
+// Hightlighter
+
+const highlightWords = (text) => {
+const wordsToHighlight = ['universe', 'magical']; // Your list of words to highlight
+let highlightedText = text;
+wordsToHighlight.forEach(word => {
+  const regEx = new RegExp('\\b' + word + '\\b', 'gi');
+  highlightedText = highlightedText.replace(regEx, `<span class="text-red-500 text-3xl">${word}</span>`);
+});
+return highlightedText;
+}
+
+// Highlighter ends
+
+
+
+
 </script>
 
 <style lang="scss" scoped>
