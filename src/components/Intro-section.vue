@@ -40,7 +40,7 @@
                         </div>
 
 
-                        <div class="col-span-6 pt-10 md:pt-0">
+                        <div class="col-span-6 pt-10 md:pt-5">
                             <BuyButton /> 
                         </div>
                 </div>
@@ -68,7 +68,7 @@
 
 
 
-                        <div class="col-span-6 pt-10 md:pt-0">
+                        <div class="col-span-6 pt-10 md:pt-5">
                             <BuyButton />  
                         </div>
                 </div>

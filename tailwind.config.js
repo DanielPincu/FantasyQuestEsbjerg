@@ -14,6 +14,10 @@ export default defineConfig({
         yellow: {
           '500': '#F0CE00',
         },
+
+        orange: {
+          '500': '#F3951A',
+        },
       },
     },
   },

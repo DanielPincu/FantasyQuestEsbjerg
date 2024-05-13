@@ -2,6 +2,67 @@
   <div v-if="historyData">
      <div v-for="item in historyData" :key="item">
 
+          
+          <div class="md:grid grid-cols-2 gap-5 xl:gap-0 items-center text-center justify-center container mx-auto px-5 pt-20">
+
+               <div class="flex items-center justify-center">
+                    <div>
+                         <h2 class="text-4xl text-gradient pb-10">{{ item.history_heading1 }}</h2>
+                         <img class="w-96" :src="item.history_image1" alt="">
+                    </div>
+               </div>
+
+               <div>
+               
+               <p class="mt-5 md:text-2xl text-sm" v-html="highlightWords(item.history_intro1)"></p>
+               
+               <p class="mt-5 md:text-2xl text-sm">{{ item.history_intro2 }}</p>
+               
+               <p class="mt-5 md:text-2xl text-sm" v-html="highlightWords(item.history_intro3)"></p>
+
+               <p class="mt-5 md:text-2xl text-sm">{{ item.history_intro4 }}</p>
+               </div>
+
+              
+
+          </div>
+
+          
+
+          <div class="md:grid grid-cols-2 md:gap-20 items-center text-center justify-center container mx-auto px-5">
+
+               <div class="md:hidden flex items-center justify-center">
+                    <div>
+                         <h2 class="text-gradient text-4xl text-center pb-5 pt-32">{{ item.history_heading2 }}</h2>
+                         <img src="../assets/img/seaman.png" alt="">
+                    </div>
+               </div>
+
+
+               <div>
+               <p class="text-center md:text-2xl text-sm pb-5">{{ item.history_intro5 }}</p>
+
+               <p class="text-center md:text-2xl text-sm pb-5" v-html="highlightWords(item.history_intro6)"></p>
+          
+               <p class="text-center md:text-2xl text-sm pb-5">{{ item.history_intro7 }}</p>
+
+               <h2 class="text-3xl">It's time for Fantasy Quest Esbjerg.</h2>
+               <br>
+               <h4 class="text-orange-500 text-4xl">Are you ready?</h4>
+
+               </div>
+
+               <div class="md:flex hidden items-center justify-center">
+                    <div>
+                         <h2 class="text-gradient text-4xl text-center pb-5 pt-32">{{ item.history_heading2 }}</h2>
+                         <img src="../assets/img/seaman.png" alt="">
+                    </div>
+               </div>
+
+          </div>
+          
+
+
           <h1 class="text-center md:text-[50px] text-3xl pt-24 pb-10 text-gradient">This is how you join the Quests</h1>
 
           <div class="md:grid grid-cols-2 gap-5 xl:gap-0 items-center container mx-auto px-5">
@@ -19,44 +80,6 @@
 
           </div>
 
-          <div class="md:grid grid-cols-2 gap-5 xl:gap-0 items-center text-center justify-center container mx-auto px-5 pt-32">
-
-               <div>
-               <h2 class="text-4xl text-gradient pb-10">{{ item.history_heading1 }}</h2>
-               <p class="mt-5 md:text-2xl text-sm">{{ item.history_intro1 }}</p>
-               
-               <p class="mt-5 md:text-2xl text-sm">{{ item.history_intro2 }}</p>
-               
-               <p class="mt-5 md:text-2xl text-sm">{{ item.history_intro3 }}</p>
-
-               <p class="mt-5 md:text-2xl text-sm">{{ item.history_intro4 }}</p>
-               </div>
-
-               <div class="flex items-center justify-center">
-               <img class="w-96" :src="item.history_image1" alt="">
-          </div>
-
-          </div>
-
-          <h2 class="text-gradient text-4xl text-center pb-5 pt-32">{{ item.history_heading2 }}</h2>
-
-          <div class="md:grid grid-cols-2 md:gap-20 items-center text-center justify-center container mx-auto px-5 py-10">
-
-               <div>
-               <p class="text-center md:text-2xl text-sm pb-5">{{ item.history_intro5 }}</p>
-
-               <p class="text-center md:text-2xl text-sm pb-5">{{ item.history_intro6 }}</p>
-          
-               <p class="text-center md:text-2xl text-sm pb-5">{{ item.history_intro7 }}</p>
-
-               </div>
-
-               <div class="flex items-center justify-center">
-               <img :src="item.history_image2" alt="">
-               </div>
-
-          </div>
-          
      </div>
  </div>
 
@@ -77,6 +100,31 @@ const { historyData,  fetchData } = connectMe()
 onMounted(() => {
   fetchData()
 })
+
+
+// Hightlighter
+
+const highlightWords = (text) => {
+const wordsToHighlight = [
+
+'kept an eye on the sea',
+'good fighters',
+'Man by the sea',
+'We need heroes in Esbjerg',
+
+
+];
+
+
+let highlightedText = text;
+wordsToHighlight.forEach(word => {
+  const regEx = new RegExp('\\b' + word + '\\b', 'gi');
+  highlightedText = highlightedText.replace(regEx, `<span class="text-yellow-500 text-xl md:text-3xl">${word}</span>`);
+});
+return highlightedText;
+}
+
+// Highlighter ends
 
 </script>
 

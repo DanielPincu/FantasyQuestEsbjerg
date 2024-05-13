@@ -5,7 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, nav, .btn {
+h1, h2, h3, h4, nav, .btn {
   font-family: 'Inknut Antiqua', sans-serif;
   
 }
@@ -28,11 +28,11 @@ a {
   transition: 0.4s;
 }
 hover .a {
-  color: orange;
+  color: #F0CE00;
 }
 
 nav a.router-link-exact-active {
-  color: orange;
+  color: #F0CE00;
 }
 
 
