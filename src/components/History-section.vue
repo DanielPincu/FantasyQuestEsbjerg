@@ -73,7 +73,14 @@
 
                <div>
 
-               <p class="mt-5 md:text-2xl text-sm text-center">{{ item.how_to_join }}</p>
+               <p class="mt-5 md:text-2xl text-sm text-center">{{ item.how_to_join1 }}</p>
+               <p class="mt-5 md:text-2xl text-sm text-center">{{ item.how_to_join2 }}</p>
+               <p class="mt-5 md:text-2xl text-sm text-center">{{ item.how_to_join3 }}</p>
+                    <ul class="text-center text-orange-500 text-sm md:text-2xl my-5 btn">
+                         <li>{{ item.family_program }}</li>
+                         <li>{{ item.night_program }}</li>
+                    </ul>
+               <p class="mt-5 md:text-2xl text-sm text-center">{{ item.how_to_join4 }}</p>
           
                </div>
                
