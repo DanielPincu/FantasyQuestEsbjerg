@@ -5,14 +5,14 @@
     <div v-for="item in introData" :key="item">
 
         <div class="md:text-2xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
-            <p class="mx-5 md:text-2xl text-sm"  v-html="highlightWords(item.intro1)"></p>
+            <p class="mx-5 md:text-2xl text-sm" v-html="highlightWords(item.intro1)"></p>
             <br>
             <!-- <p class="mx-5 md:text-2xl text-sm">{{ item.intro2 }}</p> -->
 
             <h1 class="text-center text-4xl md:text-[2.5em] pt-24 text-gradient pb-10">{{item.event_name}}</h1>
-            <p class="pb-20 mx-5">{{ item.intro3 }}</p>
-            <p class="pb-20 mx-5">{{ item.intro2 }}</p>
-            <p class="pb-20 mx-5">{{ item.intro4 }}</p>
+            <p class="pb-20 mx-5" v-html="highlightWords(item.intro3)"></p>
+            <p class="pb-20 mx-5" v-html="highlightWords(item.intro2)"></p>
+            <p class="pb-20 mx-5" v-html="highlightWords(item.intro4)"></p>
         </div>
 
         <div class="grid grid-cols-2 grid-rows-2 container mx-auto">
@@ -116,11 +116,23 @@ const toggleVisibility = (target) => {
 // Hightlighter
 
 const highlightWords = (text) => {
-const wordsToHighlight = ['universe', 'magical']; // Your list of words to highlight
+const wordsToHighlight = [
+
+'magical universe',
+'YOU ARE THE HERO',
+'evening edition',
+'family-friendly edition',
+'YouTuber Lakserytteren',
+
+
+
+];
+
+
 let highlightedText = text;
 wordsToHighlight.forEach(word => {
   const regEx = new RegExp('\\b' + word + '\\b', 'gi');
-  highlightedText = highlightedText.replace(regEx, `<span class="text-red-500 text-3xl">${word}</span>`);
+  highlightedText = highlightedText.replace(regEx, `<span class="yellow text-xl md:text-3xl">${word}</span>`);
 });
 return highlightedText;
 }
