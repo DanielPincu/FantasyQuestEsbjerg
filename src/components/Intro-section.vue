@@ -135,7 +135,7 @@ const wordsToHighlight = [
 let highlightedText = text;
 wordsToHighlight.forEach(word => {
   const regEx = new RegExp('\\b' + word + '\\b', 'gi');
-  highlightedText = highlightedText.replace(regEx, `<span class="yellow text-xl md:text-3xl">${word}</span>`);
+  highlightedText = highlightedText.replace(regEx, `<span class="text-yellow-500 text-xl md:text-3xl">${word}</span>`);
 });
 return highlightedText;
 }

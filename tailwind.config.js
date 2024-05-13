@@ -9,7 +9,13 @@ export default defineConfig({
     "./node_modules/tw-elements/js/**/*.js"
   ],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        yellow: {
+          '500': '#F0CE00',
+        },
+      },
+    },
   },
   plugins: [
     plugin
