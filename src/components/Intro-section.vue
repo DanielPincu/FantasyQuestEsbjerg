@@ -7,10 +7,12 @@
         <div class="md:text-2xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
             <p class="mx-5 md:text-2xl text-sm">{{ item.intro1 }}</p>
             <br>
-            <p class="mx-5 md:text-2xl text-sm">{{ item.intro2 }}</p>
+            <!-- <p class="mx-5 md:text-2xl text-sm">{{ item.intro2 }}</p> -->
 
             <h1 class="text-center text-4xl md:text-[2.5em] pt-24 text-gradient pb-10">{{item.event_name}}</h1>
             <p class="pb-20 mx-5">{{ item.intro3 }}</p>
+            <p class="pb-20 mx-5">{{ item.intro2 }}</p>
+            <p class="pb-20 mx-5">{{ item.intro4 }}</p>
         </div>
 
         <div class="grid grid-cols-2 grid-rows-2 container mx-auto">
