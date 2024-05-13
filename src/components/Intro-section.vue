@@ -86,6 +86,11 @@
     <p>Loading data...</p>
 </div>
    
+<div class="flex justify-end">
+    <img src="../assets/img/cloud.png" alt="">
+</div>
+
+
 </template>
 
 <script setup>
