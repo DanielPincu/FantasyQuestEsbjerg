@@ -16,8 +16,11 @@
         </div>
 
         <div class="grid grid-cols-2 grid-rows-2 container mx-auto">
-            <div @click="toggleVisibility('family')" :class="{ 'bg-orange-500': isFamilyVisible, 'hover:bg-orange-500 border-2 hover:border-4 border-orange-500 hover:border-black duration-100': !isFamilyVisible }" class="button duration-100 h-10 mx-5 flex justify-center items-center">Family Quest</div>
-            <div @click="toggleVisibility('night')" :class="{ 'bg-orange-500': isNightVisible, 'hover:bg-orange-500 border-2 hover:border-4 border-orange-500 hover:border-black duration-100': !isNightVisible }" class="button duration-100 h-10 mx-5 flex justify-center items-center">Night Quest</div>
+
+            <div @click="toggleVisibility('family')" :class="{ 'bg-yellow-500 bg-opacity-50 border-4 border-yellow-500': isFamilyVisible, 'hover:bg-yellow-500 border-4 hover:border-4 border-yellow-500 hover:border-yellow-500 duration-100': !isFamilyVisible }" class="button duration-100 h-10 mx-5 flex justify-center items-center">Family Quest</div>
+
+            <div @click="toggleVisibility('night')" :class="{ 'bg-yellow-500 bg-opacity-50 border-4 border-yellow-500': isNightVisible, 'hover:bg-yellow-500 border-4 hover:border-4 border-yellow-500 hover:border-yellow-500 duration-100': !isNightVisible }" class="button duration-100 h-10 mx-5 flex justify-center items-center">Night Quest</div>
+
         </div>
 
         <transition name="bounce">
