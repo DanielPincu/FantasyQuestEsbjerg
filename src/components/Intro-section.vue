@@ -10,8 +10,8 @@
             <!-- <p class="mx-5 md:text-2xl text-sm">{{ item.intro2 }}</p> -->
 
             <h1 class="text-center text-4xl md:text-[2.5em] pt-24 text-gradient pb-10">{{item.event_name}}</h1>
-            <p class="pb-20 mx-5" v-html="highlightWords(item.intro3)"></p>
-            <p class="pb-20 mx-5" v-html="highlightWords(item.intro2)"></p>
+            <p class="pb-5 pt-5 mx-5" v-html="highlightWords(item.intro3)"></p>
+            <p class="pb-5 mx-5" v-html="highlightWords(item.intro2)"></p>
             <p class="pb-20 mx-5" v-html="highlightWords(item.intro4)"></p>
         </div>
 
