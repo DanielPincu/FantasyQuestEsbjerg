@@ -10,11 +10,14 @@ export default defineConfig({
   ],
   theme: {
     extend: {
+      fontSize: {
+        '2xl': '1.125rem',  
+        '3xl': '1.5rem', 
+      },
       colors: {
         yellow: {
           '500': '#F0CE00',
         },
-
         orange: {
           '500': '#F3951A',
         },
