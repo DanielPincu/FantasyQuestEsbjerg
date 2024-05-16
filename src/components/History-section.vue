@@ -14,13 +14,13 @@
 
                <div>
                
-               <p class="mt-5 md:text-2xl text-sm" v-html="highlightWords(item.history_intro1)"></p>
+               <p class="mt-5 md:text-3xl text-sm" v-html="highlightWords(item.history_intro1)"></p>
                
-               <p class="mt-5 md:text-2xl text-sm">{{ item.history_intro2 }}</p>
+               <p class="mt-5 md:text-3xl text-sm">{{ item.history_intro2 }}</p>
                
-               <p class="mt-5 md:text-2xl text-sm" v-html="highlightWords(item.history_intro3)"></p>
+               <p class="mt-5 md:text-3xl text-sm" v-html="highlightWords(item.history_intro3)"></p>
 
-               <p class="mt-5 md:text-2xl text-sm">{{ item.history_intro4 }}</p>
+               <p class="mt-5 md:text-3xl text-sm">{{ item.history_intro4 }}</p>
                </div>
 
           </div>
@@ -37,11 +37,11 @@
 
 
                <div>
-               <p class="text-center md:text-2xl text-sm pb-5">{{ item.history_intro5 }}</p>
+               <p class="text-center md:text-3xl text-sm pb-5">{{ item.history_intro5 }}</p>
 
-               <p class="text-center md:text-2xl text-sm pb-5" v-html="highlightWords(item.history_intro6)"></p>
+               <p class="text-center md:text-3xl text-sm pb-5" v-html="highlightWords(item.history_intro6)"></p>
           
-               <p class="text-center md:text-2xl text-sm pb-5">{{ item.history_intro7 }}</p>
+               <p class="text-center md:text-3xl text-sm pb-5">{{ item.history_intro7 }}</p>
 
                <h2 class="text-3xl">It's time for Fantasy Quest Esbjerg.</h2>
                <br>
@@ -60,7 +60,7 @@
           
 
 
-          <h1 class="text-center md:text-[50px] text-3xl pt-24 pb-10 text-gradient">This is how you join the Quests</h1>
+          <h1 class="text-center md:text-5xl text-3xl pt-24 pb-10 text-gradient">This is how you join the Quests</h1>
 
           <div class="md:grid grid-cols-2 gap-5 xl:gap-0 items-center container mx-auto px-5">
 
@@ -70,14 +70,14 @@
 
                <div>
 
-               <p class="mt-5 md:text-2xl text-sm text-center">{{ item.how_to_join1 }}</p>
-               <p class="mt-5 md:text-2xl text-sm text-center">{{ item.how_to_join2 }}</p>
-               <p class="mt-5 md:text-2xl text-sm text-center">{{ item.how_to_join3 }}</p>
-                    <ul class="text-center text-orange-500 text-sm md:text-2xl my-5 btn">
+               <p class="mt-5 md:text-3xl text-sm text-center">{{ item.how_to_join1 }}</p>
+               <p class="mt-5 md:text-3xl text-sm text-center">{{ item.how_to_join2 }}</p>
+               <p class="mt-5 md:text-3xl text-sm text-center">{{ item.how_to_join3 }}</p>
+                    <ul class="text-center text-orange-500 text-sm md:text-3xl my-5 btn">
                          <li>{{ item.family_program }}</li>
                          <li>{{ item.night_program }}</li>
                     </ul>
-               <p class="mt-5 md:text-2xl text-sm text-center">{{ item.how_to_join4 }}</p>
+               <p class="mt-5 md:text-3xl text-sm text-center">{{ item.how_to_join4 }}</p>
           
                </div>
                

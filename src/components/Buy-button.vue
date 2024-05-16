@@ -8,7 +8,7 @@
 
 </script>
 
-<style lang="scss" scoped>
+ <style lang="scss" scoped>
 
 
 //color/ui color variables
@@ -128,4 +128,8 @@ body {
 }
 
 @include btn__split($colorPrimary, $colorSecondary, $black);
-</style>
+</style> 
+
+
+
+

@@ -39,12 +39,37 @@
 
          <p class="text-3xl">The quest takes place on Saturday 14 September 2024 during Fantasy Festival.</p>
          
-         <ul class="text-center text-gradient text-orange-500 text-sm md:text-4xl my-5 btn">
-                 <li>The Family Quest: 10.00 - 14.00</li>            
+         <ul class="text-center text-sm md:text-4xl my-5 btn">
+                <li>The Family Quest:</li>
+                <li class="text-gradient"> 10.00 - 14.00</li>            
         </ul>
     </div>
 
 </div>
+
+
+
+<div class="grid grid-cols-3 items-center">
+
+    <img src="../assets/img/portal.png" alt="">
+    <div><BuyButton /> </div>
+    <img src="../assets/img/gnist.png" alt="">
+
+
+</div>
+
+
+
+     
+
+  
+       
+
+
+
+
+
+
 
 
 <h1 class="text-5xl container mx-auto text-yellow-500 text-gradient text-center mt-20 pt-10">The salmon rider is on board</h1>
