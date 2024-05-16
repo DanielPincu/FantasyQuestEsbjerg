@@ -76,10 +76,5 @@
   </script>
   
   <style>
-    .text-gradient {
-    background: linear-gradient(to bottom, #ebdb95, #d9a52b);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  
   </style>

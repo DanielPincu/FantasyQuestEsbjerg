@@ -5,6 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 h1, h2, h3, h4, nav, .btn {
   font-family: 'Inknut Antiqua', sans-serif;
   
@@ -36,9 +39,47 @@ nav a.router-link-exact-active {
 }
 
 
-body {
-  padding: 0;
-  margin: 0;
+.text-gradient {
+  background: linear-gradient(to bottom, #ebdb95, #d9a52b);
+  padding-bottom: 20px;
+  /* -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+
+.container {
+  width: 100%;
+}
+@media (min-width: 320px) {
+  .container {
+      max-width: 320px;
+  }
+}
+@media (min-width: 640px) {
+  .container {
+      max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: 768px;
+  }
+}
+@media (min-width: 1027px) {
+  .container {
+      max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+      max-width: 1280px;
+  }
+}
+@media (min-width: 1540px) {
+  .container {
+      max-width: 1536px;
+  }
 }
 
 

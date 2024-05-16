@@ -36,7 +36,7 @@
         <CountdownTimer/>
     </div>
 
-<BuyButton/>
+
 </div>
   
     <div v-else>
@@ -54,7 +54,7 @@
   import { onMounted } from 'vue'
   import connectMe from '../modules/connectMe'
   import CountdownTimer from '../components/Countdown-timer.vue'
-  import BuyButton from '../components/Buy-button.vue'
+  // import BuyButton from '../components/Buy-button.vue'
   
   const { introData,  fetchData } = connectMe()
   

@@ -4,11 +4,9 @@
 
     <div v-for="item in introData" :key="item">
 
-        <div class="md:text-2xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
-            <p class="mx-5 md:text-2xl text-sm" v-html="highlightWords(item.intro1)"></p>
+        <div class="md:text-3xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
+            <p class="mx-5 md:text-3xl text-sm" v-html="highlightWords(item.intro1)"></p>
             <br>
-            <!-- <p class="mx-5 md:text-2xl text-sm">{{ item.intro2 }}</p> -->
-
             <h1 class="text-center text-4xl md:text-[2.5em] pt-24 text-gradient pb-10">{{item.event_name}}</h1>
             <p class="pb-5 pt-5 mx-5" v-html="highlightWords(item.intro3)"></p>
             <p class="pb-5 mx-5" v-html="highlightWords(item.intro2)"></p>
@@ -28,7 +26,7 @@
                 <div class="flex container mx-auto justify-center pb-5">
                     <img class="px-5" :src="item.family_quest_image" alt="">
                 </div>
-                <div class="container text-2xl pb-20 text-justify mx-auto">
+                <div class="container pb-20 text-justify mx-auto">
                     <p class="mx-5 md:text-2xl text-sm md:col-span-12 col-span-12 pb-5">{{ item.family_intro }}</p>
 
                 <div class="md:grid grid-cols-12 pt-5">
@@ -55,7 +53,7 @@
                 <div class="flex container mx-auto justify-center pb-5">
                     <img class="px-5" :src="item.night_quest_image" alt="">
                 </div>
-                <div class="container text-2xl pb-20 text-justify mx-auto">
+                <div class="container pb-20 text-justify mx-auto">
                     <p class="mx-5 md:text-2xl text-sm md:col-span-12 col-span-12 pb-5">{{ item.night_intro }}</p>
 
                 <div class="md:grid grid-cols-12 pt-5">
