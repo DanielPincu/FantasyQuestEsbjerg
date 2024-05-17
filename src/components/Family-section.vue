@@ -105,5 +105,8 @@ import BuyButton from '../components/Buy-button.vue'
 </script>
 
 <style lang="scss" scoped>
+p {
+  line-height: normal;
+}
 
 </style>

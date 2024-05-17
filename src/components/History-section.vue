@@ -74,7 +74,7 @@
                <p class="mt-5 md:text-3xl text-sm text-center">{{ item.how_to_join2 }}</p>
                <p class="mt-5 md:text-3xl text-sm text-center">{{ item.how_to_join3 }}</p>
                     <ul class="text-center text-orange-500 text-sm md:text-3xl my-5 btn">
-                         <li>{{ item.family_program }}</li>
+                         <li class="pb-2">{{ item.family_program }}</li>
                          <li>{{ item.night_program }}</li>
                     </ul>
                <p class="mt-5 md:text-3xl text-sm text-center">{{ item.how_to_join4 }}</p>
@@ -133,5 +133,8 @@ return highlightedText;
 </script>
 
 <style lang="scss" scoped>
+p {
+  line-height: normal;
+}
 
 </style>

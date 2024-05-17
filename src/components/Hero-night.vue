@@ -57,11 +57,11 @@
     <div class="md:grid grid-cols-2 mt-20 container mx-auto">
 
 <div>
- <p class="pb-10 text-xl">When twilight begins to descend over Esbjerg, the level of difficulty in the Evening Quest is turned up. Now you really have to think creatively and solve tasks that require both courage, cooperation and ingenuity in order for you to complete the quest and save Esbjerg.</p>
+ <p class="pb-10 text-3xl">When twilight begins to descend over Esbjerg, the level of difficulty in the Evening Quest is turned up. Now you really have to think creatively and solve tasks that require both courage, cooperation and ingenuity in order for you to complete the quest and save Esbjerg.</p>
 
- <p class="pb-10 text-xl">If you love solving puzzles and cracking codes, don't miss out on this ultimate experience. We send you and your friends on your ultimate adventure in Esbjerg's streets and alleys.</p>
+ <p class="pb-10 text-3xl">If you love solving puzzles and cracking codes, don't miss out on this ultimate experience. We send you and your friends on your ultimate adventure in Esbjerg's streets and alleys.</p>
 
- <p class="pb-10 text-xl">Here you will have to collaborate and devise new solutions to complete the AftenQuest.</p>
+ <p class="pb-10 text-3xl">Here you will have to collaborate and devise new solutions to complete the AftenQuest.</p>
 </div>
 
 <div>
@@ -105,5 +105,7 @@
         
         
       }
-      
+      p {
+        line-height: normal;
+        }
       </style>
