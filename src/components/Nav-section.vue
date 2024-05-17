@@ -4,25 +4,25 @@
   <!-- NAVIGATION, MAKE STICKY -->
   <nav class="flex flex-row md:justify-between justify-end mx-auto w-full bg-black bg-opacity-50 z-10 fixed">
     <div class="flex items-center">
-      <p class="text-yellow-500 md:text-3xl">Fantasy Quest Esbjerg</p>
+      <p class="text-yellow-500 md:text-3xl pl-10">Fantasy Quest Esbjerg</p>
     </div>
     <div>
       <ul class="hidden md:flex lg:flex flex-row text-md mt-7 mb-5">
       
       <li class="ml-7 mr-6">
-        <RouterLink to="/" class="font-bold text-white hover:text-rose-300">Home</RouterLink>
+        <RouterLink to="/" class="hover:text-orange-500">Home</RouterLink>
       </li>
 
       <li class="mr-6">
-        <RouterLink to="/family-quest" class="font-bold text-white hover:text-rose-300">Family Quest</RouterLink>
+        <RouterLink to="/family-quest" class="hover:text-orange-500">Family Quest</RouterLink>
       </li>
       
       <li class="mr-6">
-        <RouterLink to="/night-quest" class="font-bold text-white hover:text-rose-300">Night Quest</RouterLink>
+        <RouterLink to="/night-quest" class="hover:text-orange-500">Night Quest</RouterLink>
       </li>
 
       <li class="mr-6">
-        <RouterLink to="/faq" class="font-bold text-white hover:text-rose-300">FAQ</RouterLink>
+        <RouterLink to="/faq" class="hover:text-orange-500">FAQ</RouterLink>
       </li>
     </ul>
 
@@ -45,17 +45,17 @@
         <div>
           <ul class="flex flex-col">
             <li class="mb-10 text-end">
-              <RouterLink to="/" @click="closeMenuAndRemoveOverflow" class="text-xl font-bold text-white hover:text-rose-300">Home</RouterLink>
+              <RouterLink to="/" @click="closeMenuAndRemoveOverflow" class="text-xl">Home</RouterLink>
             </li>
             <li class="mb-10 text-end">
-              <RouterLink to="/family-quest" @click="closeMenuAndRemoveOverflow" class="text-xl font-bold text-white hover:text-rose-300">Family Quest</RouterLink>
+              <RouterLink to="/family-quest" @click="closeMenuAndRemoveOverflow" class="text-xl">Family Quest</RouterLink>
             </li>
             <li class="mb-10 text-end">
-              <RouterLink to="/night-quest" @click="closeMenuAndRemoveOverflow" class="text-xl font-bold text-white hover:text-rose-300">Night Quest</RouterLink>
+              <RouterLink to="/night-quest" @click="closeMenuAndRemoveOverflow" class="text-xl">Night Quest</RouterLink>
             </li>
 
             <li class="mb-10 text-end">
-              <RouterLink to="/faq" @click="closeMenuAndRemoveOverflow" class="text-xl font-bold text-white hover:text-rose-300">FAQ</RouterLink>
+              <RouterLink to="/faq" @click="closeMenuAndRemoveOverflow" class="text-xl">FAQ</RouterLink>
             </li>
           </ul>
         </div>
