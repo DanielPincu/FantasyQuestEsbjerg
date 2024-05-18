@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center pt-5 text-orange-500">
+    <div class="text-center pt-10 text-orange-500">
         <button class="btn" href="#">Buy ticket</button>
     </div>
 </template>
@@ -148,7 +148,7 @@ button.btn {
   font-weight: 700;
   border: 0;
   position: relative;
-  letter-spacing: 0.15em;
+  /* letter-spacing: 0.15em; */
   margin: 0 auto;
   padding: 1rem 2.5rem;
   background: transparent;
@@ -162,7 +162,7 @@ button.btn::after,
 button.btn::before {
   content: "";
   position: absolute;
-  height: 40%;
+  height: 35%;
   width: 10%;
   transition: all 0.5s var(--cubic-bezier);
   z-index: -2;
@@ -210,13 +210,13 @@ button.btn:hover::before {
 }
 
 @keyframes topAnimation {
-  0% { transform: translateY(0); }
+  0% { transform: translateY(1rem); }
   100% { transform: translateY(-1rem); }
 }
 
 @keyframes bottomAnimation {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(1rem); }
+  0% { transform: translateX(0rem); }
+  100% { transform: translateX(-5rem); }
 }
 </style>
 
