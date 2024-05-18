@@ -2,7 +2,7 @@
   
 
   <!-- NAVIGATION, MAKE STICKY -->
-  <nav class="flex flex-row md:justify-between justify-end mx-auto w-full bg-black bg-opacity-50 z-10 fixed">
+  <nav class="flex flex-row md:justify-between justify-end mx-auto w-full bg-black bg-opacity-50 z-20 fixed">
     <div class="flex items-center">
       <p class="text-yellow-500 md:text-3xl pl-10">Fantasy Quest Esbjerg</p>
     </div>

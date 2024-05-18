@@ -97,9 +97,9 @@
         <img src="../assets/img/clouds/cloud3.png" style="--i:8">
         <img src="../assets/img/clouds/cloud4.png" style="--i:9">
         <img src="../assets/img/clouds/cloud5.png" style="--i:10">
-      </div>
+    </div>
 
-      <div class="clouds2 flex justify-end overflow-hidden">
+    <div class="clouds2 flex justify-end overflow-hidden">
         <div>
         <img src="../assets/img/clouds/cloud1.png" style="--i:1">
         <img src="../assets/img/clouds/cloud2.png" style="--i:2">
@@ -112,10 +112,12 @@
         <img src="../assets/img/clouds/cloud4.png" style="--i:9">
         <img src="../assets/img/clouds/cloud5.png" style="--i:10">
         </div>
-      </div>
-<div class="flex justify-end">
-    <img src="../assets/img/cloud3.png" alt="">
-</div>
+    </div>
+
+    <div class="flex justify-end">
+        <img src="../assets/img/cloud3.png" alt="">
+    </div>
+    
 </div>
 
 
@@ -264,6 +266,10 @@ li span {
 li:hover span {
     transform: translateX(0.15em);
 }
+
+p {
+        line-height: normal;
+      }
 
 
 </style>
