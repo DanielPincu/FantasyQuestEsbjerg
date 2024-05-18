@@ -19,10 +19,12 @@ const db = getFirestore(app);
 const remoteData = () => {
   const introData = VueRef([]);
   const historyData = VueRef([]);
+  const familyData = VueRef([]);
 
   const EN = collection(db, 'Fantasy Quest Esbjerg');
   const introDocRef = doc(EN, 'Intro');
   const historyDocRef = doc(EN, 'History');
+  const familyDocRef = doc(EN, 'Family');
 
   const fetchIntroData = async () => {
     onSnapshot(introDocRef, async (doc) => {
@@ -46,13 +48,25 @@ const remoteData = () => {
     });
   };
 
+  const fetchFamilyData = async () => {
+    onSnapshot(familyDocRef, async (doc) => {
+      if (doc.exists()) {
+        const data = doc.data();
+        familyData.value = [data];
+      } else {
+        console.log("No such document for Family!");
+      }
+    });
+  }
+
   const fetchData = async () => {
-    await Promise.all([fetchIntroData(), fetchHistoryData()]);
+    await Promise.all([fetchIntroData(), fetchHistoryData(), fetchFamilyData()]);
   };
 
   return {
     introData,
     historyData,
+    familyData,
     fetchData,
   };
 };
