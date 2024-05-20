@@ -47,12 +47,45 @@
       
       </div>
       
+
+      
       
       
       <div class="container mx-auto grid grid-cols-3 pt-32 items-center">
+
+        <!-- <div @click="toggleVisibility(index)" class="cursor-pointer bg-blue-200 dark:bg-red-500 rounded-3xl drop-shadow-xl h-52 flex flex-col items-center mb-10 hover:scale-[103%] duration-500">
+          
+            <div v-show="visibleDiv === index" class="animate-bounce bg-blue-300 dark:bg-red-300 rounded-3xl drop-shadow-xl h-60 flex flex-col items-center mb-2 w-full">
+            <h1 class="text-xl p-5">dd</h1>
+            </div>
+
+        </div> -->
       
-          <img src="../assets/img/portal.png" alt="">
-          <div><BuyButton /> </div>
+        <div class="relative">
+
+          <img src="../assets/img/port.png">
+          <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-1/2 transform -translate-x-1/8 -translate-y-1/4">
+          
+          <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/2 bg-blue-300 dark:bg-red-300 rounded-3xl drop-shadow-xl flex flex-col items-center mb-2">
+            <p class="text-xl p-5">
+              In a forest deep, where shadows creep,And the moonlight rarely peeks,
+              There lies a key to your heart’s desire,
+              Guarded by flame, yet not by fire.
+
+              Seek the stone with markings old,
+              Amidst the tales of legends told.
+              Turn the gem of emerald bright,
+              To face the dawn and catch its light.
+
+              Answer this, brave soul, so true:
+              What creature am I, who guards the clue?
+            </p>
+
+          </div>
+
+        </div>  
+
+          <div class="text-center"><p>IDK</p></div>
           <img src="../assets/img/gnist.png" alt="">
       
       
@@ -96,7 +129,7 @@
 
 
 <script setup>
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import BuyButton from '../components/Buy-button.vue'
 import connectMe from '../modules/connectMe'
 
@@ -106,6 +139,10 @@ const { familyData,  fetchData } = connectMe()
     fetchData()
   })
 
+const visibleDiv = ref(null);
+const toggleVisibility = (index) => {
+  visibleDiv.value = visibleDiv.value === index ? null : index;
+};
 
 // Hightlighter
 
@@ -139,6 +176,17 @@ return highlightedText;
 </script>
 
 <style lang="scss" scoped>
+
+@keyframes pulse {
+    50% {
+        opacity: .6;
+    }
+}
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
 p {
   line-height: normal;
 }
