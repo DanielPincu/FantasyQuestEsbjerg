@@ -2,7 +2,7 @@
   
 
   <!-- NAVIGATION, MAKE STICKY -->
-  <nav class="flex flex-row md:justify-between justify-end mx-auto w-full bg-black bg-opacity-50 z-20 fixed">
+  <nav class="flex flex-row md:justify-between justify-end mx-auto w-full bg-black bg-opacity-50 z-50 fixed">
     <div class="flex items-center">
       <p class="text-yellow-500 md:text-3xl pl-10">Fantasy Quest Esbjerg</p>
     </div>
@@ -39,7 +39,7 @@
        
         <div class="flex items-center mb-8">
           <button class="navbar-close" @click="toggleMenu">
-            <i class="text-end text-6xl text-transparent fa-solid fa-x"></i>
+            <i class="text-end text-xl text-white fa-solid fa-x"></i>
           </button>
         </div>
         <div>
