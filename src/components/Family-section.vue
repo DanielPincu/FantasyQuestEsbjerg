@@ -52,19 +52,11 @@
       
       
       <div class="container mx-auto grid grid-cols-3 pt-32 items-center">
-
-        <!-- <div @click="toggleVisibility(index)" class="cursor-pointer bg-blue-200 dark:bg-red-500 rounded-3xl drop-shadow-xl h-52 flex flex-col items-center mb-10 hover:scale-[103%] duration-500">
-          
-            <div v-show="visibleDiv === index" class="animate-bounce bg-blue-300 dark:bg-red-300 rounded-3xl drop-shadow-xl h-60 flex flex-col items-center mb-2 w-full">
-            <h1 class="text-xl p-5">dd</h1>
-            </div>
-
-        </div> -->
       
         <div class="relative">
 
           <img src="../assets/img/port.png">
-          <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-1/2 transform -translate-x-1/8 -translate-y-1/4">
+          <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-1/2 transform -translate-x-1/8 -translate-y-1/4">
           
           <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/2 bg-blue-300 dark:bg-red-300 rounded-3xl drop-shadow-xl flex flex-col items-center mb-2">
             <p class="text-xl p-5">
