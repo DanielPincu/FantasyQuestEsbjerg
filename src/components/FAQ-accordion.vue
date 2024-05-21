@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1 class="text-gradient text-4xl text-center pt-20">PRACTICAL INFORMATION</h1>
+      <h1 class="text-gradient animate-me text-4xl text-center pt-20">PRACTICAL INFORMATION</h1>
     </div>
   
     <div class="container mx-auto mt-10 py-10 bg-white rounded-3xl">
@@ -154,7 +154,17 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
+import anime from 'animejs/lib/anime.es.js';
+
+onMounted(() => {
+  anime({
+    targets: '.animate-me',
+    rotate: '1turn',
+    backgroundColor: '#FFF',
+    duration: 2000
+  });
+});
 
 const expandedItems = ref([]);
 
