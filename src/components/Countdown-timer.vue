@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center flex items-center justify-center ">
+  <div class="text-center flex items-center justify-center" data-aos="fade-up">
     <p class="md:text-3xl text-xl  text-gradient font-bold pr-5">TIME LEFT</p>
     <div class="flex justify-center items-center space-x-4">
       <div class="w-14 h-14 border-4 border-orange-400 bg-orange-500 bg-opacity-20 text-slate-300 md:w-24 md:h-24 rounded-full flex items-center justify-center">
