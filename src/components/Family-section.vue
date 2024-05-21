@@ -5,7 +5,7 @@
        <h1 class="md:text-5xl text-xl container mx-auto text-yellow-500 text-gradient text-center pt-20">{{ item.headline1 }}</h1>
        
        <div class="grid grid-cols-1 md:grid-cols-2 container mx-auto pt-10 gap-10 pb-28">
-           <div>
+           <div class="md:pt-10">
                <p class="pb-5 md:text-3xl" v-html="highlightWords(item.intro1)"></p>
       
               <p class="pb-5 md:text-3xl" v-html="highlightWords(item.intro2)"></p>
@@ -30,7 +30,7 @@
               <img :src="item.image2" alt="">
           </div>
              
-          <div>
+          <div class="xl:pt-10 pt-0">
                <p class="pb-5  md:text-3xl">{{ item.info1 }}</p>
       
               <p class="pb-5  md:text-3xl">{{ item.info2 }}</p>
