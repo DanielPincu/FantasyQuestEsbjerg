@@ -1,20 +1,32 @@
 <template>
-    <div class="text-center pt-20 text-orange-500">
-        <button class="btn animate-me" href="#">Buy ticket</button>
-    </div>
+  <div class="text-center pt-20 text-orange-500">
+    <button class="btn animate-me" href="#">Buy ticket</button>
+  </div>
 </template>
 
 <script setup>
-import {  onMounted } from 'vue';
+import { onMounted } from 'vue';
 import anime from 'animejs';
 
 onMounted(() => {
-  anime({
-    targets: '.animate-me',
-    rotate: '1turn',
-    duration: 2000,
-    
+  const target = document.querySelector('.animate-me');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        anime({
+          targets: '.animate-me',
+          rotate: '1turn',
+          duration: 2000,
+        });
+        observer.unobserve(target); // Unobserve after animation to avoid repeated triggers
+      }
+    });
+  }, {
+    threshold: 0.5 // Adjust this value as needed
   });
+
+  observer.observe(target);
 });
 </script>
 

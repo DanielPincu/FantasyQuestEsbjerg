@@ -126,9 +126,19 @@
 <script setup>
 
 import { onMounted } from 'vue'
-
 import connectMe from '../modules/connectMe'
+import anime from 'animejs/lib/anime.es.js';
+
 const { introData,  fetchData } = connectMe()
+
+onMounted(() => {
+  anime({
+    targets: '.animate-me',
+    rotate: '1turn',
+    duration: 2000
+  });
+});
+
 
 
 onMounted(() => {
