@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1 class="text-gradient animate-me text-4xl text-center pt-20">PRACTICAL INFORMATION</h1>
+      <h1 class="text-gradient text-4xl text-center pt-20">PRACTICAL INFORMATION</h1>
     </div>
   
     <div class="container mx-auto mt-10 py-10 bg-white rounded-3xl">
@@ -161,7 +161,6 @@ onMounted(() => {
   anime({
     targets: '.animate-me',
     rotate: '1turn',
-    backgroundColor: '#FFF',
     duration: 2000
   });
 });
