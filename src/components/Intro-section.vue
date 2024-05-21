@@ -4,7 +4,7 @@
 
     <div v-for="item in introData" :key="item">
 
-        <div class="md:text-3xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto" data-aos="fade-up-right">
+        <div class="md:text-3xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
             <p class="mx-5 md:text-3xl text-sm" v-html="highlightWords(item.intro1)"></p>
             <br>
             <h1 class="text-center text-4xl md:text-[2.5em] pt-24 text-gradient pb-10">{{item.event_name}}</h1>
