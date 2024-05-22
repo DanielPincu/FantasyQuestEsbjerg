@@ -9,11 +9,13 @@
                     <div>
                          <h2 class="text-4xl text-gradient pb-10 move-in-left">{{ item.history_heading1 }}</h2>
 
-                         <div class="absolute z-20 md:top-1/8 md:right-10">
+                         <div v-if="isVisible" class="absolute hidden md:block z-20 md:top-1/8 md:right-10">
                               <p class="oval-thought absolute top-0">We have to do something...</p>
                          </div>
-                         <img class="md:w-96 w-64 move-in-right" :src="item.history_image1" alt="">
-                              
+                         
+                         <div @click="toggleVisibility" class="hover:scale-105 cursor-pointer duration-500">
+                              <img class="md:w-96 w-64 move-in-right" :src="item.history_image1" alt="">
+                         </div>
                     </div>
                </div>
 
@@ -39,6 +41,10 @@
                <div class="md:hidden flex items-center justify-center">
                     <div>
                          <h2 class="text-gradient text-4xl text-center pb-5 pt-32">{{ item.history_heading2 }}</h2>
+
+                         <div v-if="isVisible" class="absolute hidden md:block z-20 md:top-1/8 md:right-10">
+                              <p class="oval-thought absolute top-0">We have to do something...</p>
+                         </div>
                          <img src="../assets/img/seaman.png" alt="">
                     </div>
                </div>
@@ -58,9 +64,17 @@
                </div>
 
                <div class="md:flex hidden items-center justify-center">
-                    <div>
+                    <div class="relative">
                          <h2 class="text-gradient text-4xl text-center pb-5 pt-32">{{ item.history_heading2 }}</h2>
-                         <img src="../assets/img/seaman.png" alt="">
+
+                         <div v-if="isVisible2" class="absolute hidden md:block z-20 md:top-52  md:right-0">
+                              <p class="oval-thought absolute top-0">We have to do something...</p>
+                         </div>
+
+                         <div class="hover:scale-105 duration-500">
+                              <img @click="toggleVisibility2" src="../assets/img/seaman.png" alt="">
+                         </div>
+
                     </div>
                </div>
 
@@ -103,16 +117,28 @@
 
 <script setup>
 
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 
 import connectMe from '../modules/connectMe'
 const { historyData,  fetchData } = connectMe()
+
+
 
 
 onMounted(() => {
   fetchData()
 })
 
+const isVisible = ref(false);
+const isVisible2 = ref(false);
+
+const toggleVisibility = () => {
+  isVisible.value = !isVisible.value;
+};
+
+const toggleVisibility2 = () => {
+  isVisible2.value = !isVisible2.value;
+};
 
 // Hightlighter
 
