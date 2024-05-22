@@ -48,17 +48,52 @@
       </div>
       
 
+
+       <div class="container mx-auto grid grid-cols-1 pt-32 items-center">
+      
+        <div class="relative flex justify-center">
+
+          <img class="w-96" src="../assets/img/port.png">
+          <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[51%] transform -translate-y-0 ">
+        
+          <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/2 bg-blue-300 rounded-3xl drop-shadow-xl flex flex-col items-center mb-2">
+            <p class="text-xl p-5">
+              In a forest deep, where shadows creep,And the moonlight rarely peeks,
+              There lies a key to your heart’s desire,
+              Guarded by flame, yet not by fire.
+
+              Answer this, brave soul, so true:
+              What creature am I, who guards the clue?
+            </p>
+
+          </div>
+        </div>
+          
+
+          
+
+          
+      
+      
+      </div>
+       
+
+
+
+
+
+
       
       
       
-      <div class="container mx-auto grid grid-cols-3 pt-32 items-center">
+      <!-- <div class="container mx-auto grid grid-cols-3 pt-32 items-center">
       
         <div class="relative">
 
           <img src="../assets/img/port.png">
           <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-1/2 transform -translate-x-1/8 -translate-y-1/4">
-          
-          <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/2 bg-blue-300 dark:bg-red-300 rounded-3xl drop-shadow-xl flex flex-col items-center mb-2">
+        
+          <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/2 bg-blue-300 rounded-3xl drop-shadow-xl flex flex-col items-center mb-2">
             <p class="text-xl p-5">
               In a forest deep, where shadows creep,And the moonlight rarely peeks,
               There lies a key to your heart’s desire,
@@ -74,20 +109,31 @@
             </p>
 
           </div>
+        </div>
+          
 
-        </div>  
+          <div class="text-center">
+              <div class="md:text-xl text-sm">Find the clue!</div> 
+          </div>
 
-          <div class="text-center"><p>IDK</p></div>
-          <img src="../assets/img/gnist.png" alt="">
+          <div class="relative">
+            <div v-if="isVisible" class="absolute hidden xl:block z-20 md:top-0  md:left-0">
+                              <p class="oval-thought2 absolute top-0">We have to do something...</p>
+          </div>
+
+          <div class="hover:scale-105" @click="toggleVisibility2">
+            <img src="../assets/img/gnist.png" alt="">
+          </div>
+          </div>
       
       
       </div>
-      
+       -->
       
       <!-- Lakserytteren -->
-      <h1 class="text-xl md:text-5xl container mx-auto text-yellow-500 text-gradient text-center mt-28 pt-28 mb-10">{{ item.headline2 }}</h1>
+      <h1 class="text-xl md:text-5xl container mx-auto text-yellow-500 text-gradient text-center mt-28 pt-28 md:mb-10 mb-0">{{ item.headline2 }}</h1>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 container mx-auto pt-10 gap-10 pb-32">
+      <div class="grid grid-cols-1 md:grid-cols-2 container mx-auto pt-0 gap-10 pb-32">
            <div>
                <p class="pb-5  md:text-3xl" v-html="highlightWords(item.salmon1)"></p>
       
@@ -130,6 +176,11 @@ const { familyData,  fetchData } = connectMe()
   onMounted(() => {
     fetchData()
   })
+
+const isVisible = ref(false);
+const toggleVisibility2 = () => {
+  isVisible.value = !isVisible.value;
+};
 
 const visibleDiv = ref(null);
 const toggleVisibility = (index) => {
