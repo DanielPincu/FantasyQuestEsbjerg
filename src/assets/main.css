@@ -143,3 +143,96 @@ nav a.router-link-exact-active {
 }
 
 
+.fade-in {
+  opacity: 0; /* Initially hide the element */
+  animation: fade-in 0.5s ease-in forwards; /* Apply the fade-in animation */
+  animation-timeline: view();
+  animation-range: 0 50vh;
+}
+
+@keyframes fade-in {
+  0% { scale: .5; opacity: 0; } /* Start with opacity 0 */
+
+  50% { scale: .8; opacity: .5; } /* Start with opacity 0 */
+  
+  100% {scale:1; opacity: 1; } /* End with opacity 1 */ 
+}
+
+
+
+.move-in-right {
+  animation: move-in-right 1s ease forwards;
+  animation-timeline: view();
+  animation-range: 0 80vh;
+  
+}
+
+@keyframes move-in-right {
+  0% {
+    scale:0; transform: translateX(-100%); /* Start position: top-left corner */
+  }
+  100% {
+    scale:1;transform: translateX( 0); /* End position: initial position */
+  }
+}
+
+
+.move-in-left {
+  animation: move-in-left 1s ease forwards;
+  animation-timeline: view();
+  animation-range: 0 60vh;
+  
+}
+
+@keyframes move-in-left {
+  0% {
+    scale:0; transform: translateX(-100%); /* Start position: top-left corner */
+  }
+  100% {
+    scale:1;transform: translateX( 0); /* End position: initial position */
+  }
+}
+
+
+
+
+
+
+
+
+.oval-thought{
+  position: relative;
+  width: 250px;
+  padding: 20px 40px;
+  margin: 1em auto 0px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(#2e88c4, #075698);
+  border-radius: 220px / 120px;     
+}
+
+.oval-thought:before{
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background: #075698;
+  border-radius: 30px;
+}
+
+.oval-thought:after{
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 30px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: #075698;
+}
+
+
+
+

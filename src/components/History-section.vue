@@ -5,22 +5,30 @@
           
           <div class="md:grid grid-cols-2 gap-5 xl:gap-0 items-center text-center justify-center container mx-auto px-5 pt-20">
 
-               <div class="flex items-center justify-center">
+               <div class="flex items-center relative justify-center">
                     <div>
-                         <h2 class="text-4xl text-gradient pb-10">{{ item.history_heading1 }}</h2>
-                         <img class="w-96" :src="item.history_image1" alt="">
+                         <h2 class="text-4xl text-gradient pb-10 move-in-left">{{ item.history_heading1 }}</h2>
+
+                         <div class="absolute z-20 md:top-1/8 md:right-10">
+                              <p class="oval-thought absolute top-0">We have to do something...</p>
+                         </div>
+                         <img class="md:w-96 w-64 move-in-right" :src="item.history_image1" alt="">
+                              
                     </div>
                </div>
 
                <div>
-               
-               <p class="mt-5 md:text-3xl text-sm" v-html="highlightWords(item.history_intro1)"></p>
-               
-               <p class="mt-5 md:text-3xl text-sm">{{ item.history_intro2 }}</p>
-               
-               <p class="mt-5 md:text-3xl text-sm" v-html="highlightWords(item.history_intro3)"></p>
+              
+                    <div class="move-in-left">
+                         <p class="mt-5 md:text-3xl text-sm" v-html="highlightWords(item.history_intro1)"></p>
+                         
+                         <p class="mt-5 md:text-3xl text-sm">{{ item.history_intro2 }}</p>
+                         
+                         <p class="mt-5 md:text-3xl text-sm" v-html="highlightWords(item.history_intro3)"></p>
 
-               <p class="mt-5 md:text-3xl text-sm">{{ item.history_intro4 }}</p>
+                         <p class="mt-5 md:text-3xl text-sm">{{ item.history_intro4 }}</p>
+                    </div>
+              
                </div>
 
           </div>
