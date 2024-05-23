@@ -7,7 +7,7 @@
 
                <div class="flex items-center relative justify-center">
                     <div>
-                         <h2 class="text-4xl text-gradient pb-10 move-in-left">{{ item.history_heading1 }}</h2>
+                         <h2 class="text-4xl text-gradient pb-10 move-in-right">{{ item.history_heading1 }}</h2>
 
                          <div v-if="isVisible" class="absolute hidden md:block z-20 md:top-1/8 md:right-10">
                               <p class="oval-thought absolute top-0">We have to do something...</p>
@@ -40,17 +40,19 @@
 
                <div class="md:hidden flex items-center justify-center">
                     <div>
-                         <h2 class="text-gradient text-4xl text-center pb-5 pt-32">{{ item.history_heading2 }}</h2>
+                         <h2 class="text-gradient text-4xl text-center pb-5 pt-32 move-in-right">{{ item.history_heading2 }}</h2>
 
                          <div v-if="isVisible" class="absolute hidden md:block z-20 md:top-1/8 md:right-10">
                               <p class="oval-thought absolute top-0">We have to do something...</p>
                          </div>
-                         <img src="../assets/img/seaman.png" alt="">
+                         <div class="move-in-left">
+                              <img src="../assets/img/seaman.png" alt="">
+                         </div>
                     </div>
                </div>
 
 
-               <div>
+               <div class="move-in-right">
                <p class="text-center md:text-3xl text-sm pb-5">{{ item.history_intro5 }}</p>
 
                <p class="text-center md:text-3xl text-sm pb-5" v-html="highlightWords(item.history_intro6)"></p>
@@ -65,13 +67,13 @@
 
                <div class="md:flex hidden items-center justify-center">
                     <div class="relative">
-                         <h2 class="text-gradient text-4xl text-center pb-5 pt-32">{{ item.history_heading2 }}</h2>
+                         <h2 class="text-gradient text-4xl text-center pb-5 pt-32 move-in-left">{{ item.history_heading2 }}</h2>
 
                          <div v-if="isVisible2" class="absolute hidden md:block z-20 md:top-52  md:right-0">
                               <p class="oval-thought absolute top-0">We have to do something...</p>
                          </div>
 
-                         <div class="hover:scale-105 duration-500">
+                         <div class="hover:scale-105 duration-500 move-in-left">
                               <img @click="toggleVisibility2" src="../assets/img/seaman.png" alt="">
                          </div>
 
@@ -82,9 +84,9 @@
           
 
 
-          <h1 class="text-center md:text-5xl text-3xl pt-24 mb-10 text-gradient">This is how you join the Quests</h1>
+          <h1 class="text-center md:text-5xl text-3xl pt-24 mb-10 text-gradient fade-in">This is how you join the Quests</h1>
 
-          <div class="md:grid grid-cols-2 gap-5 xl:gap-0 items-center container mx-auto px-5">
+          <div class="md:grid grid-cols-2 gap-5 xl:gap-0 items-center container mx-auto px-5 fade-in">
 
           <div class="flex items-center justify-center">
                <img :src="item.join_quest_image" alt="">
