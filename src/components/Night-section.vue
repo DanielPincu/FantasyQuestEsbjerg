@@ -35,7 +35,7 @@
 
 
 
-        <BuyButton />
+        <a target="_blank" href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"><BuyButton/></a>
 
 
         <div class="relative">

@@ -32,7 +32,7 @@
                 <div class="md:grid grid-cols-12 pt-5">
                         <div class="col-span-6 text-center flex justify-center items-center">
                             <ul>
-                                <RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/family-quest"><DayButton /></RouterLink>
+                                <RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/family-quest"><ReadButton /></RouterLink>
                                 
                                 
                             </ul>
@@ -40,7 +40,7 @@
 
 
                         <div class="col-span-6 pt-10 md:pt-5">
-                            <BuyButton /> 
+                            <a target="_blank" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a> 
                         </div>
                 </div>
 
@@ -60,7 +60,7 @@
                 <div class="md:grid grid-cols-12 pt-5">
                     <div class="col-span-6 text-center flex justify-center items-center">
                             <ul>
-                                <RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/night-quest"><li><span>Read more</span></li></RouterLink>
+                                <RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/night-quest"><ReadButton /></RouterLink>
                                 
                             </ul>
                         </div>
@@ -68,7 +68,7 @@
 
 
                         <div class="col-span-6 pt-10 md:pt-5">
-                            <BuyButton />  
+                            <a target="_blank" href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"><BuyButton/></a> 
                         </div>
                 </div>
 
@@ -130,7 +130,7 @@ import { ref, onMounted } from 'vue'
 import connectMe from '../modules/connectMe'
 import anime from 'animejs/lib/anime.es.js';
 import BuyButton from '../components/Buy-button.vue'
-import DayButton from '../components/Day-button.vue'
+import ReadButton from './Read-button.vue'
 
 const { introData,  fetchData } = connectMe()
 

@@ -21,7 +21,7 @@
              
       </div>
       
-      <BuyButton />
+      <a target="_blank" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
       
       <div class="grid grid-cols-1 md:grid-cols-2 container pt-28 mx-auto gap-10">
            

@@ -46,7 +46,8 @@
         <CountdownTimer/>
     </div>
 
-    <BuyButton/>
+    <a target="_blank" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
+    
   </div>
 
   <div v-else>
