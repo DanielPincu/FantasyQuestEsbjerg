@@ -46,7 +46,9 @@
         <CountdownTimer/>
     </div>
 
-    <a target="_blank" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
+    <div class="xl:bg-gradient-to-b from-[#6E94AE] to-[#1A202C]">
+      <a target="_blank" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
+    </div>
     
   </div>
 
