@@ -44,7 +44,7 @@
     }
     
     button.btn2::before {
-      background-color: transparent;
+      background-color: #4D839A;
   
       top: -0.75rem;
       left: 0.5rem;
