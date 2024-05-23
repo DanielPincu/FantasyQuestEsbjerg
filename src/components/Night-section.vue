@@ -80,10 +80,10 @@
   
       <div class="relative flex justify-center">
 
-        <img class="w-96" src="../assets/img/port.png">
-        <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[52%] transform -translate-y-0 ">
+        <img class="w-96" src="../assets/img/port2.png">
+        <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[50%] transform -translate-y-0 ">
       
-        <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/4 bg-gradient-to-b from-[#f1d762] to-[#d9a52b] text-slate-600 rounded-3xl flex flex-col items-center mb-2">
+        <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/4 bg-gradient-to-b from-[#402454] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
           <p class="text-xl flex flex-col items-center p-5">
             In a forest deep, where shadows creep,And the moonlight rarely peeks,
             There lies a key to your heart’s desire,
@@ -91,7 +91,7 @@
 
             Answer this, brave soul, so true:
             What creature am I, who guards the clue?
-            <img class="w-32 pt-5 text-center" src="../assets/img/unicorn.png" alt="">
+            <img class="w-32 pt-5 text-center" src="../assets/img/zombie.png" alt="">
           </p>
 
         </div>
@@ -113,10 +113,10 @@
     
     <div class="relative">
 
-      <img src="../assets/img/port.png">
-      <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-1/2 transform -translate-x-1/8 -translate-y-1/4">
+      <img src="../assets/img/port2.png">
+      <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-[48%] transform -translate-x-1/8 -translate-y-1/4">
     
-      <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#f1d762] to-[#d9a52b] text-slate-600 rounded-3xl flex flex-col items-center mb-2">
+      <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#402454] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
         <p class="text-xl flex flex-col items-center p-5">
           In a forest deep, where shadows creep,And the moonlight rarely peeks,
           There lies a key to your heart’s desire,
@@ -124,7 +124,7 @@
 
           Answer this, brave soul, so true:
           What creature am I, who guards the clue?
-          <img class="w-44 pt-5 text-center" src="../assets/img/unicorn.png" alt="">
+          <img class="w-44 pt-5 text-center" src="../assets/img/zombie.png" alt="">
         </p>
 
       </div>

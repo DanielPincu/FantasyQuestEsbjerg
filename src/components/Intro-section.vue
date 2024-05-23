@@ -5,9 +5,9 @@
     <div v-for="item in introData" :key="item">
 
         <div class="md:text-3xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
-            <p class="mx-5 md:text-3xl text-sm fade-in" v-html="highlightWords(item.intro1)"></p>
+            <p class="mx-5 md:text-3xl text-sm" v-html="highlightWords(item.intro1)"></p>
             <br>
-            <div class="fade-in">
+            <div>
                 <h1 class="text-center text-4xl md:text-[2.5em] pt-24 text-gradient pb-10">{{item.event_name}}</h1>
                 <p class="pb-5 pt-5 mx-5" v-html="highlightWords(item.intro3)"></p>
                 <p class="pb-5 mx-5" v-html="highlightWords(item.intro2)"></p>
@@ -31,7 +31,7 @@
                 <div class="container pb-20 text-justify mx-auto">
                     <p class="mx-5 md:text-2xl text-sm md:col-span-12 italic col-span-12 pb-5">{{ item.family_intro }}</p>
 
-                <div class="md:grid grid-cols-12 pt-5 fade-in">
+                <div class="md:grid grid-cols-12 pt-5">
                         <div class="col-span-6 text-center flex justify-center items-center">
                             <ul>
                                 <RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/family-quest"><ReadButton /></RouterLink>
