@@ -164,21 +164,6 @@ body {
   --star-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
-animate-me {
-    background-color: #f97316; /* Tailwind's orange-500 */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-    outline: none;
-}
-.animate-me:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
 button.btn {
   text-transform: uppercase;
   text-decoration: none;

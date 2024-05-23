@@ -32,7 +32,8 @@
                 <div class="md:grid grid-cols-12 pt-5">
                         <div class="col-span-6 text-center flex justify-center items-center">
                             <ul>
-                                <RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/family-quest"><li><span>Read more</span></li></RouterLink>
+                                <RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/family-quest"><DayButton /></RouterLink>
+                                
                                 
                             </ul>
                         </div>
@@ -125,9 +126,11 @@
 
 <script setup>
 
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import connectMe from '../modules/connectMe'
 import anime from 'animejs/lib/anime.es.js';
+import BuyButton from '../components/Buy-button.vue'
+import DayButton from '../components/Day-button.vue'
 
 const { introData,  fetchData } = connectMe()
 
@@ -145,8 +148,7 @@ onMounted(() => {
   fetchData()
 })
 
-import { ref } from 'vue'
-import BuyButton from '../components/Buy-button.vue'
+
 
 
 const isFamilyVisible = ref(true)
