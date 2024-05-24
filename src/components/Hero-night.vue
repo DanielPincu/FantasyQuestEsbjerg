@@ -1,9 +1,9 @@
 
 <template>
 
-    <div v-if="introData">
+    <div v-if="nightData">
     
-    <div v-for="item in introData" :key="item" class="relative">
+    <div v-for="item in nightData" :key="item" class="relative">
       <div class="clouds2 invert blur-sm overflow-hidden">
         <img src="../assets/img/clouds/cloud1.png" style="--i:1">
         <img src="../assets/img/clouds/cloud2.png" style="--i:2">
@@ -32,7 +32,7 @@
         </div>
       </div>
 
-      <img class="" src="../assets/img/night.png" alt="">
+      <img class="" :src="item.hero_image" alt="">
       
       <div class="absolute hidden xl:block bottom-0 md:bottom-20 left-0 right-0">
         <CountdownTimer/>
@@ -59,7 +59,7 @@
       import CountdownTimer from '../components/Countdown-timer.vue'
       // import BuyButton from '../components/Buy-button.vue'
       
-      const { introData,  fetchData } = connectMe()
+      const { nightData,  fetchData } = connectMe()
       
       onMounted(() => {
         fetchData()

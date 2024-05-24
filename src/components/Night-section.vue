@@ -80,8 +80,8 @@
   
       <div class="relative flex justify-center">
 
-        <img class="w-96" src="../assets/img/port2.png">
-        <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[50%] transform -translate-y-0 ">
+        <img class="w-96" src="../assets/img/dark_portal.png">
+        <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[43%] transform -translate-y-0 ">
       
         <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/4 bg-gradient-to-b from-[#402454] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
           <p class="text-xl flex flex-col items-center p-5">
@@ -113,8 +113,8 @@
     
     <div class="relative">
 
-      <img src="../assets/img/port2.png">
-      <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-[48%] transform -translate-x-1/8 -translate-y-1/4">
+      <img src="../assets/img/dark_portal.png">
+      <img @click="toggleVisibility(index)" src="../assets/img/question.png" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-[42%] transform -translate-x-1/8 -translate-y-1/4">
     
       <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#402454] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
         <p class="text-xl flex flex-col items-center p-5">

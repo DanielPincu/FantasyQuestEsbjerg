@@ -1,9 +1,9 @@
 
 <template>
 
-<div v-if="introData">
+<div v-if="familyData">
 
-<div v-for="item in introData" :key="item" class="relative">
+<div v-for="item in familyData" :key="item" class="relative">
   
 
       <div class="clouds2 flex justify-end overflow-hidden">
@@ -25,7 +25,7 @@
       
 </div>
     
-  <img class="" src="../assets/img/family.png" alt="">
+  <img class="" :src="item.hero_image" alt="">
   
   <div class="absolute hidden xl:block bottom-0 md:bottom-32 xl:bottom-64 left-0 right-0">
     <CountdownTimer/>
@@ -56,7 +56,7 @@
   import CountdownTimer from '../components/Countdown-timer.vue'
   // import BuyButton from '../components/Buy-button.vue'
   
-  const { introData,  fetchData } = connectMe()
+  const { familyData,  fetchData } = connectMe()
   
   onMounted(() => {
     fetchData()

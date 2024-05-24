@@ -13,7 +13,7 @@
                               <p class="oval-thought absolute top-0">We have to do something...</p>
                          </div>
                          
-                         <div @click="toggleVisibility" class="hover:scale-105 cursor-pointer duration-500">
+                         <div @click="toggleVisibility" class="md:hover:scale-105 md:cursor-pointer duration-500 flex justify-center">
                               <img class="md:w-96 w-64 move-in-right" :src="item.history_image1" alt="">
                          </div>
                     </div>
@@ -46,7 +46,7 @@
                               <p class="oval-thought absolute top-0">We have to do something...</p>
                          </div>
                          <div class="move-in-left">
-                              <img src="../assets/img/seaman.png" alt="">
+                              <img :src="item.history_image2" alt="">
                          </div>
                     </div>
                </div>
@@ -74,7 +74,7 @@
                          </div>
 
                          <div class="hover:scale-105 duration-500 move-in-left">
-                              <img @click="toggleVisibility2" src="../assets/img/seaman.png" alt="">
+                              <img @click="toggleVisibility2" :src="item.history_image2" alt="">
                          </div>
 
                     </div>
