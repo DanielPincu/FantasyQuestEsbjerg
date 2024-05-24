@@ -7,16 +7,16 @@
         <div class="relative">
             <img class="absolute right-0 top-80 z-10 opacity-50 md:opacity-100" src="../assets/img/thunder.webp" alt="Enourmous thunderbolt lightening the page">
 
-            <div class="md:grid grid-cols-2 mt-20 container mx-auto">
+            <div class="md:grid grid-cols-2 mt-5 md:mt-20 container mx-auto">
 
                 <div class="relative z-20">
-                    <p class="pb-10 text-sm md:text-3xl" v-html="highlightWords(item.intro1)"></p>
+                    <p class="pb-5 md:text-3xl" v-html="highlightWords(item.intro1)"></p>
 
-                    <p class="pb-10 text-sm md:text-3xl" v-html="highlightWords(item.intro2)"></p>
+                    <p class="pb-5 md:text-3xl" v-html="highlightWords(item.intro2)"></p>
 
-                    <p class="pb-10 text-sm md:text-3xl">{{ item.intro3 }}</p>
+                    <p class="pb-5 md:text-3xl">{{ item.intro3 }}</p>
 
-                    <p class="pb-10 text-sm md:text-3xl">{{ item.intro4 }}</p>
+                    <p class="pb-5 md:text-3xl">{{ item.intro4 }}</p>
 
                 </div>
 

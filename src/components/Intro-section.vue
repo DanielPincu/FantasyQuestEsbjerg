@@ -4,8 +4,8 @@
 
     <div v-for="item in introData" :key="item">
 
-        <div class="md:text-3xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-5 md:pt-20 justify-center container mx-auto">
-            <p class="mx-5 md:text-3xl text-sm" v-html="highlightWords(item.intro1)"></p>
+        <div class="md:text-3xl italic text-justify tracking-tighter flex flex-col items-center pt-5 md:pt-20 justify-center container mx-auto">
+            <p class="mx-5 md:text-3xl" v-html="highlightWords(item.intro1)"></p>
             <br>
             <div>
                 <h1 class="text-center text-4xl md:text-5xl pt-5 md:pt-24 text-gradient pb-10">{{item.event_name}}</h1>
@@ -29,7 +29,7 @@
                     <img class="px-5" :src="item.family_quest_image" alt="Children listening attentively to a fairy tale told by a princess in a costume">
                 </div>
                 <div class="container pb-20 text-justify mx-auto">
-                    <p class="mx-5 md:text-2xl text-sm md:col-span-12 italic col-span-12 pb-5">{{ item.family_intro }}</p>
+                    <p class="mx-5 md:text-2xl md:col-span-12 italic col-span-12 pb-5">{{ item.family_intro }}</p>
 
                 <div class="md:grid grid-cols-12 pt-5">
                         <div class="col-span-6 text-center flex justify-center items-center">
@@ -57,7 +57,7 @@
                     <img class="px-5" :src="item.night_quest_image" alt="Step into the shadows of a nocturnal fantasy quest, where darkness conceals both danger and secrets waiting to be uncovered">
                 </div>
                 <div class="container pb-20 text-justify mx-auto">
-                    <p class="mx-5 md:text-2xl text-sm md:col-span-12 italic col-span-12 pb-5">{{ item.night_intro }}</p>
+                    <p class="mx-5 md:text-2xl md:col-span-12 italic col-span-12 pb-5">{{ item.night_intro }}</p>
 
                 <div class="md:grid grid-cols-12 pt-5">
                     <div class="col-span-6 text-center flex justify-center items-center">
