@@ -5,7 +5,7 @@
             <h1 class="md:text-5xl text-xl container mx-auto text-yellow-500 text-gradient text-center pt-20">For those of you who love solving mysteries</h1>
 
         <div class="relative">
-            <img class="absolute right-0 top-80 z-10 opacity-50 md:opacity-100" src="../assets/img/thunder.png" alt="Enourmous thunderbolt lightening the page">
+            <img class="absolute right-0 top-80 z-10 opacity-50 md:opacity-100" src="../assets/img/thunder.webp" alt="Enourmous thunderbolt lightening the page">
 
             <div class="md:grid grid-cols-2 mt-20 container mx-auto">
 
@@ -39,7 +39,7 @@
 
 
         <div class="relative">
-            <img class="absolute left-0 top-0 z-10 opacity-30 md:opacity-100 scale-x-[-1]" src="../assets/img/thunder.png" alt="">
+            <img class="absolute left-0 top-0 z-10 opacity-30 md:opacity-100 scale-x-[-1]" src="../assets/img/thunder.webp" alt="">
 
             <div class="md:grid grid-cols-12 mt-20 container mx-auto">
 
@@ -80,8 +80,8 @@
   
       <div class="relative flex justify-center">
 
-        <img class="w-96" src="../assets/img/dark_portal.png" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
-        <img @click="toggleVisibility(index)" src="../assets/img/question.png" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[43%] transform -translate-y-0 ">
+        <img class="w-96" src="../assets/img/dark_portal.webp" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
+        <img @click="toggleVisibility(index)" src="../assets/img/question.webp" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[43%] transform -translate-y-0 ">
       
         <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/4 bg-gradient-to-b from-[#402454] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
           <p class="text-xl flex flex-col items-center p-5">
@@ -91,7 +91,7 @@
 
             Answer this, brave soul, so true:
             What creature am I, who guards the clue?
-            <img class="w-32 pt-5 text-center" src="../assets/img/zombie.png" alt="Gaze upon the ghastly visage of a zombie unicorn, its rotting flesh and twisted horn embodying the macabre fusion of beauty and horror">
+            <img class="w-32 pt-5 text-center" src="../assets/img/zombie.webp" alt="Gaze upon the ghastly visage of a zombie unicorn, its rotting flesh and twisted horn embodying the macabre fusion of beauty and horror">
           </p>
 
         </div>
@@ -113,8 +113,8 @@
     
     <div class="relative">
 
-      <img src="../assets/img/dark_portal.png" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
-      <img @click="toggleVisibility(index)" src="../assets/img/question.png" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-[42%] transform -translate-x-1/8 -translate-y-1/4">
+      <img src="../assets/img/dark_portal.webp" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
+      <img @click="toggleVisibility(index)" src="../assets/img/question.webp" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-[42%] transform -translate-x-1/8 -translate-y-1/4">
     
       <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#402454] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
         <p class="text-xl flex flex-col items-center p-5">
@@ -124,7 +124,7 @@
 
           Answer this, brave soul, so true:
           What creature am I, who guards the clue?
-          <img class="w-44 pt-5 text-center" src="../assets/img/zombie.png" alt="Gaze upon the ghastly visage of a zombie unicorn, its rotting flesh and twisted horn embodying the macabre fusion of beauty and horror">
+          <img class="w-44 pt-5 text-center" src="../assets/img/zombie.webp" alt="Gaze upon the ghastly visage of a zombie unicorn, its rotting flesh and twisted horn embodying the macabre fusion of beauty and horror">
         </p>
 
       </div>
@@ -141,7 +141,7 @@
       </div>
 
       <div>
-        <img src="../assets/img/gnist.png" alt="Elf with pointed ears and mystical attire standing in a forest glade">
+        <img src="../assets/img/gnist.webp" alt="Elf with pointed ears and mystical attire standing in a forest glade">
       </div>
       </div>
   
@@ -231,7 +231,7 @@ const toggleVisibility = (index) => {
 
 .thunder {
        
-       background-image: url('../assets/img/thunder.png');
+       background-image: url('../assets/img/thunder.webp');
        
        background-repeat: no-repeat;
        background-position: center;
