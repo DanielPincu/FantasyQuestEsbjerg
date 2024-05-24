@@ -4,7 +4,7 @@
        
        <h1 class="md:text-5xl text-xl container mx-auto text-yellow-500 text-gradient text-center pt-20">{{ item.headline1 }}</h1>
        
-       <div class="grid grid-cols-1 md:grid-cols-2 container mx-auto pt-10 gap-10 pb-28">
+       <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-10 gap-10 pb-28">
            <div class="md:pt-10">
                <p class="pb-5 md:text-3xl" v-html="highlightWords(item.intro1)"></p>
       
@@ -23,7 +23,7 @@
       
       <a target="_blank" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 container pt-28 mx-auto gap-10">
+      <div class="grid grid-cols-1 xl:grid-cols-2 container pt-28 mx-auto gap-10">
            
       
           <div class="flex justify-center items-center">
@@ -138,7 +138,7 @@
 <!-- Lakserytteren -->
       <h1 class="text-xl md:text-5xl container mx-auto text-yellow-500 text-gradient text-center mt-28 pt-28 md:mb-10 mb-0">{{ item.headline2 }}</h1>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 container mx-auto pt-0 gap-10 pb-32">
+      <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-0 gap-10 pb-32">
            <div>
                <p class="pb-5  md:text-3xl" v-html="highlightWords(item.salmon1)"></p>
       

@@ -3,11 +3,11 @@
      <div v-for="item in historyData" :key="item">
 
           
-          <div class="md:grid grid-cols-2 gap-5 xl:gap-0 items-center text-center justify-center container mx-auto px-5 pt-20">
+          <div class="xl:grid grid-cols-2 gap-5 xl:gap-0 items-center text-center justify-center container mx-auto px-5 pt-20">
 
                <div class="flex items-center relative justify-center">
                     <div>
-                         <h1 class="text-4xl text-gradient pb-10 move-in-right">{{ item.history_heading1 }}</h1>
+                         <h2 class="text-4xl text-gradient pb-10 move-in-right">{{ item.history_heading1 }}</h2>
 
                          <div v-if="isVisible" class="absolute hidden md:block z-20 md:top-1/8 md:right-10">
                               <p class="oval-thought absolute top-0">We have to do something...</p>
@@ -36,16 +36,16 @@
           </div>
 
 
-          <div class="md:grid grid-cols-2 md:gap-20 items-center text-center justify-center container mx-auto px-5">
+          <div class="xl:grid grid-cols-2 md:gap-20 items-center text-center justify-center container mx-auto px-5">
 
-               <div class="md:hidden flex items-center justify-center">
+               <div class="xl:hidden flex items-center justify-center">
                     <div>
                          <h2 class="text-gradient text-4xl text-center pb-5 pt-32 move-in-right">{{ item.history_heading2 }}</h2>
 
                          <div v-if="isVisible" class="absolute hidden md:block z-20 md:top-1/8 md:right-10">
                               <p class="oval-thought absolute top-0">We have to do something...</p>
                          </div>
-                         <div class="move-in-left">
+                         <div class="move-in-left flex justify-center">
                               <img :src="item.history_image2" alt="The four guardians of the sea, majestic and vigilant, each embodying the power and grace of the ocean depths">
                          </div>
                     </div>
@@ -65,7 +65,7 @@
 
                </div>
 
-               <div class="md:flex hidden items-center justify-center">
+               <div class="xl:flex hidden items-center justify-center">
                     <div class="relative">
                          <h2 class="text-gradient text-4xl text-center pb-5 pt-32 move-in-left">{{ item.history_heading2 }}</h2>
 
@@ -84,9 +84,9 @@
           
 
 
-          <h5 class="text-center md:text-5xl text-3xl pt-24 mb-10 text-gradient fade-in">This is how you join the Quests</h5>
+          <h3 class="text-center md:text-5xl text-3xl pt-24 mb-10 text-gradient fade-in">This is how you join the Quests</h3>
 
-          <div class="md:grid grid-cols-2 gap-5 xl:gap-0 items-center container mx-auto px-5 fade-in">
+          <div class="xl:grid grid-cols-2 gap-5 xl:gap-0 items-center container mx-auto px-5 fade-in">
 
           <div class="flex items-center justify-center">
                <img :src="item.join_quest_image" alt="Join the quest and journey into realms of magic, mystery, and endless possibility">

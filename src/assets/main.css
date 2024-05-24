@@ -71,12 +71,12 @@ nav a.router-link-exact-active {
       max-width: 1024px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1285px) {
   .container {
       max-width: 1280px;
   }
 }
-@media (min-width: 1540px) {
+@media (min-width: 1557px) {
   .container {
       max-width: 1536px;
   }
