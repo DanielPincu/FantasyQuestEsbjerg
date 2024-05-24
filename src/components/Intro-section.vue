@@ -4,11 +4,11 @@
 
     <div v-for="item in introData" :key="item">
 
-        <div class="md:text-3xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-20 justify-center container mx-auto">
+        <div class="md:text-3xl text-sm italic text-justify tracking-tighter flex flex-col items-center pt-5 md:pt-20 justify-center container mx-auto">
             <p class="mx-5 md:text-3xl text-sm" v-html="highlightWords(item.intro1)"></p>
             <br>
             <div>
-                <h1 class="text-center text-4xl md:text-[2.5em] pt-24 text-gradient pb-10">{{item.event_name}}</h1>
+                <h1 class="text-center text-4xl md:text-5xl pt-5 md:pt-24 text-gradient pb-10">{{item.event_name}}</h1>
                 <p class="pb-5 pt-5 mx-5" v-html="highlightWords(item.intro3)"></p>
                 <p class="pb-5 mx-5" v-html="highlightWords(item.intro2)"></p>
                 <p class="pb-20 mx-5" v-html="highlightWords(item.intro4)"></p>
@@ -26,7 +26,7 @@
         <transition name="bounce">
             <div v-if="isFamilyVisible" id="family">
                 <div class="flex container mx-auto justify-center pb-5">
-                    <img class="px-5" :src="item.family_quest_image" alt="">
+                    <img class="px-5" :src="item.family_quest_image" alt="Children listening attentively to a fairy tale told by a princess in a costume">
                 </div>
                 <div class="container pb-20 text-justify mx-auto">
                     <p class="mx-5 md:text-2xl text-sm md:col-span-12 italic col-span-12 pb-5">{{ item.family_intro }}</p>
@@ -54,7 +54,7 @@
         <transition name="bounce">
             <div v-if="isNightVisible" id="night">
                 <div class="flex container mx-auto justify-center pb-5">
-                    <img class="px-5" :src="item.night_quest_image" alt="">
+                    <img class="px-5" :src="item.night_quest_image" alt="Step into the shadows of a nocturnal fantasy quest, where darkness conceals both danger and secrets waiting to be uncovered">
                 </div>
                 <div class="container pb-20 text-justify mx-auto">
                     <p class="mx-5 md:text-2xl text-sm md:col-span-12 italic col-span-12 pb-5">{{ item.night_intro }}</p>
@@ -118,7 +118,7 @@
     </div>
 
     <div class="flex justify-end">
-        <img src="../assets/img/cloud3.png" alt="">
+        <img src="../assets/img/cloud3.png">
     </div>
     
 </div>

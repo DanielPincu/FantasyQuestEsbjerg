@@ -7,14 +7,14 @@
 
                <div class="flex items-center relative justify-center">
                     <div>
-                         <h2 class="text-4xl text-gradient pb-10 move-in-right">{{ item.history_heading1 }}</h2>
+                         <h1 class="text-4xl text-gradient pb-10 move-in-right">{{ item.history_heading1 }}</h1>
 
                          <div v-if="isVisible" class="absolute hidden md:block z-20 md:top-1/8 md:right-10">
                               <p class="oval-thought absolute top-0">We have to do something...</p>
                          </div>
                          
                          <div @click="toggleVisibility" class="md:hover:scale-105 md:cursor-pointer duration-500 flex justify-center">
-                              <img class="md:w-96 w-64 move-in-right" :src="item.history_image1" alt="">
+                              <img class="md:w-96 w-64 move-in-right" :src="item.history_image1" alt="Arkivaren, the wizard also known as 'The Archivist,' handling ancient spell books and secret scrolls with supreme wisdom">
                          </div>
                     </div>
                </div>
@@ -46,7 +46,7 @@
                               <p class="oval-thought absolute top-0">We have to do something...</p>
                          </div>
                          <div class="move-in-left">
-                              <img :src="item.history_image2" alt="">
+                              <img :src="item.history_image2" alt="The four guardians of the sea, majestic and vigilant, each embodying the power and grace of the ocean depths">
                          </div>
                     </div>
                </div>
@@ -74,7 +74,7 @@
                          </div>
 
                          <div class="hover:scale-105 duration-500 move-in-left">
-                              <img @click="toggleVisibility2" :src="item.history_image2" alt="">
+                              <img @click="toggleVisibility2" :src="item.history_image2" alt="The four guardians of the sea, majestic and vigilant, each embodying the power and grace of the ocean depths">
                          </div>
 
                     </div>
@@ -84,12 +84,12 @@
           
 
 
-          <h1 class="text-center md:text-5xl text-3xl pt-24 mb-10 text-gradient fade-in">This is how you join the Quests</h1>
+          <h4 class="text-center md:text-5xl text-3xl pt-24 mb-10 text-gradient fade-in">This is how you join the Quests</h4>
 
           <div class="md:grid grid-cols-2 gap-5 xl:gap-0 items-center container mx-auto px-5 fade-in">
 
           <div class="flex items-center justify-center">
-               <img :src="item.join_quest_image" alt="">
+               <img :src="item.join_quest_image" alt="Join the quest and journey into realms of magic, mystery, and endless possibility">
           </div>
 
                <div>

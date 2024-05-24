@@ -3,7 +3,7 @@
       <img src="../assets/img/footer.png" alt="">
       <div class="bg-[#165678] w-full grid justify-center">
         <p class="text-xl">Sponsored by</p>
-        <img src="../assets/img/sponsors.png" alt="">
+        <img src="../assets/img/sponsors.png" alt="Festiva's sponsors">
       </div>
     </footer>
 </template>

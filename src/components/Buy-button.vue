@@ -19,11 +19,11 @@ onMounted(() => {
           rotate: '1turn',
           duration: 2000,
         });
-        observer.unobserve(target); // Unobserve after animation to avoid repeated triggers
+        observer.unobserve(target); 
       }
     });
   }, {
-    threshold: 0.5 // Adjust this value as needed
+    threshold: 0.5 
   });
 
   observer.observe(target);

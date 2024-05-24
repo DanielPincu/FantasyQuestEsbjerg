@@ -297,7 +297,7 @@
           <div class="px-5 py-4 flex items-center justify-center text-slate-200">
           
           
-            <img src="../assets/img/sponsors.png" alt="">
+            <img src="../assets/img/sponsors.png" alt="Festival's sponsors">
           
 
           </div>

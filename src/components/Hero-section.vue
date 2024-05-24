@@ -35,7 +35,7 @@
       </div>
 
 
-      <img class="" :src="item.hero_image" alt="">
+      <img class="" :src="item.hero_image" alt="The awe-inspiring sight of a majestic dragon breathing forth mythical flames, its fierce presence igniting wonder and fear in equal measure">
       
       <div class="absolute hidden xl:block bottom-0 md:bottom-5 xl:bottom-20 left-0 right-0">
         <CountdownTimer/>

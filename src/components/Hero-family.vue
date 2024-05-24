@@ -25,7 +25,7 @@
       
 </div>
     
-  <img class="" :src="item.hero_image" alt="">
+  <img class="" :src="item.hero_image" alt="A mesmerizing hero image featuring a graceful mermaid, enchanting viewers with her ethereal beauty beneath the shimmering waves">
   
   <div class="absolute hidden xl:block bottom-0 md:bottom-32 xl:bottom-64 left-0 right-0">
     <CountdownTimer/>
@@ -54,7 +54,6 @@
   import { onMounted } from 'vue'
   import connectMe from '../modules/connectMe'
   import CountdownTimer from '../components/Countdown-timer.vue'
-  // import BuyButton from '../components/Buy-button.vue'
   
   const { familyData,  fetchData } = connectMe()
   
