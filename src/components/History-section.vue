@@ -84,7 +84,7 @@
           
 
 
-          <h4 class="text-center md:text-5xl text-3xl pt-24 mb-10 text-gradient fade-in">This is how you join the Quests</h4>
+          <h5 class="text-center md:text-5xl text-3xl pt-24 mb-10 text-gradient fade-in">This is how you join the Quests</h5>
 
           <div class="md:grid grid-cols-2 gap-5 xl:gap-0 items-center container mx-auto px-5 fade-in">
 
