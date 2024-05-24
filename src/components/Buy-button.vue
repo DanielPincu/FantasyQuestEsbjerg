@@ -158,8 +158,8 @@ body {
   --black: #111111;
   --red1: #E7BB0A;
   --red2: #F3951A;
-  --colorPrimary: #E7BB0A;
-  --colorSecondary: #F3951A;
+  --colorPrimary: #F3951A;
+  --colorSecondary: #E7BB0A;
   --cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   --star-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
