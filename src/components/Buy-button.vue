@@ -1,6 +1,6 @@
 <template>
-  <div class="text-center pt-20 text-orange-500">
-    <button class="btn animate-me" href="#">Buy ticket</button>
+  <div class="text-center  text-orange-500">
+    <button class="btn animate-me" href="#">Buy tickets</button>
   </div>
 </template>
 
@@ -175,7 +175,7 @@ button.btn {
   padding: 1rem 2.5rem;
   background: transparent;
   outline: none;
-  font-size: 28px;
+  font-size: 22px;
   color: var(--white);
   transition: all 0.5s var(--cubic-bezier) 0.15s;
 }

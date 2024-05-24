@@ -6,7 +6,12 @@
 @tailwind utilities;
 
 
-
+  .text-gradient {
+    background: -webkit-linear-gradient(#f4df5d, #F0CE00, #F3951A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 10px;
+}
 
 h1, h2, h3, h4, nav, .btn, .btn2 {
   font-family: 'Inknut Antiqua', sans-serif;
@@ -38,14 +43,6 @@ nav a.router-link-exact-active {
   color: #F0CE00;
 }
 
-
-.text-gradient {
-  background: linear-gradient(to bottom, #F0CE00, #F3951A);
-  padding-bottom: 20px;
-  /* -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
-}
 
 
 .container {

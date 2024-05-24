@@ -4,22 +4,22 @@
 
     <div v-for="item in introData" :key="item">
 
-        <div class="md:text-3xl italic text-justify tracking-tighter flex flex-col items-center pt-5 md:pt-20 justify-center container mx-auto">
+        <div class="md:text-[18px] text-justify tracking-tighter flex flex-col items-center pt-5 md:pt-20 justify-center container mx-auto">
             <p class="mx-5 md:text-3xl" v-html="highlightWords(item.intro1)"></p>
             <br>
             <div>
-                <h1 class="text-center text-4xl md:text-5xl pt-5 md:pt-24 text-gradient pb-10">{{item.event_name}}</h1>
+                <h1 class="text-center text-gradient text-4xl md:text-5xl uppercase pt-5 md:pt-24 pb-10">{{item.event_name}}</h1>
                 <p class="pb-5 pt-5 mx-5" v-html="highlightWords(item.intro3)"></p>
                 <p class="pb-5 mx-5" v-html="highlightWords(item.intro2)"></p>
                 <p class="pb-20 mx-5" v-html="highlightWords(item.intro4)"></p>
             </div>
         </div>
 
-        <div class="grid grid-cols-2 grid-rows-2 container mx-auto">
+        <div class="grid grid-cols-2  container mx-auto">
 
-            <div @click="toggleVisibility('family')" :class="{ 'bg-yellow-500 bg-opacity-50 border-4 border-yellow-500': isFamilyVisible, 'hover:bg-yellow-500 border-4 hover:border-4 border-yellow-500 hover:border-yellow-500 duration-100': !isFamilyVisible }" class="button duration-100 h-10 mx-5 flex justify-center items-center">Family Quest</div>
+            <div @click="toggleVisibility('family')" :class="{ 'bg-yellow-500 bg-opacity-50 border-4 border-yellow-500': isFamilyVisible, 'hover:bg-yellow-500 border-4 hover:border-4 border-yellow-500 hover:border-yellow-500 duration-100': !isFamilyVisible }" class="button md:text-[18px] uppercase duration-100 h-10 mx-5 flex justify-center items-center">Family Quest</div>
 
-            <div @click="toggleVisibility('night')" :class="{ 'bg-yellow-500 bg-opacity-50 border-4 border-yellow-500': isNightVisible, 'hover:bg-yellow-500 border-4 hover:border-4 border-yellow-500 hover:border-yellow-500 duration-100': !isNightVisible }" class="button duration-100 h-10 mx-5 flex justify-center items-center">Night Quest</div>
+            <div @click="toggleVisibility('night')" :class="{ 'bg-orange-500 bg-opacity-50 border-4 border-orange-500': isNightVisible, 'hover:bg-orange-500 border-4 hover:border-4 border-orange-500 hover:border-orange-500 duration-100': !isNightVisible }" class="button duration-100 h-10 mx-5 flex md:text-[18px] justify-center items-center uppercase">Night Quest</div>
 
         </div>
 
@@ -29,7 +29,7 @@
                     <img class="px-5" :src="item.family_quest_image" alt="Children listening attentively to a fairy tale told by a princess in a costume">
                 </div>
                 <div class="container pb-20 text-justify mx-auto">
-                    <p class="mx-5 md:text-2xl md:col-span-12 italic col-span-12 pb-5">{{ item.family_intro }}</p>
+                    <p class="mx-5 md:text-2xl md:col-span-12  col-span-12 pb-5">{{ item.family_intro }}</p>
 
                 <div class="md:grid grid-cols-12 pt-5">
                         <div class="col-span-6 text-center flex justify-center items-center">
@@ -118,7 +118,7 @@
     </div>
 
     <div class="flex justify-end">
-        <img src="../assets/img/clouds/generic_cloud.webp" alt="clouds, mist and fog">
+        <img src="../assets/img/banner.png" alt="clouds, mist and fog">
     </div>
     
 </div>

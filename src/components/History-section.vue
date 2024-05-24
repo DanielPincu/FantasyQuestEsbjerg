@@ -7,7 +7,7 @@
 
                <div class="flex items-center relative justify-center">
                     <div>
-                         <h2 class="text-4xl text-gradient pb-10 move-in-right">{{ item.history_heading1 }}</h2>
+                         <!-- <h2 class="text-4xl text-gradient pb-10 move-in-right">{{ item.history_heading1 }}</h2> -->
 
                          <div v-if="isVisible" class="absolute hidden md:block z-20 md:top-1/8 md:right-10">
                               <p class="oval-thought absolute top-0">We have to do something...</p>
@@ -22,13 +22,13 @@
                <div>
               
                     <div class="move-in-left">
-                         <p class="mt-5 md:text-3xl" v-html="highlightWords(item.history_intro1)"></p>
+                         <p class="mt-5 md:text-2xl" v-html="highlightWords(item.history_intro1)"></p>
                          
-                         <p class="mt-5 md:text-3xl">{{ item.history_intro2 }}</p>
+                         <p class="mt-5 md:text-2xl">{{ item.history_intro2 }}</p>
                          
-                         <p class="mt-5 md:text-3xl" v-html="highlightWords(item.history_intro3)"></p>
+                         <p class="mt-5 md:text-2xl" v-html="highlightWords(item.history_intro3)"></p>
 
-                         <p class="mt-5 md:text-3xl">{{ item.history_intro4 }}</p>
+                         <p class="mt-5 md:text-2xl">{{ item.history_intro4 }}</p>
                     </div>
               
                </div>
@@ -53,15 +53,14 @@
 
 
                <div class="move-in-right">
-               <p class="text-center md:text-3xl pb-5">{{ item.history_intro5 }}</p>
+               <p class="text-center md:text-2xl pb-5">{{ item.history_intro5 }}</p>
 
-               <p class="text-center md:text-3xl pb-5" v-html="highlightWords(item.history_intro6)"></p>
+               <p class="text-center md:text-2xl pb-5" v-html="highlightWords(item.history_intro6)"></p>
           
-               <p class="text-center md:text-3xl pb-5">{{ item.history_intro7 }}</p>
+               <p class="text-center md:text-2xl pb-5">{{ item.history_intro7 }}</p>
 
-               <h2 class="text-3xl">It's time for Fantasy Quest Esbjerg.</h2>
-               <br>
-               <h4 class="text-orange-500 text-4xl">Are you ready?</h4>
+               <p class="text-3xl uppercase ">It's time for Fantasy Quest Esbjerg.</p>
+               <h4 class="text-orange-500 uppercase text-4xl">Are you ready?</h4>
 
                </div>
 
@@ -94,14 +93,14 @@
 
                <div>
 
-               <p class="mt-5 md:text-3xl text-center">{{ item.how_to_join1 }}</p>
-               <p class="mt-5 md:text-3xl text-center">{{ item.how_to_join2 }}</p>
-               <p class="mt-5 md:text-3xl text-center">{{ item.how_to_join3 }}</p>
-                    <ul class="text-center text-orange-500 md:text-3xl my-5 btn">
-                         <li class="pb-2">{{ item.family_program }}</li>
+               <p class="mt-5 md:text-2xl">{{ item.how_to_join1 }}</p>
+               <p class="mt-5 md:text-2xl">{{ item.how_to_join2 }}</p>
+               <p class="mt-5 md:text-2xl">{{ item.how_to_join3 }}</p>
+                    <ul class="text-orange-500 md:text-3xl my-5 btn">
+                         <li>{{ item.family_program }}</li>
                          <li>{{ item.night_program }}</li>
                     </ul>
-               <p class="mt-5 md:text-3xl text-center">{{ item.how_to_join4 }}</p>
+               <p class="mt-5 md:text-2xl">{{ item.how_to_join4 }}</p>
           
                </div>
                
@@ -159,7 +158,7 @@ const wordsToHighlight = [
 let highlightedText = text;
 wordsToHighlight.forEach(word => {
   const regEx = new RegExp('\\b' + word + '\\b', 'gi');
-  highlightedText = highlightedText.replace(regEx, `<span class="text-yellow-500 text-xl md:text-3xl">${word}</span>`);
+  highlightedText = highlightedText.replace(regEx, `<span class="text-yellow-500 text-xl md:text-[22px]">${word}</span>`);
 });
 return highlightedText;
 }

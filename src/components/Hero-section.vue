@@ -46,7 +46,7 @@
         <CountdownTimer/>
     </div>
 
-    <div class="xl:bg-gradient-to-b from-[#6E94AE] to-[#1A202C]">
+    <div class="xl:bg-gradient-to-b from-[#6E94AE] to-[#1A202C] pt-10">
       <a target="_blank" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
     </div>
     
@@ -79,10 +79,5 @@ onMounted(() => {
 </script>
 
 <style>
-  .text-gradient {
-  background: linear-gradient(to bottom, #ebdb95, #d9a52b);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 </style>
