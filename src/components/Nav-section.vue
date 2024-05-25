@@ -2,7 +2,7 @@
   
 
   <!-- NAVIGATION, MAKE STICKY -->
-  <nav class="flex animate-me flex-row md:justify-between justify-end mx-auto w-full bg-black bg-opacity-50 z-50 sticky top-0">
+  <nav class="flex animate-me flex-row md:justify-between justify-end mx-auto w-full bg-black bg-opacity-75 z-50 sticky top-0">
     <div class="flex items-center">
       <p class="text-yellow-500 md:text-3xl pl-10">Fantasy Quest Esbjerg</p>
     </div>
@@ -35,14 +35,15 @@
     </div>
 
     <div class="navbar-menu relative z-50" :class="{ 'hidden': !menuOpen }">
-      <nav class="fixed top-0 right-0 bottom-0 flex flex-col w-full py-6 px-6 bg-black bg-opacity-80">
+      <nav class="fixed top-0 right-0 bottom-0 flex flex-col w-full bg-black bg-opacity-80">
        
-        <div class="flex items-center mb-8">
-          <button class="navbar-close" @click="toggleMenu">
-            <i class="text-end text-xl text-white fa-solid fa-x"></i>
-          </button>
-        </div>
-        <div>
+       
+        <div class="bg-black bg-opacity-80 px-5">
+          <div class="flex items-center mb-8">
+            <button class="navbar-close" @click="toggleMenu">
+              <i class="text-end text-xl pt-5 text-white fa-solid fa-x"></i>
+            </button>
+          </div>
           <ul class="flex flex-col">
             <li class="mb-10 text-end">
               <RouterLink to="/" @click="closeMenuAndRemoveOverflow" class="text-xl">Home</RouterLink>

@@ -20,7 +20,7 @@
               @click="toggleCollapse(0)"
               :aria-expanded="isExpanded(0)"
               :aria-controls="'collapse0'">
-              <span class="text-3xl">Where and when?</span>
+              <span class="md:text-3xl">Where and when?</span>
               <span
                 class="-me-1 ms-auto h-5 w-5 shrink-0 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 [&>svg]:h-6 [&>svg]:w-6"
                 :class="{ 'rotate-180': isExpanded(0) }">
@@ -60,7 +60,7 @@
               @click="toggleCollapse(1)"
               :aria-expanded="isExpanded(1)"
               :aria-controls="'collapse1'">
-             <span class="text-3xl">Food and drinks</span>
+             <span class="md:text-3xl">Food and drinks</span>
               <span
                 class="-me-1 ms-auto h-5 w-5 shrink-0 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 [&>svg]:h-6 [&>svg]:w-6"
                 :class="{ 'rotate-180': isExpanded(1) }">
@@ -118,7 +118,7 @@
             @click="toggleCollapse(5)"
             :aria-expanded="isExpanded(5)"
             :aria-controls="'collapse2'">
-            <span class="text-3xl">Transportation</span>
+            <span class="md:text-3xl">Transportation</span>
             <span
               class="-me-1 ms-auto h-5 w-5 shrink-0 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 [&>svg]:h-6 [&>svg]:w-6"
               :class="{ 'rotate-180': isExpanded(5) }">
@@ -165,7 +165,7 @@
             @click="toggleCollapse(2)"
             :aria-expanded="isExpanded(2)"
             :aria-controls="'collapse2'">
-            <span class="text-3xl">Overnight in Esbjerg</span>
+            <span class="md:text-3xl">Overnight in Esbjerg</span>
             <span
               class="-me-1 ms-auto h-5 w-5 shrink-0 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 [&>svg]:h-6 [&>svg]:w-6"
               :class="{ 'rotate-180': isExpanded(2) }">
@@ -208,7 +208,7 @@
             @click="toggleCollapse(3)"
             :aria-expanded="isExpanded(3)"
             :aria-controls="'collapse2'">
-            <span class="text-3xl">Cooperation partners</span>
+            <span class="md:text-3xl">Cooperation partners</span>
             <span
               class="-me-1 ms-auto h-5 w-5 shrink-0 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 [&>svg]:h-6 [&>svg]:w-6"
               :class="{ 'rotate-180': isExpanded(3) }">
@@ -270,7 +270,7 @@
             @click="toggleCollapse(4)"
             :aria-expanded="isExpanded(4)"
             :aria-controls="'collapse2'">
-            <span class="text-3xl">Sponsors</span>
+            <span class="md:text-3xl">Sponsors</span>
             <span
               class="-me-1 ms-auto h-5 w-5 shrink-0 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 [&>svg]:h-6 [&>svg]:w-6"
               :class="{ 'rotate-180': isExpanded(4) }">
