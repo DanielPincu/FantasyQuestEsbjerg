@@ -84,7 +84,7 @@
             <div v-if="isVisible" class="absolute hidden xl:block z-20 md:top-0 md:left-0">
               <p class="oval-thought2 absolute text-slate-800 top-0">You have to search for the clue a little closer</p>
             </div>
-            <div>
+            <div class="flex justify-start">
               <img src="../assets/img/gnist.webp" alt="Elf with pointed ears and mystical attire standing in a forest glade">
             </div>
           </div>
