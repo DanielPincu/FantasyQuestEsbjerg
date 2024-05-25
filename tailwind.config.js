@@ -11,8 +11,11 @@ export default defineConfig({
   theme: {
     extend: {
       fontSize: {
-        '2xl': '1.125rem',  
-        '3xl': '1.5rem', 
+        // '2xl': '1.125rem',  
+        // '3xl': '1.5rem', 
+
+        '2xl': '18px',  
+        '3xl': '24px', 
       },
       colors: {
         yellow: {

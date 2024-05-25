@@ -9,10 +9,10 @@
        <img class="absolute right-0 top-80 z-10 opacity-50 md:opacity-100" src="../assets/img/thunder.webp" alt="Enormous thunderbolt lightening the page">
        <div class="md:grid grid-cols-2 mt-5 md:mt-20 container mx-auto">
          <div class="relative z-20">
-           <p class="pb-5 md:text-3xl" v-html="highlightWords(item.intro1)"></p>
-           <p class="pb-5 md:text-3xl" v-html="highlightWords(item.intro2)"></p>
-           <p class="pb-5 md:text-3xl">{{ item.intro3 }}</p>
-           <p class="pb-5 md:text-3xl">{{ item.intro4 }}</p>
+           <p class="pb-5 md:text-2xl" v-html="highlightWords(item.intro1)"></p>
+           <p class="pb-5 md:text-2xl" v-html="highlightWords(item.intro2)"></p>
+           <p class="pb-5 md:text-2xl">{{ item.intro3 }}</p>
+           <p class="pb-5 md:text-2xl">{{ item.intro4 }}</p>
          </div>
          <div>
            <img class="scale-x-[-1]" :src="item.image1" alt="Step into the shadows of a nocturnal fantasy quest, where darkness conceals both danger and secrets waiting to be uncovered">
@@ -29,9 +29,9 @@
        <div class="md:grid grid-cols-12 mt-20 container mx-auto">
          <div class="col-span-6"></div>
          <div class="relative z-20 col-span-6">
-           <p class="pb-5 md:text-3xl">{{ item.info1 }}</p>
-           <p class="pb-5 md:text-3xl font-bold">{{ item.info2 }}</p>
-           <p class="md:text-3xl" v-html="highlightWords(item.info3)"></p>
+           <p class="pb-5 md:text-2xl">{{ item.info1 }}</p>
+           <p class="pb-5 md:text-2xl font-bold">{{ item.info2 }}</p>
+           <p class="md:text-2xl" v-html="highlightWords(item.info3)"></p>
            <ul class="text-center text-sm md:text-4xl my-5 btn">
              <li>The Evening Quest:</li>
              <li class="text-gradient">{{ item.schedule }}</li>

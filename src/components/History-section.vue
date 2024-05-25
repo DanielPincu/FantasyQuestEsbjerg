@@ -85,15 +85,15 @@
 
           <h3 class="text-center md:text-5xl text-3xl pt-24 mb-10 text-gradient fade-in">This is how you join the Quests</h3>
 
-          <div class="xl:grid grid-cols-2 gap-5 xl:gap-0 items-center container mx-auto px-5 fade-in">
+          <div class="xl:grid grid-cols-2 gap-5 xl:gap-0  container mx-auto px-5 fade-in">
 
-          <div class="flex items-center justify-center">
+          <div class="flex pb-5 justify-center">
                <img :src="item.join_quest_image" alt="Join the quest and journey into realms of magic, mystery, and endless possibility">
           </div>
 
                <div>
 
-               <p class="mt-5 md:text-2xl">{{ item.how_to_join1 }}</p>
+               <p class="md:text-2xl">{{ item.how_to_join1 }}</p>
                <p class="mt-5 md:text-2xl">{{ item.how_to_join2 }}</p>
                <p class="mt-5 md:text-2xl">{{ item.how_to_join3 }}</p>
                     <ul class="text-orange-500 md:text-3xl my-5 btn">
@@ -158,7 +158,7 @@ const wordsToHighlight = [
 let highlightedText = text;
 wordsToHighlight.forEach(word => {
   const regEx = new RegExp('\\b' + word + '\\b', 'gi');
-  highlightedText = highlightedText.replace(regEx, `<span class="text-yellow-500 text-xl md:text-[22px]">${word}</span>`);
+  highlightedText = highlightedText.replace(regEx, `<span class="text-yellow-500 text-xl md:text-3xl">${word}</span>`);
 });
 return highlightedText;
 }

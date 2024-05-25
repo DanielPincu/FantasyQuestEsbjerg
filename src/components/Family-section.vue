@@ -3,12 +3,12 @@
     <div v-for="(item, index) in familyData" :key="index">
       <h1 class="md:text-5xl text-xl container mx-auto text-yellow-500 text-gradient text-center pt-20">{{ item.headline1 }}</h1>
       
-      <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-5 gap-10 pb-28">
-        <div class="md:pt-10">
-          <p class="pb-5 md:text-3xl" v-html="highlightWords(item.intro1)"></p>
-          <p class="pb-5 md:text-3xl" v-html="highlightWords(item.intro2)"></p>
-          <p class="pb-5 md:text-3xl" v-html="highlightWords(item.intro3)"></p>
-          <p class="md:text-3xl" v-html="highlightWords(item.intro4)"></p>
+      <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-10 gap-10 pb-28">
+        <div>
+          <p class="pb-5 md:text-2xl" v-html="highlightWords(item.intro1)"></p>
+          <p class="pb-5 md:text-2xl" v-html="highlightWords(item.intro2)"></p>
+          <p class="pb-5 md:text-2xl" v-html="highlightWords(item.intro3)"></p>
+          <p class="md:text-2xl" v-html="highlightWords(item.intro4)"></p>
         </div>
         <div class="flex justify-center items-center">
           <img :src="item.image1" alt="Children listening attentively to a fairy tale told by a princess in a costume">
@@ -21,14 +21,15 @@
         <div class="flex justify-center items-center">
           <img :src="item.image2" alt="A princess in costume telling a fairy tale to a group of children">
         </div>
-        <div class="xl:pt-10 pt-0">
-          <p class="pb-5 md:text-3xl">{{ item.info1 }}</p>
-          <p class="pb-5 md:text-3xl">{{ item.info2 }}</p>
-          <p class="pb-5 md:text-3xl">{{ item.info3 }}</p>
-          <p class="md:text-3xl" v-html="highlightWords(item.info4)"></p>
+        <div>
+          <p class="pb-5 md:text-2xl">{{ item.info1 }}</p>
+          <p class="pb-5 md:text-2xl">{{ item.info2 }}</p>
+          <p class="pb-5 md:text-2xl">{{ item.info3 }}</p>
+          <p class="md:text-2xl" v-html="highlightWords(item.info4)"></p>
           <ul class="text-center text-sm md:text-4xl my-5 btn">
             <li>The Family Quest:</li>
             <li class="text-gradient">{{ item.schedule }}</li>
+            <li class="md:text-sm text-[10px]">The quest takes approx. one hour to complete.</li>
           </ul>
         </div>
       </div>
@@ -95,13 +96,13 @@
       <h1 class="text-xl md:text-5xl container mx-auto text-yellow-500 text-gradient text-center mt-28 pt-28 md:mb-10 mb-0">{{ item.headline2 }}</h1>
       <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-0 gap-10 pb-32">
         <div>
-          <p class="pb-5 md:text-3xl" v-html="highlightWords(item.salmon1)"></p>
-          <p class="pb-5 md:text-3xl" v-html="highlightWords(item.salmon2)"></p>
-          <p class="pb-5 md:text-3xl" v-html="highlightWords(item.salmon3)"></p>
-          <p class="md:text-3xl">{{ item.salmon4 }}</p>
+          <p class="pb-5 md:text-2xl" v-html="highlightWords(item.salmon1)"></p>
+          <p class="pb-5 md:text-2xl" v-html="highlightWords(item.salmon2)"></p>
+          <p class="pb-5 md:text-2xl" v-html="highlightWords(item.salmon3)"></p>
+          <p class="md:text-2xl" v-html="highlightWords(item.salmon4)"></p>
         </div>
         <div class="flex justify-center items-center">
-          <img :src="item.image3" alt="Lakserytteren, the electrifying performer, captivating audiences with daring stunts and mesmerizing artistry">
+          <img class="w-4/5" :src="item.image3" alt="Lakserytteren, the electrifying performer, captivating audiences with daring stunts and mesmerizing artistry">
         </div>
       </div>
     </div>
@@ -143,7 +144,8 @@ const highlightWords = (text) => {
     'Saturday 14 September 2024',
     "Fantasy festival's 10th anniversary",
     'Rasmus Kolbe',
-    'Salmon Rider'
+    'Salmon Rider',
+    'meet him'
   ];
 
   let highlightedText = text;
