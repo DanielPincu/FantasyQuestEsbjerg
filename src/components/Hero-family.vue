@@ -27,7 +27,7 @@
     
   <img class="" src="../assets/img/family2.png" alt="A mesmerizing hero image featuring a graceful mermaid, enchanting viewers with her ethereal beauty beneath the shimmering waves">
   
-  <div class="absolute hidden xl:block bottom-0 md:bottom-32 xl:bottom-64 left-0 right-0">
+  <div class="absolute hidden xl:block bottom-0 md:bottom-32 xl:bottom-[250px] 2xl:bottom-80 left-0 right-0">
     <CountdownTimer/>
   </div>
 </div>
