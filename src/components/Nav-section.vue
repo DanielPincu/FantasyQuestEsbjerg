@@ -2,7 +2,7 @@
   
 
   <!-- NAVIGATION, MAKE STICKY -->
-  <nav class="flex flex-row md:justify-between justify-end mx-auto w-full bg-black bg-opacity-50 z-50 sticky top-0">
+  <nav class="flex animate-me flex-row md:justify-between justify-end mx-auto w-full bg-black bg-opacity-50 z-50 sticky top-0">
     <div class="flex items-center">
       <p class="text-yellow-500 md:text-3xl pl-10">Fantasy Quest Esbjerg</p>
     </div>
@@ -66,8 +66,30 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import { RouterLink } from 'vue-router';
+import anime from 'animejs';
+
+onMounted(() => {
+  const target = document.querySelector('.animate-me');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        anime({
+          targets: '.animate-me',
+          rotate: '1turn',
+          duration: 2000,
+        });
+        observer.unobserve(target); 
+      }
+    });
+  }, {
+    threshold: 0.5 
+  });
+
+  observer.observe(target);
+});
 
 const menuOpen = ref(false);
 

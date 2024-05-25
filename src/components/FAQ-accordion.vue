@@ -11,7 +11,7 @@
         <!-- Accordion Items -->
   
         <!-- Where and when -->
-        <div :class="[itemClasses]">
+        <div>
           <!-- Accordion Header -->
           <h2 class="mb-0" :id="'heading0'">
             <button
@@ -51,7 +51,7 @@
         </div>
   
         <!-- Food and drinks -->
-        <div :class="[itemClasses]">
+        <div>
           <!-- Accordion Header -->
           <h2 class="mb-0" :id="'heading1'">
             <button
@@ -109,7 +109,7 @@
 
 
          <!-- Transportation -->
-      <div :class="[itemClasses]">
+      <div>
           <!-- Accordion Header -->
           <h2 class="mb-0" :id="'heading4'">
             <button
@@ -156,7 +156,7 @@
 
 
         <!-- Overnight -->
-        <div :class="[itemClasses]">
+        <div>
           <!-- Accordion Header -->
           <h2 class="mb-0" :id="'heading2'">
             <button
@@ -199,7 +199,7 @@
 
       
       <!-- Partners -->
-      <div :class="[itemClasses]">
+      <div>
           <!-- Accordion Header -->
           <h2 class="mb-0" :id="'heading3'">
             <button
@@ -261,7 +261,7 @@
 
 
       <!-- Sponsors -->
-      <div :class="[itemClasses]">
+      <div>
           <!-- Accordion Header -->
           <h2 class="mb-0" :id="'heading4'">
             <button
@@ -315,19 +315,10 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import anime from 'animejs/lib/anime.es.js';
+import { ref } from 'vue';
 
-onMounted(() => {
-  anime({
-  targets: '.cls-1',
-  strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutSine',
-  duration: 1500,
-  delay: function(el, i) { return i * 250 },
-  loop: false
-});
-});
+
+
 
 const expandedItems = ref([]);
 
@@ -348,10 +339,5 @@ function isExpanded(index) {
 </script>
 
 <style scoped>
-.cls-1 {
-  fill: none;
-  stroke: #DFB647;
-  stroke-width: 1.5px;
-  
-}
+
 </style>

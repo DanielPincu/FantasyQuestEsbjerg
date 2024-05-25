@@ -15,11 +15,11 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-2  container mx-auto">
+        <div class="grid grid-cols-2 container mx-auto">
 
-            <div @click="toggleVisibility('family')" :class="{ 'bg-yellow-500 bg-opacity-50 border-4 border-yellow-500': isFamilyVisible, 'hover:bg-yellow-500 border-4 hover:border-4 border-yellow-500 hover:border-yellow-500 duration-100': !isFamilyVisible }" class="button md:text-[18px] uppercase duration-100 h-10 mx-5 flex justify-center items-center">Family Quest</div>
+            <div @click="toggleVisibility('family')" :class="{ 'bg-yellow-500 bg-opacity-50 border-4 border-yellow-500': isFamilyVisible, 'hover:bg-yellow-500 border-4 hover:border-4 border-yellow-500 hover:border-yellow-500 duration-100': !isFamilyVisible }" class="button md:text-[18px] uppercase duration-100 h-10 mx-5 flex justify-center items-center"><p>Family Quest</p></div>
 
-            <div @click="toggleVisibility('night')" :class="{ 'bg-orange-500 bg-opacity-50 border-4 border-orange-500': isNightVisible, 'hover:bg-orange-500 border-4 hover:border-4 border-orange-500 hover:border-orange-500 duration-100': !isNightVisible }" class="button duration-100 h-10 mx-5 flex md:text-[18px] justify-center items-center uppercase">Night Quest</div>
+            <div @click="toggleVisibility('night')" :class="{ 'bg-orange-500 bg-opacity-50 border-4 border-orange-500': isNightVisible, 'hover:bg-orange-500 border-4 hover:border-4 border-orange-500 hover:border-orange-500 duration-100': !isNightVisible }" class="button duration-100 h-10 mx-5 flex md:text-[18px] justify-center items-center uppercase"><p>Night Quest</p></div>
 
         </div>
 
