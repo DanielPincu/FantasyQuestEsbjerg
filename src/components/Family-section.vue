@@ -11,7 +11,7 @@
           <p class="md:text-2xl" v-html="highlightWords(item.intro4)"></p>
         </div>
         <div class="flex justify-center move-in-left items-center">
-          <img :src="item.image1" alt="Children listening attentively to a fairy tale told by a princess in a costume">
+          <img class="w-full" :src="item.image1" alt="Children listening attentively to a fairy tale told by a princess in a costume">
         </div>
       </div>
 
@@ -22,7 +22,7 @@
       
       <div class="grid grid-cols-1 xl:grid-cols-2 container pt-10 md:pt-28 mx-auto gap-10 pb-20">
         <div class="flex move-in-right justify-center items-center">
-          <img :src="item.image2" alt="A princess in costume telling a fairy tale to a group of children">
+          <img class="w-full" :src="item.image2" alt="A princess in costume telling a fairy tale to a group of children">
         </div>
         <div class="move-in-left">
           <p class="pb-5 md:text-2xl">{{ item.info1 }}</p>

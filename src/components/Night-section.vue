@@ -15,7 +15,7 @@
            <p class="pb-5 md:text-2xl">{{ item.intro4 }}</p>
          </div>
          <div>
-           <img class="scale-x-[-1] move-in-left" :src="item.image1" alt="Step into the shadows of a nocturnal fantasy quest, where darkness conceals both danger and secrets waiting to be uncovered">
+           <img class="scale-x-[-1] move-in-left w-full" :src="item.image1" alt="Step into the shadows of a nocturnal fantasy quest, where darkness conceals both danger and secrets waiting to be uncovered">
          </div>
        </div>
      </div>

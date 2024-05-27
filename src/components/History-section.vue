@@ -14,7 +14,7 @@
                          </div>
                          
                          <div @click="toggleVisibility" class="md:hover:scale-105 md:cursor-pointer duration-500 flex justify-center">
-                              <img class="md:w-96 w-64 move-in-right" :src="item.history_image1" alt="Arkivaren, the wizard also known as 'The Archivist,' handling ancient spell books and secret scrolls with supreme wisdom">
+                              <img class="md:w-96 w-64 h-full move-in-right" :src="item.history_image1" alt="Arkivaren, the wizard also known as 'The Archivist,' handling ancient spell books and secret scrolls with supreme wisdom">
                          </div>
                     </div>
                </div>
@@ -46,7 +46,7 @@
                               <p class="oval-thought absolute top-0">We have to do something...</p>
                          </div>
                          <div class="move-in-left flex justify-center">
-                              <img :src="item.history_image2" alt="The four guardians of the sea, majestic and vigilant, each embodying the power and grace of the ocean depths">
+                              <img class="w-full h-full" :src="item.history_image2" alt="The four guardians of the sea, majestic and vigilant, each embodying the power and grace of the ocean depths">
                          </div>
                     </div>
                </div>
@@ -73,7 +73,7 @@
                          </div>
 
                          <div class="hover:scale-105 duration-500 cursor-pointer">
-                              <img class="move-in-left" @click="toggleVisibility2" :src="item.history_image2" alt="The four guardians of the sea, majestic and vigilant, each embodying the power and grace of the ocean depths">
+                              <img class="move-in-left w-full h-full" @click="toggleVisibility2" :src="item.history_image2" alt="The four guardians of the sea, majestic and vigilant, each embodying the power and grace of the ocean depths">
                          </div>
 
                     </div>
@@ -85,10 +85,10 @@
 
           <h3 class="text-center md:text-5xl text-3xl pt-24 mb-10 text-gradient fade-in">This is how you join the Quests</h3>
 
-          <div class="xl:grid grid-cols-2 gap-5 xl:gap-0  container mx-auto px-5 fade-in">
+          <div class="xl:grid grid-cols-2 gap-10 container mx-auto px-5 fade-in">
 
           <div class="flex pb-5 justify-center">
-               <img :src="item.join_quest_image" alt="Join the quest and journey into realms of magic, mystery, and endless possibility">
+               <img class="w-full h-full" :src="item.join_quest_image" alt="Join the quest and journey into realms of magic, mystery, and endless possibility">
           </div>
 
                <div>

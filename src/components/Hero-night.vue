@@ -32,7 +32,7 @@
         </div>
       </div>
 
-      <img class="w-full" :src="item.hero_image" alt="The sinister allure of Malice, a formidable female wizard, emanating dark magic and commanding the shadows with her wicked power">
+      <img class="w-full h-full" :src="item.hero_image" alt="The sinister allure of Malice, a formidable female wizard, emanating dark magic and commanding the shadows with her wicked power">
       
       <div class="absolute hidden xl:block bottom-0 md:bottom-20 left-0 right-0">
         <CountdownTimer/>
