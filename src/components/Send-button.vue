@@ -1,6 +1,6 @@
 <template>
-    <div class="text-center pt-20 text-orange-500">
-      <button class="btn2 animate-me" href="#">SEND MESSAGE</button>
+    <div class="pt-10">
+      <button class="btn2 animate-me" href="#">Send Question</button>
     </div>
   </template>
   
@@ -35,7 +35,7 @@
     button.btn2::before {
       content: "";
       position: absolute;
-      height: 35%;
+      height: 30%;
       width: 10%;
       transition: all 0.5s var(--cubic-bezier);
       z-index: -2;
