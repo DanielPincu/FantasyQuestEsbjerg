@@ -15,9 +15,12 @@
         </div>
       </div>
 
-      <a target="_blank" class="fade-in" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
+      <div class="pt-10">
+        <a target="_blank" class="fade-in" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
 
-      <div class="grid grid-cols-1 xl:grid-cols-2 container pt-28 mx-auto gap-10 pb-20">
+      </div>
+      
+      <div class="grid grid-cols-1 xl:grid-cols-2 container pt-10 md:pt-28 mx-auto gap-10 pb-20">
         <div class="flex move-in-right justify-center items-center">
           <img :src="item.image2" alt="A princess in costume telling a fairy tale to a group of children">
         </div>
@@ -86,7 +89,7 @@
       <!-- Portal Setup Desktop END -->
 
       <!-- Lakserytteren -->
-      <h1 class="text-xl md:text-5xl container mx-auto text-yellow-500 text-gradient text-center mt-28 pt-28 md:mb-10 mb-0 fade-in">{{ item.headline2 }}</h1>
+      <h1 class="text-3xl md:text-5xl container mx-auto text-yellow-500 text-gradient text-center mt-28 pt-28 md:mb-10 mb-0 fade-in">{{ item.headline2 }}</h1>
       <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-0 gap-10 pb-32 fade-in">
         <div>
           <p class="pb-5 md:text-2xl" v-html="highlightWords(item.salmon1)"></p>

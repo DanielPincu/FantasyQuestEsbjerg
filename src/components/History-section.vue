@@ -40,7 +40,7 @@
 
                <div class="xl:hidden flex items-center justify-center">
                     <div>
-                         <h2 class="text-gradient text-4xl text-center pb-5 pt-32 move-in-right">{{ item.history_heading2 }}</h2>
+                         <h2 class="text-gradient text-3xl text-center pb-5 pt-32 move-in-right">{{ item.history_heading2 }}</h2>
 
                          <div v-if="isVisible" class="absolute hidden md:block z-20 md:top-1/8 md:right-10">
                               <p class="oval-thought absolute top-0">We have to do something...</p>
@@ -60,13 +60,13 @@
                <p class="text-center md:text-2xl pb-5">{{ item.history_intro7 }}</p>
 
                <p class="text-3xl uppercase ">It's time for Fantasy Quest Esbjerg.</p>
-               <p class="text-orange-500 font-bold uppercase text-4xl custom-p">Are you ready?</p>
+               <p class="text-orange-500 font-bold uppercase text-3xl md:text-4xl custom-p">Are you ready?</p>
 
                </div>
 
                <div class="xl:flex hidden items-center justify-center">
                     <div class="relative">
-                         <h2 class="text-gradient text-4xl text-center pb-5 pt-32 move-in-left">{{ item.history_heading2 }}</h2>
+                         <h2 class="text-gradient md:text-4xl text-center pb-5 pt-32 move-in-left">{{ item.history_heading2 }}</h2>
 
                          <div v-if="isVisible2" class="absolute hidden md:block z-20 md:top-52  md:right-0">
                               <p class="oval-thought text-slate-600 absolute top-0">We really have to defend the city!</p>
