@@ -45,21 +45,17 @@
      <div class="wrapper block md:hidden">
        <div class="container mx-auto grid grid-cols-1 items-center">
          <div class="flex justify-center" @click="toggleVisibility2">
-           <img class="w-64" src="../assets/img/gnist_dark.png" alt="Elf with pointed ears and mystical attire standing in a forest glade.">
+           <img class="w-64" :src="item.gnist_dark" alt="Elf with pointed ears and mystical attire standing in a forest glade.">
          </div>
        </div>
        <div class="container mx-auto grid grid-cols-1 pt-32 items-center">
          <div class="relative flex justify-center">
-           <img class="w-96" src="../assets/img/portal_dark.png" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
-           <img @click="toggleVisibility(index)" src="../assets/img/question.webp" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[48%] transform -translate-y-0">
+           <img class="w-96" :src="item.portal_dark" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
+           <img @click="toggleVisibility(index)" :src="item.questionmark" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[43%] transform -translate-y-0">
            <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/4 bg-gradient-to-b from-[#402454] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
              <p class="text-xl flex flex-col items-center p-5">
-               In a forest deep, where shadows creep,And the moonlight rarely peeks,
-               There lies a key to your heart’s desire,
-               Guarded by flame, yet not by fire.
-               Answer this, brave soul, so true:
-               What creature am I, who guards the clue?
-               <img class="w-32 pt-5 text-center" src="../assets/img/zombie.webp" alt="Gaze upon the ghastly visage of a zombie unicorn, its rotting flesh and twisted horn embodying the macabre fusion of beauty and horror">
+               {{ item.riddle }}
+               <img class="w-32 pt-5 text-center" :src="item.zombie" alt="Gaze upon the ghastly visage of a zombie unicorn, its rotting flesh and twisted horn embodying the macabre fusion of beauty and horror">
              </p>
            </div>
          </div>
@@ -67,22 +63,22 @@
      </div>
      <!-- Portal Setup Mobile END -->
 
+
+
+
+
      <!-- Portal Setup Desktop -->     
      <div class="wrapper hidden md:block">
       <p class="z-50 text-5xl text-center text-gradient pt-20 move-in-right">Where is the start point?</p>
        <div class="container mx-auto grid grid-cols-3 pt-32 items-center">
          <div class="relative move-in-right">
-           <img src="../assets/img/portal_dark.png" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
-           <img @click="toggleVisibility(index)" src="../assets/img/question.webp" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-5 md:w-14 xl:w-20 hover:scale-90 xl:scale-75 duration-500 top-1/2 md:left-[43%] xl:left-[46%] transform -translate-x-1/8 -translate-y-1/4">
+           <img :src="item.portal_dark" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
+           <img @click="toggleVisibility(index)" :src="item.questionmark" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-90 xl:scale-75 duration-500 top-1/2 md:left-[43%] xl:left-[42%] transform -translate-x-1/8 -translate-y-1/4">
 
            <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#8E4BA3] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
              <p class="text-xl flex flex-col items-center p-5">
-               In a forest deep, where shadows creep,And the moonlight rarely peeks,
-               There lies a key to your heart’s desire,
-               Guarded by flame, yet not by fire.
-               Answer this, brave soul, so true:
-               What creature am I, who guards the clue?
-               <img class="w-44 pt-5 text-center" src="../assets/img/zombie.webp" alt="Gaze upon the ghastly visage of a zombie unicorn, its rotting flesh and twisted horn embodying the macabre fusion of beauty and horror">
+               {{ item.riddle }}
+               <img class="w-44 pt-5 text-center" :src="item.zombie" alt="Gaze upon the ghastly visage of a zombie unicorn, its rotting flesh and twisted horn embodying the macabre fusion of beauty and horror">
              </p>
            </div>
          </div>
@@ -94,7 +90,7 @@
              <p class="oval-dark bg-gradient-to-b from-[#8E4BA3] to-[#2A294D] absolute text-slate-300 top-0">You have to search for the clue a little closer</p>
            </div>
            <div>
-             <img src="../assets/img/gnist_dark.png" alt="Elf with pointed ears and mystical attire standing in a forest glade">
+             <img :src="item.gnist_dark" alt="Elf with pointed ears and mystical attire standing in a forest glade">
            </div>
          </div>
        </div>

@@ -38,7 +38,7 @@
       <div class="wrapper block md:hidden">
         <div class="container mx-auto grid grid-cols-1 items-center">
           <div class="flex justify-center" @click="toggleVisibility2">
-            <img src="../assets/img/gnist.png" alt="Elf with pointed ears and mystical attire standing in a forest glade">
+            <img :src="item.gnist" alt="Elf with pointed ears and mystical attire standing in a forest glade">
           </div>
         </div>
         <div class="container mx-auto grid grid-cols-1 pt-32 items-center">
@@ -47,11 +47,7 @@
             <img @click="toggleVisibility(index)" src="../assets/img/question.webp" alt="here is a clue" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[52%] transform -translate-y-0 ">
             <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/4 bg-gradient-to-b from-[#f1d762] to-[#d9a52b] text-slate-600 rounded-3xl flex flex-col items-center mb-2">
               <p class="text-xl flex flex-col items-center p-5">
-                In a forest deep, where shadows creep,And the moonlight rarely peeks,
-                There lies a key to your heart’s desire,
-                Guarded by flame, yet not by fire.
-                Answer this, brave soul, so true:
-                What creature am I, who guards the clue?
+                {{ item.riddle }}
                 <img class="w-32 pt-5 text-center" src="../assets/img/unicorn.webp" alt="Majestic unicorn with a flowing mane and horn, standing in a mystical forest clearing">
               </p>
             </div>
@@ -65,16 +61,12 @@
         <p class="z-50 text-5xl text-center text-gradient pt-20 move-in-right">Where is the start point?</p>
         <div class="container mx-auto grid grid-cols-3 pt-32 items-center">
           <div class="relative move-in-right">
-            <img src="../assets/img/port.webp" alt="Enchanting portal shimmering with otherworldly light, beckoning adventurers to step into realms unknown">
-            <img @click="toggleVisibility(index)" src="../assets/img/question.webp" alt="here is a clue" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-1/2 transform -translate-x-1/8 -translate-y-1/4">
+            <img :src="item.portal" alt="Enchanting portal shimmering with otherworldly light, beckoning adventurers to step into realms unknown">
+            <img @click="toggleVisibility(index)" :src="item.questionmark" alt="here is a clue" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-90 xl:scale-75 duration-500 top-1/2 left-1/2 transform -translate-x-1/8 -translate-y-1/4">
             <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#F0CE00] to-[#F3951A] text-slate-600 rounded-3xl flex flex-col items-center mb-2">
               <p class="text-xl flex flex-col items-center p-5">
-                In a forest deep, where shadows creep,And the moonlight rarely peeks,
-                There lies a key to your heart’s desire,
-                Guarded by flame, yet not by fire.
-                Answer this, brave soul, so true:
-                What creature am I, who guards the clue?
-                <img class="w-44 pt-5 text-center" src="../assets/img/unicorn.webp" alt="Majestic unicorn with a flowing mane and horn, standing in a mystical forest clearing">
+                {{ item.riddle }}
+                <img class="w-44 pt-5 text-center" :src="item.unicorn" alt="Majestic unicorn with a flowing mane and horn, standing in a mystical forest clearing">
               </p>
             </div>
           </div>
@@ -86,7 +78,7 @@
               <p class="oval-thought absolute text-slate-800 top-0">You have to search for the clue a little closer</p>
             </div>
             <div class="flex justify-start">
-              <img src="../assets/img/gnist.png" alt="Elf with pointed ears and mystical attire standing in a forest glade">
+              <img :src="item.gnist" alt="Elf with pointed ears and mystical attire standing in a forest glade">
             </div>
           </div>
         </div>
