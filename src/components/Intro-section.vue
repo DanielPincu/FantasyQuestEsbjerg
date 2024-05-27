@@ -7,7 +7,7 @@
         <div class="md:text-[18px] text-justify tracking-tighter flex flex-col items-center pt-5 md:pt-20 justify-center container mx-auto">
             <p class="mx-5 md:text-3xl" v-html="highlightWords(item.intro1)"></p>
             <br>
-            <div>
+            <div class="move-in-right">
                 <h1 class="text-center text-gradient text-4xl md:text-5xl uppercase pt-5 md:pt-24 pb-10">{{item.event_name}}</h1>
                 <p class="pb-5 pt-5 mx-5" v-html="highlightWords(item.intro3)"></p>
                 <p class="pb-5 mx-5" v-html="highlightWords(item.intro2)"></p>
