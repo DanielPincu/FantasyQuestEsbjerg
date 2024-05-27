@@ -62,8 +62,13 @@
         </div>
       </nav>
     </div>
-   
+
+    <div class="scroll-watcher">
+
+    </div>
+    
   </nav>
+  
 </template>
 
 <script setup>

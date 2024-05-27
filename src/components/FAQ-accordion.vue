@@ -304,18 +304,41 @@
         </div>
       </div>
 
-
-
-
-
     </div>
 
   </div>
+
+
+
+
+
+
+  <div class="container mx-auto flex justify-center items-center rounded-3xl mt-32 mb-5 border-2 border-yellow-500">
+      <div class="container mx-auto">
+        <h1 class="flex justify-center text-2xl md:text-3xl dark:text-slate-200 mx-auto py-10">Have more questions?</h1>
+        <form target="_blank" action="https://formspree.io/f/mgegplkr" method="POST" class="w-full p-8 my-4 md:px-12">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 my-5">
+          <input type="text" name="name" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg" placeholder="Full Name" required>
+          <input type="email" name="email" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg" placeholder="Email Address" required>
+        </div>
+        <div class="mb-5">
+          <textarea placeholder="Your Message" class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:shadow-outline" name="message" rows="10" required></textarea>
+        </div>
+
+        <div class="flex justify-end">
+          <button type="submit"><SendButton /></button>
+          
+        </div>
+
+        </form>
+      </div>
+	</div>
 
 </template>
 
 <script setup>
 import { ref } from 'vue';
+import SendButton from './Send-button.vue';
 
 
 

@@ -192,11 +192,6 @@ nav a.router-link-exact-active {
 
 
 
-
-
-
-
-
 .oval-thought{
   /* border: 2px solid orange; */
   position: relative;
@@ -229,8 +224,6 @@ nav a.router-link-exact-active {
   border-radius: 15px;
   background: linear-gradient(#F0CE00, #F3951A);
 }
-
-
 
 
 .oval-thought2{
@@ -267,3 +260,18 @@ nav a.router-link-exact-active {
 }
 
 
+.scroll-watcher{
+  height: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 40;
+  background-color: #FB923C;
+  width: 100%;
+  scale: 0 1;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to {scale: 1 1;}
+}
