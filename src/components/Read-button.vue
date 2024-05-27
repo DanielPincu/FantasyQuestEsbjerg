@@ -1,6 +1,6 @@
 <template>
     <div class="text-center pt-20 text-orange-500">
-      <button class="btn2 animate-me" href="#">Read More</button>
+      <button class="btn2 animate-me" href="#">Find out more</button>
     </div>
   </template>
   

@@ -60,7 +60,7 @@
                <p class="text-center md:text-2xl pb-5">{{ item.history_intro7 }}</p>
 
                <p class="text-3xl uppercase ">It's time for Fantasy Quest Esbjerg.</p>
-               <h4 class="text-orange-500 uppercase text-4xl">Are you ready?</h4>
+               <p4 class="text-orange-500 font-bold uppercase text-4xl">Are you ready?</p4>
 
                </div>
 

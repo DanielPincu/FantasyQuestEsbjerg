@@ -17,9 +17,9 @@
 
         <div class="grid grid-cols-2 container mx-auto">
 
-            <div @click="toggleVisibility('family')" :class="{ 'bg-yellow-500 bg-opacity-50 border-4 border-yellow-500': isFamilyVisible, 'hover:bg-yellow-500 border-4 hover:border-4 border-yellow-500 hover:border-yellow-500 duration-100': !isFamilyVisible }" class="button md:text-[18px] uppercase duration-100 h-10 mx-5 flex justify-center items-center"><p>Family Quest</p></div>
+            <div @click="toggleVisibility('family')" :class="{ 'bg-yellow-500 bg-opacity-30 border-4 border-yellow-500': isFamilyVisible, 'hover:bg-yellow-500 hover:bg-opacity-50 border-4 hover:border-4 border-yellow-500 hover:border-yellow-500 duration-100': !isFamilyVisible }" class="button md:text-[18px] uppercase duration-100 h-10 mx-5 flex justify-center items-center"><p class="text-slate-50">Family Quest</p></div>
 
-            <div @click="toggleVisibility('night')" :class="{ 'bg-orange-500 bg-opacity-50 border-4 border-orange-500': isNightVisible, 'hover:bg-orange-500 border-4 hover:border-4 border-orange-500 hover:border-orange-500 duration-100': !isNightVisible }" class="button duration-100 h-10 mx-5 flex md:text-[18px] justify-center items-center uppercase"><p>Night Quest</p></div>
+            <div @click="toggleVisibility('night')" :class="{ 'bg-orange-500 bg-opacity-30 border-4 border-orange-500': isNightVisible, 'hover:bg-orange-500 hover:bg-opacity-50 border-4 hover:border-4 border-orange-500 hover:border-orange-500 duration-100': !isNightVisible }" class="button duration-100 h-10 mx-5 flex md:text-[18px] justify-center items-center uppercase"><p class="text-slate-50">Night Quest</p></div>
 
         </div>
 
@@ -34,9 +34,7 @@
                 <div class="md:grid grid-cols-12 pt-5">
                         <div class="col-span-6 text-center flex justify-center items-center">
                             <ul>
-                                <RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/family-quest"><ReadButton /></RouterLink>
-                                
-                                
+                               <li> <RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/family-quest"><ReadButton /></RouterLink></li>
                             </ul>
                         </div>
 
@@ -62,8 +60,7 @@
                 <div class="md:grid grid-cols-12 pt-5">
                     <div class="col-span-6 text-center flex justify-center items-center">
                             <ul>
-                                <RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/night-quest"><ReadButton /></RouterLink>
-                                
+                                <li><RouterLink class="text-slate-300 hover:text-orange-500 font-medium px-3 py-2  transition-all duration-300" to="/night-quest"><ReadButton /></RouterLink></li>
                             </ul>
                         </div>
 
@@ -118,7 +115,7 @@
     </div>
 
     <div class="flex justify-end">
-        <img src="../assets/img/banner.png" alt="clouds, mist and fog">
+        <img src="../assets/img/banner.webp" alt="clouds, mist and fog">
     </div>
     
 </div>
@@ -216,70 +213,6 @@ return highlightedText;
   }
 }
 
-
-
-
-
-
-ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-li {
-    font-size: 25px;
-    width: 8em;
-    height: 2em;
-    color: orange;
-    border-left: 0.08em solid;
-    position: relative;
-    margin-top: 0.8em;
-    cursor: pointer;
-}
-
-li::before,
-li::after
- {
-    content: '';
-    position: absolute;
-    width: inherit;
-    border-left: inherit;
-    z-index: -1;
-}
-
-li::before {
-    height: 80%;
-    top: 10%;
-    left: calc(-0.15em - 0.08em * 2);
-    filter: brightness(0.8);
-}
-
-li::after {
-    height: 60%;
-    top: 20%;
-    left: calc(-0.15em * 2 - 0.08em * 3);
-    filter: brightness(0.6);
-}
-
-li span {
-    position: relative;
-    height: 120%;
-    top: -10%;
-    box-sizing: border-box;
-    border: 0.08em solid;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-    text-transform: capitalize;
-    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
-    transition: 0.3s;
-}
-
-li:hover span {
-    transform: translateX(0.15em);
-}
 
 p {
         line-height: normal;
