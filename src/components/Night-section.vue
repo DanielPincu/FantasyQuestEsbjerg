@@ -51,7 +51,7 @@
        <div class="container mx-auto grid grid-cols-1 pt-32 items-center">
          <div class="relative flex justify-center">
            <img class="w-96" :src="item.portal_dark" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
-           <img @click="toggleVisibility(index)" :src="item.questionmark" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[43%] transform -translate-y-0">
+           <img @click="toggleVisibility(index)" :src="item.questionmark" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[48%] transform -translate-y-0">
            <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/4 bg-gradient-to-b from-[#402454] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
              <p class="text-xl flex flex-col items-center p-5">
                {{ item.riddle }}
@@ -73,7 +73,7 @@
        <div class="container mx-auto grid grid-cols-3 pt-32 items-center">
          <div class="relative move-in-right">
            <img class="w-full" :src="item.portal_dark" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
-           <img @click="toggleVisibility(index)" :src="item.questionmark" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-90 xl:scale-75 duration-500 top-1/2 md:left-[43%] xl:left-[42%] transform -translate-x-1/8 -translate-y-1/4">
+           <img @click="toggleVisibility(index)" :src="item.questionmark" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-90 xl:scale-75 duration-500 top-1/2 md:left-[44%] xl:left-[46%] transform -translate-x-1/8 -translate-y-1/4">
 
            <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#8E4BA3] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
              <p class="text-xl flex flex-col items-center p-5">
@@ -83,7 +83,7 @@
            </div>
          </div>
          <div class="text-center">
-           <div class="md:text-xl animate-pulse text-sm hover:scale-110 duration-500 cursor-pointer" @click="toggleVisibility2">SEE THE CLUE</div> 
+           <div class="md:text-xl animate-pulse text-sm hover:scale-110 duration-500 cursor-pointer" @click="toggleVisibility2"><p>SEE THE CLUE</p></div> 
          </div>
          <div class="relative move-in-left">
            <div v-if="isVisible2" class="absolute hidden md:block z-20 md:top-0 md:left-0 ">
