@@ -61,7 +61,7 @@
         <p class="z-50 text-5xl text-center text-gradient pt-20 move-in-right">Where is the start point?</p>
         <div class="container mx-auto grid grid-cols-3 pt-32 items-center">
           <div class="relative move-in-right">
-            <img :src="item.portal" alt="Enchanting portal shimmering with otherworldly light, beckoning adventurers to step into realms unknown">
+            <img class="w-full" :src="item.portal" alt="Enchanting portal shimmering with otherworldly light, beckoning adventurers to step into realms unknown">
             <img @click="toggleVisibility(index)" :src="item.questionmark" alt="here is a clue" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-90 xl:scale-75 duration-500 top-1/2 left-1/2 transform -translate-x-1/8 -translate-y-1/4">
             <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#F0CE00] to-[#F3951A] text-slate-600 rounded-3xl flex flex-col items-center mb-2">
               <p class="text-xl flex flex-col items-center p-5">

@@ -26,7 +26,7 @@
         <transition name="bounce">
             <div v-if="isFamilyVisible" id="family">
                 <div class="flex container mx-auto justify-center pb-5">
-                    <img class="px-5" :src="item.family_quest_image" alt="Children listening attentively to a fairy tale told by a princess in a costume">
+                    <img class="px-5 w-full" :src="item.family_quest_image" alt="Children listening attentively to a fairy tale told by a princess in a costume">
                 </div>
                 <div class="container pb-20 text-justify mx-auto">
                     <p class="mx-5 md:text-2xl md:col-span-12  col-span-12 pb-5">{{ item.family_intro }}</p>
@@ -52,7 +52,7 @@
         <transition name="bounce">
             <div v-if="isNightVisible" id="night">
                 <div class="flex container mx-auto justify-center pb-5">
-                    <img class="px-5" :src="item.night_quest_image" alt="Step into the shadows of a nocturnal fantasy quest, where darkness conceals both danger and secrets waiting to be uncovered">
+                    <img class="px-5 w-full" :src="item.night_quest_image" alt="Step into the shadows of a nocturnal fantasy quest, where darkness conceals both danger and secrets waiting to be uncovered">
                 </div>
                 <div class="container pb-20 text-justify mx-auto">
                     <p class="mx-5 md:text-2xl md:col-span-12 italic col-span-12 pb-5">{{ item.night_intro }}</p>

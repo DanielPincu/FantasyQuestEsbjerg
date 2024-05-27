@@ -72,7 +72,7 @@
       <p class="z-50 text-5xl text-center text-gradient pt-20 move-in-right">Where is the start point?</p>
        <div class="container mx-auto grid grid-cols-3 pt-32 items-center">
          <div class="relative move-in-right">
-           <img :src="item.portal_dark" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
+           <img class="w-full" :src="item.portal_dark" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
            <img @click="toggleVisibility(index)" :src="item.questionmark" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-90 xl:scale-75 duration-500 top-1/2 md:left-[43%] xl:left-[42%] transform -translate-x-1/8 -translate-y-1/4">
 
            <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#8E4BA3] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">

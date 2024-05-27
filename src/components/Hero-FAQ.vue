@@ -35,7 +35,7 @@
         </div>
   
   
-        <img class="" :src="item.hero_image" alt="A fantastical hero image depicting a mystical scene with a wizard, weaving magic and mystery into the fabric of the imagination">
+        <img class="w-full" :src="item.hero_image" alt="A fantastical hero image depicting a mystical scene with a wizard, weaving magic and mystery into the fabric of the imagination">
         
         <div class="absolute hidden xl:block bottom-0 md:bottom-5 xl:bottom-20 left-0 right-0">
           <CountdownTimer/>
