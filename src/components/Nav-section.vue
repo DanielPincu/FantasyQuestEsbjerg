@@ -2,26 +2,26 @@
   
 
   <!-- NAVIGATION, MAKE STICKY -->
-  <nav class="flex animate-me flex-row md:justify-between justify-end mx-auto w-full bg-black bg-opacity-75 z-50 sticky top-0">
-    <div class="flex items-center">
+  <nav class="flex flex-row md:justify-end justify-end mx-auto w-full bg-black bg-opacity-75 z-50 sticky top-0">
+    <!-- <div class="flex items-center">
       <p class="text-yellow-500 md:text-3xl pl-10">Fantasy Quest Esbjerg</p>
-    </div>
-    <div>
+    </div> -->
+    <div class="pr-20">
       <ul class="hidden md:flex lg:flex flex-row text-md mt-7 mb-5">
       
-      <li class="ml-7 mr-6">
+      <li class="ml-7 mr-6 animate">
         <RouterLink to="/" class="hover:text-orange-500">Home</RouterLink>
       </li>
 
-      <li class="mr-6">
+      <li class="mr-6 animate">
         <RouterLink to="/family-quest" class="hover:text-orange-500">Family Quest</RouterLink>
       </li>
       
-      <li class="mr-6">
+      <li class="mr-6 animate">
         <RouterLink to="/night-quest" class="hover:text-orange-500">Night Quest</RouterLink>
       </li>
 
-      <li class="mr-6">
+      <li class="mr-6 animate">
         <RouterLink to="/faq" class="hover:text-orange-500">FAQ</RouterLink>
       </li>
     </ul>
@@ -72,15 +72,15 @@ import { RouterLink } from 'vue-router';
 import anime from 'animejs';
 
 onMounted(() => {
-  const target = document.querySelector('.animate-me');
+  const target = document.querySelector('.animate');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         anime({
-          targets: '.animate-me',
-          rotate: '1turn',
-          duration: 2000,
+          targets: '.animate',
+          translateX: 50,
+        delay: anime.stagger(100)
         });
         observer.unobserve(target); 
       }
