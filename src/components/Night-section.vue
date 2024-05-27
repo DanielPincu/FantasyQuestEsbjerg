@@ -7,7 +7,7 @@
 
      <div class="relative">
        <img class="absolute right-0 top-80 z-10 opacity-50 md:opacity-100" src="../assets/img/thunder.webp" alt="Enormous thunderbolt lightening the page">
-       <div class="md:grid grid-cols-2 mt-5 md:mt-20 container mx-auto">
+       <div class="md:grid grid-cols-2 mt-5 md:mt-20 gap-10 container mx-auto">
          <div class="relative z-20">
            <p class="pb-5 md:text-2xl" v-html="highlightWords(item.intro1)"></p>
            <p class="pb-5 md:text-2xl" v-html="highlightWords(item.intro2)"></p>
@@ -45,13 +45,13 @@
      <div class="wrapper block md:hidden">
        <div class="container mx-auto grid grid-cols-1 items-center">
          <div class="flex justify-center" @click="toggleVisibility2">
-           <img src="../assets/img/gnist.png" alt="Elf with pointed ears and mystical attire standing in a forest glade.">
+           <img src="../assets/img/gnist_dark.png" alt="Elf with pointed ears and mystical attire standing in a forest glade.">
          </div>
        </div>
        <div class="container mx-auto grid grid-cols-1 pt-32 items-center">
          <div class="relative flex justify-center">
-           <img class="w-96" src="../assets/img/dark_portal.webp" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
-           <img @click="toggleVisibility(index)" src="../assets/img/question.webp" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[43%] transform -translate-y-0">
+           <img class="w-96" src="../assets/img/portal_dark.png" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
+           <img @click="toggleVisibility(index)" src="../assets/img/question.webp" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[48%] transform -translate-y-0">
            <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/4 bg-gradient-to-b from-[#402454] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
              <p class="text-xl flex flex-col items-center p-5">
                In a forest deep, where shadows creep,And the moonlight rarely peeks,
@@ -69,11 +69,13 @@
 
      <!-- Portal Setup Desktop -->     
      <div class="wrapper hidden md:block">
+      <p class="z-50 text-5xl text-center text-gradient pt-20">Where is the start point?</p>
        <div class="container mx-auto grid grid-cols-3 pt-32 items-center">
          <div class="relative">
-           <img src="../assets/img/dark_portal.webp" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
-           <img @click="toggleVisibility(index)" src="../assets/img/question.webp" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-[42%] transform -translate-x-1/8 -translate-y-1/4">
-           <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#402454] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
+           <img src="../assets/img/portal_dark.png" alt="Peer into the depths of the abyss through the ominous veil of a dark portal, where unknown realms beckon with whispers of peril and promise">
+           <img @click="toggleVisibility(index)" src="../assets/img/question.webp" alt="here is the clue" class="absolute cursor-pointer animate-pulse w-5 md:w-14 xl:w-20 hover:scale-90 xl:scale-75 duration-500 top-1/2 md:left-[43%] xl:left-[46%] transform -translate-x-1/8 -translate-y-1/4">
+
+           <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#8E4BA3] to-[#2A294D] text-slate-300 rounded-3xl flex flex-col items-center mb-2">
              <p class="text-xl flex flex-col items-center p-5">
                In a forest deep, where shadows creep,And the moonlight rarely peeks,
                There lies a key to your heart’s desire,
@@ -85,14 +87,14 @@
            </div>
          </div>
          <div class="text-center">
-           <div class="md:text-xl animate-pulse text-sm hover:scale-110 duration-500 cursor-pointer" @click="toggleVisibility2">Find the starting point!</div> 
+           <div class="md:text-xl animate-pulse text-sm hover:scale-110 duration-500 cursor-pointer" @click="toggleVisibility2">SEE THE CLUE</div> 
          </div>
          <div class="relative">
-           <div v-if="isVisible2" class="absolute hidden xl:block z-20 md:top-0 md:left-0">
-             <p class="oval-thought2 absolute text-slate-800 top-0">You have to search for the clue a little closer</p>
+           <div v-if="isVisible2" class="absolute hidden md:block z-20 md:top-0 md:left-0 ">
+             <p class="oval-dark bg-gradient-to-b from-[#8E4BA3] to-[#2A294D] absolute text-slate-300 top-0">You have to search for the clue a little closer</p>
            </div>
            <div>
-             <img src="../assets/img/gnist.webp" alt="Elf with pointed ears and mystical attire standing in a forest glade">
+             <img src="../assets/img/gnist_dark.png" alt="Elf with pointed ears and mystical attire standing in a forest glade">
            </div>
          </div>
        </div>
@@ -137,7 +139,10 @@ const highlightWords = (text) => {
 
  let highlightedText = text;
  wordsToHighlight.forEach(word => {
+
+  // creates a regular expression that matches the exact word stored in the variable word, wherever it appears in a string, in a case-insensitive manner. The \\b ensures it matches only whole words, not substrings within other words.
    const regEx = new RegExp('\\b' + word + '\\b', 'gi');
+
    highlightedText = highlightedText.replace(regEx, `<span class="text-yellow-500 text-xl md:text-3xl">${word}</span>`);
  });
  return highlightedText;
@@ -158,4 +163,40 @@ p {
 p {
  line-height: normal;
 }
+
+
+.oval-dark{
+  // border: 2px solid #39317E;
+  position: relative;
+  width: 250px;
+  padding: 20px 40px;
+  margin: 1em auto 0px;
+  text-align: center;
+  border-radius: 220px / 120px;     
+}
+
+.oval-dark:before{
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(#8E4BA3, #2A294D); 
+  border-radius: 30px;
+}
+
+.oval-dark:after{
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 80px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: linear-gradient(#8E4BA3, #2A294D); 
+}
+
+
+
 </style>

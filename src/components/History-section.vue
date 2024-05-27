@@ -10,7 +10,7 @@
                          <!-- <h2 class="text-4xl text-gradient pb-10 move-in-right">{{ item.history_heading1 }}</h2> -->
 
                          <div v-if="isVisible" class="absolute hidden md:block z-20 md:top-1/8 md:right-10">
-                              <p class="oval-thought absolute top-0">We have to do something...</p>
+                              <p class="oval-thought2 text-slate-600 absolute top-0">I can feel evil forces stirring...</p>
                          </div>
                          
                          <div @click="toggleVisibility" class="md:hover:scale-105 md:cursor-pointer duration-500 flex justify-center">
@@ -69,7 +69,7 @@
                          <h2 class="text-gradient text-4xl text-center pb-5 pt-32 move-in-left">{{ item.history_heading2 }}</h2>
 
                          <div v-if="isVisible2" class="absolute hidden md:block z-20 md:top-52  md:right-0">
-                              <p class="oval-thought absolute top-0">We have to do something...</p>
+                              <p class="oval-thought text-slate-600 absolute top-0">We really have to defend the city!</p>
                          </div>
 
                          <div class="hover:scale-105 duration-500 move-in-left">

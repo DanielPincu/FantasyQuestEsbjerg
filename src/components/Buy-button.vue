@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center  text-orange-500">
+  <div class="text-center pt-20 text-orange-500">
     <button class="btn animate-me" href="#">Buy tickets</button>
   </div>
 </template>

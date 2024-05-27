@@ -150,7 +150,10 @@ const highlightWords = (text) => {
 
   let highlightedText = text;
   wordsToHighlight.forEach(word => {
+
+    // creates a regular expression that matches the exact word stored in the variable word, wherever it appears in a string, in a case-insensitive manner. The \\b ensures it matches only whole words, not substrings within other words.
     const regEx = new RegExp('\\b' + word + '\\b', 'gi');
+    
     highlightedText = highlightedText.replace(regEx, `<span class="text-yellow-500 text-xl md:text-3xl">${word}</span>`);
   });
   return highlightedText;
