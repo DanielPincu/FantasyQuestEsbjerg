@@ -72,8 +72,8 @@
                               <p class="oval-thought text-slate-600 absolute top-0">We really have to defend the city!</p>
                          </div>
 
-                         <div class="hover:scale-105 duration-500 move-in-left">
-                              <img @click="toggleVisibility2" :src="item.history_image2" alt="The four guardians of the sea, majestic and vigilant, each embodying the power and grace of the ocean depths">
+                         <div class="hover:scale-105 duration-500 cursor-pointer">
+                              <img class="move-in-left" @click="toggleVisibility2" :src="item.history_image2" alt="The four guardians of the sea, majestic and vigilant, each embodying the power and grace of the ocean depths">
                          </div>
 
                     </div>

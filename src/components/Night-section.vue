@@ -45,7 +45,7 @@
      <div class="wrapper block md:hidden">
        <div class="container mx-auto grid grid-cols-1 items-center">
          <div class="flex justify-center" @click="toggleVisibility2">
-           <img src="../assets/img/gnist_dark.png" alt="Elf with pointed ears and mystical attire standing in a forest glade.">
+           <img class="w-64" src="../assets/img/gnist_dark.png" alt="Elf with pointed ears and mystical attire standing in a forest glade.">
          </div>
        </div>
        <div class="container mx-auto grid grid-cols-1 pt-32 items-center">

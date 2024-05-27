@@ -3,7 +3,7 @@
     <div v-for="(item, index) in familyData" :key="index">
       <h1 class="md:text-5xl text-xl container mx-auto text-yellow-500 text-gradient text-center pt-20">{{ item.headline1 }}</h1>
       
-      <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-10 gap-10 pb-28">
+      <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-10 gap-10">
         <div>
           <p class="pb-5 md:text-2xl" v-html="highlightWords(item.intro1)"></p>
           <p class="pb-5 md:text-2xl" v-html="highlightWords(item.intro2)"></p>
@@ -17,7 +17,7 @@
 
       <a target="_blank" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
 
-      <div class="grid grid-cols-1 xl:grid-cols-2 container pt-28 mx-auto gap-10">
+      <div class="grid grid-cols-1 xl:grid-cols-2 container pt-28 mx-auto gap-10 pb-20">
         <div class="flex justify-center items-center">
           <img :src="item.image2" alt="A princess in costume telling a fairy tale to a group of children">
         </div>
@@ -62,11 +62,12 @@
 
       <!-- Portal Setup Desktop -->     
       <div class="wrapper hidden md:block">
+        <p class="z-50 text-5xl text-center text-gradient pt-20">Where is the start point?</p>
         <div class="container mx-auto grid grid-cols-3 pt-32 items-center">
           <div class="relative">
             <img src="../assets/img/port.webp" alt="Enchanting portal shimmering with otherworldly light, beckoning adventurers to step into realms unknown">
             <img @click="toggleVisibility(index)" src="../assets/img/question.webp" alt="here is a clue" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-110 duration-500 top-1/2 left-1/2 transform -translate-x-1/8 -translate-y-1/4">
-            <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#f1d762] to-[#d9a52b] text-slate-600 rounded-3xl flex flex-col items-center mb-2">
+            <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#F0CE00] to-[#F3951A] text-slate-600 rounded-3xl flex flex-col items-center mb-2">
               <p class="text-xl flex flex-col items-center p-5">
                 In a forest deep, where shadows creep,And the moonlight rarely peeks,
                 There lies a key to your heart’s desire,
@@ -81,11 +82,11 @@
             <div class="md:text-xl animate-pulse text-sm hover:scale-105 duration-500 cursor-pointer" @click="toggleVisibility2">Find the starting point!</div> 
           </div>
           <div class="relative">
-            <div v-if="isVisible" class="absolute hidden xl:block z-20 md:top-0 md:left-0">
-              <p class="oval-thought2 absolute text-slate-800 top-0">You have to search for the clue a little closer</p>
+            <div v-if="isVisible" class="absolute hidden xl:block z-20 md:top-0 md:left-32">
+              <p class="oval-thought absolute text-slate-800 top-0">You have to search for the clue a little closer</p>
             </div>
             <div class="flex justify-start">
-              <img src="../assets/img/gnist.webp" alt="Elf with pointed ears and mystical attire standing in a forest glade">
+              <img src="../assets/img/gnist.png" alt="Elf with pointed ears and mystical attire standing in a forest glade">
             </div>
           </div>
         </div>
