@@ -29,7 +29,7 @@
     </div>
     <!-- burger menu -->
     <div class="lg:hidden md:hidden">
-      <button class="navbar-burger flex items-center text-white hover:text-rose-300 p-3" @click="toggleMenu">
+      <button aria-label="Navigation" class="navbar-burger flex items-center text-white hover:text-rose-300 p-3" @click="toggleMenu">
         <i class="fa-solid fa-bars text-4xl"></i>
       </button>
     </div>
