@@ -190,7 +190,7 @@
           :aria-labelledby="'heading2'"
           data-twe-parent="#accordionExample">
           <div class="px-5 py-4 text-slate-200">
-            <p class="text-2xl">Would you like to take the whole Fantasy Festival with you? <a class="text-orange-500" href="https://www.lejebolig.dk/">See your options for accommodation in Esbjerg</a></p>
+            <p class="text-2xl">Would you like to take the whole Fantasy Festival with you? <a class="text-yellow-500 hover:text-orange-500 hover:underline" target="_blank" href="https://www.lejebolig.dk/">See your options for accommodation in Esbjerg</a></p>
           </div>
         </div>
       </div>
