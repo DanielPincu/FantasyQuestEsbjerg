@@ -1,11 +1,13 @@
 <template>
-  <footer class="w-full bg-[#1A202C] pt-10 flex flex-col items-center justify-center text-center">
-    <img class="w-full h-full" src="../assets/img/footer.webp" alt="Footer Image">
+  <div v-if="footerData">
+    <div v-for="(item, index) in footerData" :key="index">
+      <footer class="w-full bg-[#1A202C] pt-10 flex flex-col items-center justify-center text-center">
+    <img class="w-full h-full" :src="item.footer_image" alt="Footer Image">
     
     <div class="bg-[#155777] w-full grid grid-cols-12 gap-4 justify-center pb-10">
       
       <div class="col-span-12 container mx-auto sm:col-span-6 sm:order-2 order-1 flex justify-center items-center">
-        <img class="w-96 h-auto" src="../assets/img/sponsors.webp" alt="Sponsors">
+        <img class="w-96 h-auto" :src="item.sponsors_image" alt="Sponsors">
       </div>
       
       
@@ -38,7 +40,26 @@
       <p class="text-sm">Fantasy Quest is an enchanting experience of the Fantasy Festival© <br> All rights reserved. © 2024</p>
     </div>
   </footer>
+    </div>
+  </div>
+
+  <div v-else>
+    <p>loading...</p>
+  </div>
+
 </template>
+
+<script setup>
+import { onMounted } from 'vue';
+import connectMe from '../modules/connectMe';
+const { footerData, fetchData } = connectMe();
+
+onMounted(() => {
+  fetchData();
+});
+
+
+</script>
 
 
 <style scoped>

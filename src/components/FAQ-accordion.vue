@@ -245,74 +245,17 @@
               <li>Lords Assembly</li>
               <li>Ripen</li>
             </ul>
-
           </div>
         </div>
       </div>
-
-
-
-     
-
-
-
-
-
-
-
-      <!-- Sponsors -->
-      <div>
-          <!-- Accordion Header -->
-          <h2 class="mb-0" :id="'heading4'">
-            <button
-              class="group relative flex w-full items-center border-t-2 border-yellow-500 bg-white px-5 py-4 text-left text-base text-neutral-800 transition overflow-anchor-none hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-c-collapse-collapsed])]:bg-[#1A202C] [&:not([data-twe-collapse-collapsed])]:text-slate-200 [&:not([data-twe-collapse-collapsed])] dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
-            type="button"
-            @click="toggleCollapse(4)"
-            :aria-expanded="isExpanded(4)"
-            :aria-controls="'collapse2'">
-            <span class="md:text-3xl">Sponsors</span>
-            <span
-              class="-me-1 ms-auto h-5 w-5 shrink-0 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 [&>svg]:h-6 [&>svg]:w-6"
-              :class="{ 'rotate-180': isExpanded(4) }">
-              <svg class="text-yellow-500"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  :d="isExpanded(3) ? 'M0 15.75l7.5-7.5 7.5 7.5' : 'M19.5 8.25l-7.5 7.5-7.5-7.5'" />
-              </svg>
-            </span>
-          </button>
-        </h2>
-        <!-- Accordion Content -->
-        <div class="bg-[#1A202C]"
-          :class="{ '!visible': isExpanded(4), 'hidden': !isExpanded(4) }"
-          data-twe-collapse-item
-          :aria-labelledby="'heading2'"
-          data-twe-parent="#accordionExample">
-          <div class="px-5 py-4 flex items-center justify-center text-slate-200">
-          
-          
-            <img src="../assets/img/sponsors.webp" alt="Festival's sponsors">
-          
-
-          </div>
-        </div>
-      </div>
-
     </div>
-
   </div>
 
 
 
 
 
-
+<!-- CONTACT FORM -->
   <div class="container mx-auto flex justify-center items-center rounded-3xl mt-32 mb-5 border-2 border-yellow-500">
       <div class="container mx-auto">
         <h1 class="flex justify-center text-2xl md:text-3xl dark:text-slate-200 mx-auto py-10">Have more questions?</h1>

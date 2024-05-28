@@ -22,6 +22,7 @@ const remoteData = () => {
   const familyData = VueRef([]);
   const nightData = VueRef([]);
   const faqData = VueRef([]);
+  const footerData = VueRef([]);
 
   const EN = collection(db, 'Fantasy Quest Esbjerg');
   const introDocRef = doc(EN, 'Intro');
@@ -29,6 +30,7 @@ const remoteData = () => {
   const familyDocRef = doc(EN, 'Family');
   const nightDocRef = doc(EN, 'Night');
   const faqDocRef = doc(EN, 'FAQ');
+  const footerDocRef = doc(EN, 'Footer');
 
   const fetchIntroData = async () => {
     onSnapshot(introDocRef, async (doc) => {
@@ -85,8 +87,19 @@ const remoteData = () => {
     });
   }
 
+  const fetchFooterData = async () => {
+    onSnapshot(footerDocRef, async (doc) => {
+      if (doc.exists()) {
+        const data = doc.data();
+        footerData.value = [data];
+      } else {
+        console.log("No such document for Footer!");
+      }
+    });
+  }
+
   const fetchData = async () => {
-    await Promise.all([ fetchIntroData(), fetchHistoryData(), fetchFamilyData(), fetchNightData(), fetchFaqData() ]);
+    await Promise.all([ fetchIntroData(), fetchHistoryData(), fetchFamilyData(), fetchNightData(), fetchFaqData(), fetchFooterData() ]);
   };
 
   return {
@@ -95,7 +108,8 @@ const remoteData = () => {
     familyData,
     nightData,
     fetchData,
-    faqData
+    faqData,
+    footerData
   };
 };
 

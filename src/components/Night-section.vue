@@ -6,7 +6,7 @@
      </h1>
 
      <div class="relative">
-       <img class="absolute right-0 top-80 z-10 opacity-50 md:opacity-100" src="../assets/img/thunder.webp" alt="Enormous thunderbolt lightening the page">
+       <img class="absolute right-0 top-80 z-10 opacity-50 md:opacity-100" src="../assets/img/clouds/thunder.webp" alt="Enormous thunderbolt lightening the page">
        <div class="md:grid grid-cols-2 mt-5 md:mt-20 gap-10 container mx-auto">
          <div class="relative z-20 move-in-right">
            <p class="pb-5 md:text-2xl" v-html="highlightWords(item.intro1)"></p>
@@ -25,7 +25,7 @@
      </a>
 
      <div class="relative">
-       <img class="absolute left-0 top-0 z-10 opacity-30 md:opacity-100 scale-x-[-1]" src="../assets/img/thunder.webp" alt="">
+       <img class="absolute left-0 top-0 z-10 opacity-30 md:opacity-100 scale-x-[-1]" src="../assets/img/clouds/thunder.webp" alt="">
        <div class="md:grid grid-cols-12 mt-20 container mx-auto move-in-left">
          <div class="col-span-6"></div>
          <div class="relative z-20 col-span-6">
