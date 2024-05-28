@@ -38,12 +38,13 @@
 
       <!-- Portal Setup Mobile -->
       <div class="wrapper block md:hidden">
+        <p class="text-center text-2xl text-gradient pb-5">Where is the starting point?</p>
         <div class="container mx-auto grid grid-cols-1 items-center">
           <div class="flex justify-center" @click="toggleVisibility2">
             <img class="w-full h-full" :src="item.gnist_mobile" alt="Elf with pointed ears and mystical attire standing in a forest glade">
           </div>
         </div>
-        <div class="container mx-auto grid grid-cols-1 pt-32 items-center">
+        <div class="container mx-auto grid grid-cols-1 items-center">
           <div class="md:pt-0 py-5">
            <a class="fade-in" target="_blank" href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4">
             <BuyButton />
@@ -65,7 +66,7 @@
 
       <!-- Portal Setup Desktop -->     
       <div class="wrapper hidden md:block">
-        <p class="z-50 text-5xl text-center text-gradient pt-20 move-in-right">Where is the start point?</p>
+        <p class="z-50 text-5xl text-center text-gradient pt-20 move-in-right">Where is the starting point?</p>
         <div class="container mx-auto grid grid-cols-3 pt-32 items-center">
           <div class="relative move-in-right">
             <img class="w-full" :src="item.portal" alt="Enchanting portal shimmering with otherworldly light, beckoning adventurers to step into realms unknown">
