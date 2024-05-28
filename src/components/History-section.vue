@@ -100,7 +100,7 @@
                          <li>{{ item.family_program }}</li>
                          <li>{{ item.night_program }}</li>
                     </ul>
-               <p class="mt-5 text-[14px]">{{ item.how_to_join4 }}</p>
+               <p class="mt-5 md:text-sm text-[10px]">{{ item.how_to_join4 }}</p>
                <div class="pt-10">
                       <a target="_blank" class="fade-in" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
                 </div>
