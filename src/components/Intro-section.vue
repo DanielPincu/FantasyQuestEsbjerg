@@ -115,7 +115,7 @@
     </div>
 
     <div class="flex justify-end">
-        <img class="w-full h-full" src="../assets/img/banner.webp" alt="clouds, mist and fog">
+        <img class="w-full h-full" src="../assets/img/clouds/banner.webp" alt="clouds, mist and fog">
     </div>
     
 </div>

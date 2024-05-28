@@ -46,12 +46,12 @@
         </div>
         <div class="container mx-auto grid grid-cols-1 pt-32 items-center">
           <div class="relative flex justify-center">
-            <img class="w-96" src="../assets/img/port.webp" alt="Enchanting portal shimmering with otherworldly light, beckoning adventurers to step into realms unknown.">
-            <img @click="toggleVisibility(index)" src="../assets/img/question.webp" alt="here is a clue" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[52%] transform -translate-y-0 ">
+            <img class="w-96" :src="item.portal" alt="Enchanting portal shimmering with otherworldly light, beckoning adventurers to step into realms unknown.">
+            <img @click="toggleVisibility(index)" :src="item.questionmark" alt="here is a clue" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[52%] transform -translate-y-0 ">
             <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-1/4 bg-gradient-to-b from-[#f1d762] to-[#d9a52b] text-slate-600 rounded-3xl flex flex-col items-center mb-2">
               <p class="text-xl flex flex-col items-center p-5">
                 {{ item.riddle }}
-                <img class="w-32 pt-5 text-center" src="../assets/img/unicorn.webp" alt="Majestic unicorn with a flowing mane and horn, standing in a mystical forest clearing">
+                <img class="w-32 pt-5 text-center" :src="item.unicorn" alt="Majestic unicorn with a flowing mane and horn, standing in a mystical forest clearing">
               </p>
             </div>
           </div>
