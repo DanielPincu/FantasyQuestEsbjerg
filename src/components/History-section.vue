@@ -88,7 +88,7 @@
           <div class="xl:grid grid-cols-2 gap-10 container mx-auto px-5 fade-in">
 
           <div class="flex pb-5 justify-center">
-               <img class="w-full h-full" :src="item.join_quest_image" alt="Join the quest and journey into realms of magic, mystery, and endless possibility">
+               <img class="w-auto h-auto" :src="item.join_quest_image" alt="Join the quest and journey into realms of magic, mystery, and endless possibility">
           </div>
 
                <div>
@@ -100,7 +100,10 @@
                          <li>{{ item.family_program }}</li>
                          <li>{{ item.night_program }}</li>
                     </ul>
-               <p class="mt-5 md:text-2xl">{{ item.how_to_join4 }}</p>
+               <p class="mt-5 text-[14px]">{{ item.how_to_join4 }}</p>
+               <div class="pt-10">
+                      <a target="_blank" class="fade-in" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
+                </div>
           
                </div>
                
@@ -119,8 +122,8 @@
 <script setup>
 
 import { ref, onMounted } from 'vue'
-
 import connectMe from '../modules/connectMe'
+import BuyButton from './Buy-button.vue';
 const { historyData,  fetchData } = connectMe()
 
 

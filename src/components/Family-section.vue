@@ -17,7 +17,6 @@
 
       <div class="pt-10">
         <a target="_blank" class="fade-in" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
-
       </div>
       
       <div class="grid grid-cols-1 xl:grid-cols-2 container pt-10 md:pt-28 mx-auto gap-10 pb-20">
@@ -41,10 +40,15 @@
       <div class="wrapper block md:hidden">
         <div class="container mx-auto grid grid-cols-1 items-center">
           <div class="flex justify-center" @click="toggleVisibility2">
-            <img :src="item.gnist" alt="Elf with pointed ears and mystical attire standing in a forest glade">
+            <img class="w-full h-full" :src="item.gnist_mobile" alt="Elf with pointed ears and mystical attire standing in a forest glade">
           </div>
         </div>
         <div class="container mx-auto grid grid-cols-1 pt-32 items-center">
+          <div class="md:pt-0 py-5">
+           <a class="fade-in" target="_blank" href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4">
+            <BuyButton />
+           </a>
+        </div>
           <div class="relative flex justify-center">
             <img class="w-96" :src="item.portal" alt="Enchanting portal shimmering with otherworldly light, beckoning adventurers to step into realms unknown.">
             <img @click="toggleVisibility(index)" :src="item.questionmark" alt="here is a clue" class="absolute cursor-pointer animate-pulse w-10 hover:scale-110 duration-500 top-1/2 left-[52%] transform -translate-y-0 ">
@@ -66,7 +70,7 @@
           <div class="relative move-in-right">
             <img class="w-full" :src="item.portal" alt="Enchanting portal shimmering with otherworldly light, beckoning adventurers to step into realms unknown">
             <img @click="toggleVisibility(index)" :src="item.questionmark" alt="here is a clue" class="absolute cursor-pointer animate-pulse w-5 md:w-10 xl:w-20 hover:scale-90 xl:scale-75 duration-500 top-1/2 left-1/2 transform -translate-x-1/8 -translate-y-1/4">
-            <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#F0CE00] to-[#F3951A] text-slate-600 rounded-3xl flex flex-col items-center mb-2">
+            <div @click="toggleVisibility(index)" v-show="visibleDiv === index" class="md:w-96 w-72 cursor-pointer absolute top-44 bg-gradient-to-b from-[#55B6B5] to-[#184147] text-slate-200 rounded-3xl flex flex-col items-center mb-2">
               <p class="text-xl flex flex-col items-center p-5">
                 {{ item.riddle }}
                 <img class="w-44 pt-5 text-center" :src="item.unicorn" alt="Majestic unicorn with a flowing mane and horn, standing in a mystical forest clearing">
@@ -78,7 +82,7 @@
           </div>
           <div class="relative move-in-left">
             <div v-if="isVisible" class="absolute hidden xl:block z-20 md:top-0 md:left-32">
-              <p class="oval-thought absolute text-slate-800 top-0">You have to search for the clue a little closer</p>
+              <p class="oval-family bg-gradient-to-b from-[#D8CC95] to-[#739789] absolute text-slate-800 top-0">You have to search for the clue a little closer</p>
             </div>
             <div class="flex justify-start">
               <img :src="item.gnist" alt="Elf with pointed ears and mystical attire standing in a forest glade">
@@ -96,13 +100,20 @@
           <p class="pb-5 md:text-2xl" v-html="highlightWords(item.salmon2)"></p>
           <p class="pb-5 md:text-2xl" v-html="highlightWords(item.salmon3)"></p>
           <p class="md:text-2xl" v-html="highlightWords(item.salmon4)"></p>
+          <div class="pt-10">
+              <a target="_blank" class="fade-in hidden md:block" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
+          </div>
         </div>
         <div class="flex justify-center items-center">
           <img class="w-4/5" :src="item.image3" alt="Lakserytteren, the electrifying performer, captivating audiences with daring stunts and mesmerizing artistry">
         </div>
+        <div class="pt-10 md:hidden">
+              <a target="_blank" class="fade-in" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
+        </div>
       </div>
     </div>
   </div>
+  
   <div v-else>
     <p>Loading data...</p>
   </div>
@@ -169,4 +180,43 @@ const highlightWords = (text) => {
 p {
   line-height: normal;
 }
+
+
+
+.oval-family{
+  // border: 2px solid #39317E;
+  position: relative;
+  width: 250px;
+  padding: 20px 40px;
+  margin: 1em auto 0px;
+  text-align: center;
+  border-radius: 220px / 120px;     
+}
+
+.oval-family:before{
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(#D8CC95, #739789); 
+  border-radius: 30px;
+}
+
+.oval-family:after{
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 80px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: linear-gradient(#D8CC95, #739789); 
+}
+
+
+
+
+
 </style>
