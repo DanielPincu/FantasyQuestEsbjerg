@@ -11,13 +11,13 @@
       
       <div class="col-span-12 sm:col-span-3 sm:order-3 order-2 flex flex-col justify-center items-center pt-5">
         <p class="text-3xl pb-10">Follow us on social media</p>
-        <a class="instagram-gradient" target="_blank" href="https://www.instagram.com/fantasyfestivalen"><i class="fa-brands fa-instagram text-4xl md:text-5xl"></i></a>
-        <a href="https://www.instagram.com/fantasyfestivalen" class="text-2xl hover:underline">Follow us on Instagram</a>
+        <a class="instagram-gradient" target="_blank" aria-label="Follow us on Instagram" href="https://www.instagram.com/fantasyfestivalen"><i class="fa-brands fa-instagram text-4xl md:text-5xl"></i></a>
+        <a href="https://www.instagram.com/fantasyfestivalen" target="_blank" aria-label="Follow us on Facebook" class="text-2xl hover:underline">Follow us on Instagram</a>
        
 
         
-        <a class="facebook-gradient" target="_blank" href="https://www.facebook.com/fantasyfestivalen/?locale=da_DK"><i class="fa-brands fa-facebook text-4xl md:text-5xl pt-10"></i></a>
-        <a href="https://www.facebook.com/fantasyfestivalen/?locale=da_DK" class="text-2xl hover:underline">Follow us on Facebook</a>
+        <a class="facebook-gradient" target="_blank" aria-label="Follow us on Facebook" href="https://www.facebook.com/fantasyfestivalen/?locale=da_DK"><i class="fa-brands fa-facebook text-4xl md:text-5xl pt-10"></i></a>
+        <a href="https://www.facebook.com/fantasyfestivalen/?locale=da_DK" target="_blank" aria-label="Follow us on Facebook" class="text-2xl hover:underline">Follow us on Facebook</a>
         
 
       </div>
@@ -28,8 +28,8 @@
         <i class="fa-solid fa-phone-volume text-4xl"></i>
         <p class="md:text-3xl pb-5">76 16 20 00</p>
 
-        <a href="/faq"><i class="fa-solid fa-envelope text-4xl hover:text-slate-300"></i></a>
-        <a href="/faq" class="text-2xl pb-5 hover:underline">Write us an email</a>
+        <a href="/faq" aria-label="Write us an email"><i class="fa-solid fa-envelope text-4xl hover:text-slate-300"></i></a>
+        <a href="/faq" aria-label="Write us an email" class="text-2xl pb-5 hover:underline">Write us an email</a>
         
       </div>
     </div>
