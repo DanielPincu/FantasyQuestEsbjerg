@@ -55,7 +55,7 @@
                     <img class="px-5 w-full h-full" :src="item.night_quest_image" alt="Step into the shadows of a nocturnal fantasy quest, where darkness conceals both danger and secrets waiting to be uncovered">
                 </div>
                 <div class="container pb-20 text-justify mx-auto">
-                    <p class="mx-5 md:text-2xl md:col-span-12 italic col-span-12 pb-5">{{ item.night_intro }}</p>
+                    <p class="mx-5 md:text-2xl md:col-span-12 col-span-12 pb-5">{{ item.night_intro }}</p>
 
                 <div class="md:grid grid-cols-12 pt-5">
                     <div class="col-span-6 text-center flex justify-center items-center">
