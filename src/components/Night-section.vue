@@ -42,8 +42,8 @@
      </div>
 
      <!-- Portal Setup Mobile -->
-     <div class="wrapper block md:hidden">
-      <p class="text-center text-2xl text-gradient pb-5">Where is the starting point?</p>
+     <div class="wrapper block md:hidden pt-5">
+      <p class="text-center text-3xl text-gradient pb-5">Where is the starting point?</p>
        <div class="container mx-auto grid grid-cols-1 items-center">
          <div class="flex justify-center" @click="toggleVisibility2">
            <img class="w-80 h-full" :src="item.gnist_mobile" alt="Elf with pointed ears and mystical attire standing in a forest glade.">
