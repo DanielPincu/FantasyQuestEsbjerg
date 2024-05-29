@@ -24,11 +24,11 @@
        <BuyButton />
      </a>
 
-     <div class="relative">
-       <img class="absolute left-0 top-0 z-10 opacity-30 md:opacity-100 scale-x-[-1]" src="../assets/img/clouds/thunder.webp" alt="">
+     <div class="relative z-50">
+       <img class="absolute left-0 top-0 z-10 opacity-30 md:opacity-100 scale-x-[-1]" src="../assets/img/clouds/thunder.webp" alt="Mighty thunderbolt">
        <div class="md:grid grid-cols-12 mt-20 container mx-auto move-in-left">
          <div class="col-span-6"></div>
-         <div class="relative z-20 col-span-6">
+         <div class="relative z-50 col-span-6">
            <p class="pb-5 md:text-2xl">{{ item.info1 }}</p>
            <p class="pb-5 md:text-2xl font-bold">{{ item.info2 }}</p>
            <p class="md:text-2xl" v-html="highlightWords(item.info3)"></p>
