@@ -47,7 +47,7 @@
     </div>
 
     <div class="xl:bg-gradient-to-b from-[#6E94AE] to-[#1A202C] pt-10">
-      <a target="_blank" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
+      <a target="_blank" href="https://www.universe.com/explore?query=Fantasy%2520Quest&loc=Esbjerg%252C%2520Denmark&ll=55.476466%252C8.459405"><BuyButton/></a>
     </div>
     
   </div>

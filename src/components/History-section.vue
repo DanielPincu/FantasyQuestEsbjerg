@@ -98,12 +98,12 @@
                <p class="mt-5 md:text-2xl">{{ item.how_to_join2 }}</p>
                <p class="mt-5 md:text-2xl">{{ item.how_to_join3 }}</p>
                     <ul class="text-orange-500 md:text-3xl my-5 btn">
-                         <li><a class="text-orange-500 hover:underline" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3">{{ item.family_program }}</a></li>
-                         <li><a class="text-orange-500 hover:underline" href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4">{{ item.night_program }}</a></li>
+                         <li>{{ item.family_program }}</li>
+                         <li>{{ item.night_program }}</li>
                     </ul>
                <p class="mt-5 md:text-sm text-[10px]">{{ item.how_to_join4 }}</p>
                <div class="pt-10">
-                      <a target="_blank" class="fade-in" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><BuyButton/></a>
+                      <a target="_blank" class="fade-in" href="https://www.universe.com/explore?query=Fantasy%2520Quest&loc=Esbjerg%252C%2520Denmark&ll=55.476466%252C8.459405"><BuyButton/></a>
                 </div>
           
                </div>

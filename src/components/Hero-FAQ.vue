@@ -45,8 +45,10 @@
       <div class="block xl:hidden ">
           <CountdownTimer/>
       </div>
-  
-      <BuyButton/>
+      <a target="_blank" href="https://www.universe.com/explore?query=Fantasy%2520Quest&loc=Esbjerg%252C%2520Denmark&ll=55.476466%252C8.459405">
+       <BuyButton/>
+      </a>
+     
     </div>
   
     <div v-else>
