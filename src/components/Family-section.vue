@@ -95,7 +95,7 @@
 
       <!-- Lakserytteren -->
       <h1 class="text-3xl md:text-5xl container mx-auto text-yellow-500 text-gradient text-center mt-28 pt-28 md:mb-10 mb-0 fade-in">{{ item.headline2 }}</h1>
-      <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-0 gap-10 pb-32 fade-in">
+      <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-0 gap-10 md:pb-32 pb-10 fade-in">
         <div>
           <p class="pb-5 md:text-2xl" v-html="highlightWords(item.salmon1)"></p>
           <p class="pb-5 md:text-2xl" v-html="highlightWords(item.salmon2)"></p>
