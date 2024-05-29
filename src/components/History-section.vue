@@ -87,9 +87,10 @@
 
           <div class="xl:grid grid-cols-2 gap-10 container mx-auto px-5 fade-in">
 
-          <div class="flex pb-5 justify-center">
-               <img class="w-auto h-auto" :src="item.join_quest_image" alt="Join the quest and journey into realms of magic, mystery, and endless possibility">
-          </div>
+               <div class="flex justify-center">
+                    <img class="w-full h-auto object-cover" :src="item.join_quest_image" alt="Join the quest and journey into realms of magic, mystery, and endless possibility">
+               </div>
+
 
                <div>
 
