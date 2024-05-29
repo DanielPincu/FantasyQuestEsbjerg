@@ -216,8 +216,4 @@ p {
   background: linear-gradient(#D8CC95, #739789); 
 }
 
-
-
-
-
 </style>

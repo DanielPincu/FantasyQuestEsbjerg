@@ -3,9 +3,7 @@
 
   <!-- NAVIGATION, MAKE STICKY -->
   <nav class="flex flex-row md:justify-end justify-end mx-auto w-full bg-black bg-opacity-75 z-50 sticky top-0">
-    <!-- <div class="flex items-center">
-      <p class="text-yellow-500 md:text-3xl pl-10">Fantasy Quest Esbjerg</p>
-    </div> -->
+    
     <div class="pr-20">
       <ul class="hidden md:flex lg:flex flex-row text-md mt-7 mb-5">
       
