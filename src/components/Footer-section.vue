@@ -25,7 +25,7 @@
       </div>
       
       
-      <div class="col-span-12 flex-col sm:col-span-3 sm:order-1 order-3 flex justify-center items-center pt-5">
+      <div class="col-span-12 flex-col sm:col-span-3 sm:order-1 order-3 md:flex justify-center items-center pt-5 hidden">
         <p class="text-3xl pb-10">Contact us</p>
         <i class="fa-solid fa-phone-volume text-4xl"></i>
         <p class="md:text-3xl pb-5">76 16 20 00</p>
