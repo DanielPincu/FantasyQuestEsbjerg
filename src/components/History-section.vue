@@ -69,7 +69,7 @@
                          <h2 class="text-gradient md:text-4xl text-center pb-5 pt-32 move-in-left">{{ item.history_heading2 }}</h2>
 
                          <div v-if="isVisible2" class="absolute hidden md:block z-20 md:top-52  md:right-0">
-                              <p class="oval-thought text-slate-600 absolute top-0">We really have to defend the city!</p>
+                              <p class="oval-thought text-slate-600 absolute top-0">...but now we really have to defend the city!</p>
                          </div>
 
                          <div class="hover:scale-105 duration-500 cursor-pointer">
