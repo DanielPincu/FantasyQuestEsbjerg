@@ -80,6 +80,39 @@
                </div>
 
           </div>
+
+          <div class="flex flex-col justify-center items-center lg:flex-row lg:flex-wrap md:flex-row md:flex-wrap">
+               <div v-for="card in filteredCards" :key="card.title" :id="card.id" class="moving-border w-72 h-auto  mt-4  bg-gray-900 sm:mb-2  p-2 m-5 rounded-lg shadow flex justify-start items-start flex-col">
+            <a @click="openModal(card)">
+              <img class="rounded-lg  hover:scale-[101%] " :src="card.image" alt="">
+            </a>
+            <div class="p-5">
+              <h5 class=" text-3xl mt-4 font-black tracking-tight text-white">{{ card.title }}</h5>
+              <p class="mb-2 text-md font-light tracking-tight text-white">{{ card.about }}</p>
+              <button @click="openModal(card)" class=" hover:scale-110 mt-5  hover:text-rose-300 text-orange-200 text-xl ">{{ card.button }}</button>
+            </div>
+            <!-- modal here -->
+              <div v-if="card.modalVisible" class="fixed inset-0 z-50 overflow-y-auto">
+                <div class="flex items-center justify-center bg-black mt-16 bg-opacity-50 h-auto">
+                  <div class="bg-black bg-opacity-65 p-10 rounded-lg shadow-lg w-[55%] h-auto border-orange-500 border-2">
+                    <div class="flex flex-col justify-center py-5">
+                      <p class="mb-2 text-lg font-semibold text-left">{{ card.modal.title }}</p>
+                      <div class="flex flex-row justify-center mb-20">
+                        <img class="w-96 rounded-lg" :src="card.image" alt="">
+                      
+                      </div>
+                      <h1 class="mb-10">{{ card.modal.description }}</h1>
+                      
+                      <div class="flex justify-center items-center"></div>
+                     
+                      
+                      <button @click="closeModal(card)" class="text-xl font-bold mt-5 hover:text-rose-300 text-orange-200">//Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
           
 
 
@@ -121,8 +154,8 @@
 </template>
 
 <script setup>
-
-import { ref, onMounted } from 'vue'
+import { cards } from '@/modules/portfolio.js';
+import { ref, onMounted, computed } from 'vue'
 import connectMe from '../modules/connectMe'
 import BuyButton from './Buy-button.vue';
 const { historyData,  fetchData } = connectMe()
@@ -133,6 +166,35 @@ const { historyData,  fetchData } = connectMe()
 onMounted(() => {
   fetchData()
 })
+
+
+
+
+const filteredCards = computed(() => {
+  if (selectedCategory.value === 'all') {
+    return cards.value;
+  } else {
+    return cards.value.filter(card => card.id === selectedCategory.value);
+  }
+});
+
+// Define a ref for selected category
+const selectedCategory = ref('all');
+
+
+
+// modal function
+const openModal = (card) => {
+  // used to prevent body scrolling when modal is open
+  document.body.classList.add('modal-open');
+  card.modalVisible = true;
+};
+
+const closeModal = (card) => {
+  // used to prevent body scrolling when modal is open
+  document.body.classList.remove('modal-open');
+  card.modalVisible = false;
+};
 
 const isVisible = ref(false);
 const isVisible2 = ref(false);
