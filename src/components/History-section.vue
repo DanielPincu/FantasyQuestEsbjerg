@@ -154,7 +154,7 @@
 </template>
 
 <script setup>
-import { cards } from '@/modules/portfolio.js';
+import { cards } from '../modules/portfolio.js';
 import { ref, onMounted, computed } from 'vue'
 import connectMe from '../modules/connectMe'
 import BuyButton from './Buy-button.vue';
