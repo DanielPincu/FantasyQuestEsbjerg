@@ -94,7 +94,7 @@
             <!-- modal here -->
               <div v-if="card.modalVisible" class="fixed inset-0 z-50 overflow-y-auto">
                 <div class="flex items-center justify-center bg-black mt-16 bg-opacity-50 h-auto">
-                  <div class="bg-black bg-opacity-65 p-10 rounded-lg shadow-lg w-[55%] h-auto border-orange-500 border-2">
+                  <div class="bg-black bg-opacity-65 p-10 rounded-lg shadow-lg md:w-[55%] h-auto border-orange-500 border-2">
                     <div class="flex flex-col justify-center py-5">
                       <p class="mb-2 text-lg font-semibold text-left">{{ card.modal.title }}</p>
                       <div class="flex flex-row justify-center mb-20">
@@ -106,7 +106,7 @@
                       <div class="flex justify-center items-center"></div>
                      
                       
-                      <button @click="closeModal(card)" class="text-xl font-bold mt-5 hover:text-rose-300 text-orange-200">//Close</button>
+                      <button @click="closeModal(card)" class="text-xl font-bold mt-5 hover:text-rose-300 text-orange-200">Close</button>
                     </div>
                   </div>
                 </div>
