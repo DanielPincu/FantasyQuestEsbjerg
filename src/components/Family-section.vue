@@ -79,7 +79,7 @@
             </div>
           </div>
           <div class="text-center">
-            <div class="md:text-xl animate-pulse text-sm hover:scale-105 duration-500 cursor-pointer" @click="toggleVisibility2"><p>SEE THE CLUE</p></div> 
+            <div class="md:text-xl animate-pulse text-sm hover:scale-105 duration-500 cursor-pointer" @click="toggleVisibility2"><p>Open the Portal</p></div> 
           </div>
           <div class="relative move-in-left">
             <div v-if="isVisible" class="absolute hidden xl:block z-20 md:top-0 md:left-32">
