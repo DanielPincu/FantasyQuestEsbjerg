@@ -90,11 +90,11 @@
            </div>
          </div>
          <div class="text-center">
-           <div class="md:text-xl animate-pulse text-sm hover:scale-110 duration-500 cursor-pointer" @click="toggleVisibility2"><p>Open the Portal</p></div> 
+           <div class="md:text-xl animate-pulse text-sm hover:scale-110 duration-500 cursor-pointer" @click="toggleVisibility2"><p>See the clue</p></div> 
          </div>
          <div class="relative move-in-left">
            <div v-if="isVisible2" class="absolute hidden md:block z-20 md:top-0 md:left-0 ">
-             <p class="oval-dark bg-gradient-to-b from-[#8E4BA3] to-[#2A294D] absolute text-slate-300 top-0">You have to search for the clue a little closer</p>
+             <p class="oval-dark bg-gradient-to-b from-[#8E4BA3] to-[#2A294D] absolute text-slate-300 top-0">You have to open the Portal to find the clue</p>
            </div>
            <div>
              <img :src="item.gnist_dark" alt="Elf with pointed ears and mystical attire standing in a forest glade">

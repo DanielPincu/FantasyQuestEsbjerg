@@ -79,11 +79,11 @@
             </div>
           </div>
           <div class="text-center">
-            <div class="md:text-xl animate-pulse text-sm hover:scale-105 duration-500 cursor-pointer" @click="toggleVisibility2"><p>Open the Portal</p></div> 
+            <div class="md:text-xl animate-pulse text-sm hover:scale-105 duration-500 cursor-pointer" @click="toggleVisibility2"><p>See the clue</p></div> 
           </div>
           <div class="relative move-in-left">
             <div v-if="isVisible" class="absolute hidden xl:block z-20 md:top-0 md:left-32">
-              <p class="oval-family bg-gradient-to-b from-[#D8CC95] to-[#739789] absolute text-slate-800 top-0">You have to search for the clue a little closer</p>
+              <p class="oval-family bg-gradient-to-b from-[#D8CC95] to-[#739789] absolute text-slate-800 top-0">You have to open the Portal to find the clue</p>
             </div>
             <div class="flex justify-start">
               <img :src="item.gnist" alt="Elf with pointed ears and mystical attire standing in a forest glade">
